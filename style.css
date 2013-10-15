@@ -117,6 +117,9 @@ body {
     border-radius: 5px;
 }
 
+#categories_menu {
+    display: none;
+}
 /* Search Button */
 #search-button a {
     display: inline-block;
