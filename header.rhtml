@@ -1,27 +1,22 @@
 <div id="barra-brasil">
 </div>
+<div class="header-content">
+  <div id="search-button">
+    <a id="sb_search" href="/search"><span>Search</span></a>
+  </div>
+  <div id="social-buttons">
+    <a id="sb_tweet" href="http://twitter.com/participa"><span>Twitter</span></a>
+    <a id="sb_youtb" href="http://youtube.com/user/participa"><span>Youtube</span></a>
+    <a id="sb_face" href="http://www.facebook.com/participa"><span>Facebook</span></a>
+    <a id="sb_flickr" href="#"><span>Flickr</span></a>
+  </div>
+  <div id="top-links">
+    <a id="link-faq" href="/portal/faq"><span>Perguntas frequentes</span></a>
+    <a id="link-contact" href="/contact/portal/new"><span>Contato</span></a>
+  </div>
+</div>
 <div id="barra-psocial">
-<div id="assets-menu">
-  <ul>
-    <%= generate_assets_menu %>
-  </ul>
-</div><!-- fim id="assets-menu" -->
-
-<script type="text/javascript">
-  jQuery(function($) {
-    $("#site-title, #assets-menu").mouseover(function() {
-      clearTimeout( window.closeAssetsTimeout );
-      $("#assets-menu").slideDown(400);
-    });
-    $("#site-title, #assets-menu").mouseout(function() {
-      window.closeAssetsTimeout =
-      setTimeout( function() { $("#assets-menu").slideUp(400); }, 500 );
-    });
-  });
-</script>
+  <div id="categories_menu">
+    <%= render :file => 'categories.rhtml' %>
+  </div>
 </div>
-
-<div id="search-header">
-  <%= render :partial => 'shared/profile_search_form' %>
-</div>
-

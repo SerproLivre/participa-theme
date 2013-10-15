@@ -1,6 +1,6 @@
-Conference Theme Noosfero
-=========================
+Participa.gov Theme for Noosfero
+================================
 
-Noosfero theme for the Conference environment.
+Noosfero theme for the Participa.gov environment.
 
-Install on /public/designs/themes/conference
+Install on /public/designs/themes/participa
