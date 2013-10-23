@@ -303,26 +303,26 @@ div#article-parent {
 
 /* Blocks main style */
 
-#content .box-1 .block {
+.action-home-index #content .box-1 .block {
     width: 48%;
     float: left;
     margin-right: 10px;
 }
 
-#content .box-1 .block-title {
+.action-home-index #content .box-1 .block-title {
     padding: 0.6em 1.5em;
     color: #444;
     text-transform: uppercase;
     font-variant: normal;
 }
 
-#content .box-1 .main-block {
+.action-home-index #content .box-1 .main-block {
     background: #FFF;
     width: 100%;
     clear: both;
 }
 
-#content .box-1 .article-block {
+.action-home-index #content .box-1 .article-block {
     background: none;
 }
 
@@ -335,11 +335,11 @@ div#article-parent {
     Xmargin: 0 0 0 170px;
 }
 
-.box-2 {
+.action-home-index .box-2 {
     width: 160px;
 }
 
-#content .box-3 .block {
+.action-home-index #content .box-3 .block {
     width: 210px;
     margin: 0px 0px 0px 30px;
     float: left;
@@ -392,7 +392,7 @@ div#article-parent {
 
 /* Block Display Content style */
 
-#content .box-1 .display-content-block {
+.action-home-index #content .box-1 .display-content-block {
     width: 300px;
 }
 
@@ -412,25 +412,25 @@ div#article-parent {
 
 /* Block Article style */
 
-#content .box-1 .article-block {
+.action-home-index #content .box-1 .article-block {
     width: 100%;
     font-size: 14px;
 }
 
-#content .box-1 .article-block .block-title {
+.action-home-index #content .box-1 .article-block .block-title {
     display: none;
 }
 
-#content .box-1 .article-block h2 {
+.action-home-index #content .box-1 .article-block h2 {
     font-size: 34px;
     font-weight: bold;
 }
 
-#content .box-1 .article-block .read-more {
+.action-home-index #content .box-1 .article-block .read-more {
     float: right;
 }
 
-#content .box-1 .article-block .read-more a {
+.action-home-index #content .box-1 .article-block .read-more a {
     display: block;
     height: 30px;
     text-align: center;
@@ -438,37 +438,30 @@ div#article-parent {
     background: url(images/read-more-home.png) repeat-x;
 }
 
-#content .box-1 .article-block .read-more a:first-child {
+.action-home-index #content .box-1 .article-block .read-more a:first-child {
     display: none;
 }
 
 /* Block My Network style */
 
-#content .my-network-block {
+.action-home-index #content .my-network-block {
     background: #eeefff;
 }
 
-#content .my-network-block .block-title {
+.action-home-index #content .my-network-block .block-title {
     background: #757575;
     padding: 0.6em 1.5em;
     color: #FFF;
 }
 
-#content .my-network-block ul {
+.action-home-index #content .my-network-block ul {
     padding: 10px 0px 10px 20px;
 }
 
-#content .my-network-block .my-network-actions a.button {
+.action-home-index #content .my-network-block .my-network-actions a.button {
     width: 100px;
     display: block;
     margin-bottom: 5px;
-}
-
-/* Hidden Actions MyNetwork */
-
-#content .box-2 .my-network-block .my-network-actions a.report-abuse-action,
-#content .box-2 .my-network-block .my-network-actions a.icon-menu-mail {
-    display: none;
 }
 
 /* Blocks profiles and enterprises */
