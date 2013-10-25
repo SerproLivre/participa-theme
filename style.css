@@ -689,3 +689,39 @@ div#article-parent {
 #footer-license {
   text-align: left;
 }
+
+
+/* padrao da barra verde - estatistica */
+.environment-statistics-block-data{
+	background:#0c763e;
+	width:960px;
+	float:left;
+	padding:10px 0 25px 0;
+}
+
+.environment-statistics-block-data ul{
+	list-style:none;
+}
+
+.environment-statistics-block-data ul li{
+	float:left;
+	width:146px;
+	margin:0 20px 20px 0px;
+	text-align:center;
+	color:#fff;
+}
+
+.environment-statistics-block-data ul li .amount{
+	font-size:40px !important;
+	font-weight:bold;
+	width:136px;
+}
+
+.environment-statistics-block-data ul li .label{
+	font-size:14px !important;
+	clear:both;
+	float:left;
+	width:136px;
+	color:#98baa5;
+}
+
