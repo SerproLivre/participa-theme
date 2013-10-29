@@ -70,7 +70,6 @@ body {
 
 #barra-psocial {
     position: relative;
-    width: 1800px;
     height: 40px;
     margin: auto;
     background: url(images/barra-psocial-bg.png) repeat-x;
@@ -118,7 +117,14 @@ body {
 }
 
 #categories_menu {
-    display: none;
+    max-width: 960px;
+    margin: auto;
+}
+#cat_menu li {
+    list-style: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 15px 20px;
 }
 /* Search Button */
 #search-button a {
