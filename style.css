@@ -59,7 +59,11 @@ body {
     font-size: 48px;
 }
 
-#user { top: 0px; }
+#user { top: -30px; }
+
+#user form {
+    display:none;
+}
 
 #barra-brasil {
     box-shadow: 0px 0px 10px #DFDFDF inset;
@@ -122,10 +126,55 @@ body {
 }
 #cat_menu li {
     list-style: none;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     padding: 15px 20px;
+    text-transform: uppercase;
 }
+
+#cat_menu li#category1 {
+    color: #ba4a00
+}
+#cat_menu li#category2 {
+    color: #3b7390
+}
+#cat_menu li#category3 {
+    color: #643c67
+}
+#cat_menu li#category4 {
+    color: #826938
+}
+#cat_menu li#category5 {
+    color: #1D571F
+}
+#cat_menu li#category6 {
+    color: #017b16
+}
+#cat_menu li#category7 {
+    color: #1a55dd
+}
+#cat_menu li#category8 {
+    color: #753900
+}
+#cat_menu li#category9 {
+    color: #56762b
+}
+#cat_menu li#category10 {
+    color: #3867b7
+}
+#cat_menu li#category11 {
+    color: #00439e
+}
+#cat_menu li#category12 {
+    color: #00A0DB
+}
+#cat_menu li#category13 {
+    color: #AD6500
+}
+#cat_menu li#category14 {
+    color: #DE9200
+}
+
 /* Search Button */
 #search-button a {
     display: inline-block;
