@@ -124,6 +124,13 @@ body {
     max-width: 960px;
     margin: auto;
 }
+
+#cat_menu {
+    background: url(images/logo-PS-barra.png) no-repeat center left;
+    height: 40px;
+    padding-left: 60px;
+}
+
 #cat_menu li {
     list-style: none;
     font-size: 12px;
@@ -356,6 +363,12 @@ div#article-parent {
     margin: 0;
 }
 
+/* Blocks main on home */
+
+.action-home-index .main-block {
+    display: none;
+}
+
 /* Blocks main style */
 
 .action-home-index #content .box-1 .block {
@@ -561,6 +574,12 @@ div#article-parent {
     margin-left: 15px;
 }
 
+
+.action-home-index #content .communities-block .block-title,
+.action-home-index #content .people-block .block-title {
+    display: none;
+}
+
 #content .people-block .vcard a.profile_link {
     height: 52px;
     margin: 0;
@@ -745,20 +764,27 @@ div#article-parent {
   text-align: left;
 }
 
-
 /* padrao da barra verde - estatistica */
-.environment-statistics-block-data{
+.action-home-index #content .box-1 .statistics-block {
+   width: 100%;
+}
+
+.action-home-index .statistics-block .block-title {
+   display: none;
+}
+
+.statistics-block-data{
 	background:#0c763e;
 	width:960px;
 	float:left;
 	padding:10px 0 25px 0;
 }
 
-.environment-statistics-block-data ul{
+.statistics-block-data ul{
 	list-style:none;
 }
 
-.environment-statistics-block-data ul li{
+.statistics-block-data ul li{
 	float:left;
 	width:146px;
 	margin:0 20px 20px 0px;
@@ -766,13 +792,13 @@ div#article-parent {
 	color:#fff;
 }
 
-.environment-statistics-block-data ul li .amount{
+.statistics-block-data ul li .amount{
 	font-size:40px !important;
 	font-weight:bold;
 	width:136px;
 }
 
-.environment-statistics-block-data ul li .label{
+.statistics-block-data ul li .label{
 	font-size:14px !important;
 	clear:both;
 	float:left;
