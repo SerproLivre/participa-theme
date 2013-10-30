@@ -369,6 +369,14 @@ div#article-parent {
     display: none;
 }
 
+.action-home-index .box-2 {
+    display: none;
+}
+
+.action-home-index .box-1 {
+    margin-left: 0px;
+}
+
 /* Blocks main style */
 
 .action-home-index #content .box-1 .block {
