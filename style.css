@@ -363,6 +363,12 @@ div#article-parent {
 
 .action-home-index #content .box-1 .block.raw-html-block {
     width: 100%;
+    background-image: url(images/bg-palacio-do-planalto.jpg);
+}
+
+.action-home-index #content .box-1 .block.track-list-block {
+    width: 100%;
+    background-image: url(images/bg-pessoas.jpg);
 }
 
 .action-home-index #content .box-1 .block-title {
@@ -565,6 +571,11 @@ div#article-parent {
     margin-left: 15px;
 }
 
+.action-home-index #content .box-1 .communities-block,
+.action-home-index #content .box-1 .people-block {
+    background-image: url(images/bg-linhas-cinza.png);
+    margin-right: 0px;
+}
 
 .action-home-index #content .communities-block .block-title,
 .action-home-index #content .people-block .block-title {
@@ -591,32 +602,34 @@ div#article-parent {
 }
 
 /* Blocks tags */
-.action-home-index #content .box-1 .block.tags-block {
+.action-home-index #theme-footer .block.tags-block {
     background: #034811;
     min-height: 50px;
     padding: 20px 0;
     width: 100%;
+    margin-bottom: 0px;
+    background-image: url(images/bg-fundo-verde-tags.png);
 }
 
-.action-home-index #content .box-1 .block.tags-block {
-   margin-bottom: 0px;
+.action-home-index #theme-footer .block.tags-block .block-inner-1 {
+    max-width: 960px;
+    margin: auto;
 }
-
-.action-home-index #content .box-1 .block.tags-block .block-title {
+.action-home-index #theme-footer .block.tags-block .block-title {
     display: none;
 }
 
-.action-home-index #content .box-1 .tags-block .block-footer-content a {
+.action-home-index #theme-footer .tags-block .block-footer-content a {
     color: #FFFFFF;
 }
 
-.action-home-index .box-1 .block.tags-block a,
-.action-home-index .box-1 .block.tags-block a:visited,
-.action-home-index .box-1 .block.tags-block a:hover {
+.action-home-index #theme-footer .block.tags-block a,
+.action-home-index #theme-footer .block.tags-block a:visited,
+.action-home-index #theme-footer .block.tags-block a:hover {
     color: #E7F1E9;
 }
 
-.action-home-index .box-1 .block.tags-block a:hover {
+.action-home-index #theme-footer .block.tags-block a:hover {
     text-decoration: underline;
 }
 
