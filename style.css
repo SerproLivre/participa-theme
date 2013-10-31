@@ -489,10 +489,16 @@ div#article-parent {
 
 .action-home-index #content .box-1 .article-block .read-more a {
     display: block;
-    height: 30px;
+    height: 39px;
+    width: 161px;
     text-align: center;
     padding: 7px;
-    background: url(images/read-more-home.png) repeat-x;
+    background: url(images/button-read-more2.png) no-repeat;
+}
+
+.action-home-index #content .box-1 .article-block .read-more a,
+.action-home-index #content .box-1 .article-block .read-more a:hover {
+   color: transparent !important;
 }
 
 .action-home-index #content .box-1 .article-block .read-more a:first-child {
