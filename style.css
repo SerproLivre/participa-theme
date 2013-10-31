@@ -756,18 +756,18 @@ div#article-parent {
    display: none;
 }
 
-.statistics-block-data{
+.action-home-index .statistics-block-data{
 	background:#0c763e;
 	width:960px;
 	float:left;
 	padding:10px 0 25px 0;
 }
 
-.statistics-block-data ul{
+.action-home-index .statistics-block-data ul{
 	list-style:none;
 }
 
-.statistics-block-data ul li{
+.action-home-index .statistics-block-data ul li{
 	float:left;
 	width:146px;
 	margin:0 20px 20px 0px;
@@ -775,17 +775,16 @@ div#article-parent {
 	color:#fff;
 }
 
-.statistics-block-data ul li .amount{
+.action-home-index .statistics-block-data ul li .amount{
 	font-size:40px !important;
 	font-weight:bold;
 	width:136px;
 }
 
-.statistics-block-data ul li .label{
+.action-home-index .statistics-block-data ul li .label{
 	font-size:14px !important;
 	clear:both;
 	float:left;
 	width:136px;
 	color:#98baa5;
 }
-
