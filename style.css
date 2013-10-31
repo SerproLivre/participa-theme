@@ -1,21 +1,26 @@
 @import url(../profile-base/style.css);
+@import url(gov-style.css);
+@import url(gov-plone.css);
 
 /* Main style page */
 body {
     background: #FFF;
 }
 
+#link-go-content {
+    display: none;
+}
+
 #wrap-1 {
     width: 100%;
     margin: 0px;
-    background: url(images/site-top2.png) repeat-x;
 }
 
 #wrap-2 {
     max-width: 960px;
     margin: auto;
     border: 0px;
-    margin-top: 40px;
+    margin-top: 223px;
 }
 
 #main-content-wrapper-1,
@@ -31,33 +36,6 @@ body {
 }
 
 /* Bar Psocial Style */
-
-#theme-header {
-    height: 100px;
-    margin: auto;
-    text-align: right;
-}
-
-#theme-header .header-content {
-    max-width: 960px;
-    margin: auto;
-}
-
-#profile-header {
-    min-height: 150px;
-}
-
-#site-title {
-    top: -130px;
-    height: 57px;
-    width: 372px;
-}
-
-#site-title a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 48px;
-}
 
 #user { top: -30px; }
 
@@ -204,42 +182,40 @@ background-size: 100% 100%;
 
 /* Social Buttons */
 #social-buttons a {
-    display: inline-block;
     width: 18px;
     height: 20px;
     margin-right: 3px;
     margin-top: 10px;
 }
 
-#social-buttons a:hover {
+#social-icons a {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#social-icons a:hover {
     opacity: 0.6;
 }
 
-#social-buttons #sb_face {
-background-image: url(images/facebook.png);
-Xbackground: none,url(images/facebook.svg);
-background-size: 100% 100%;
+#social-icons #sb_face {
+background-image: url(images/icone-facebook.png);
 }
 
-#social-buttons #sb_tweet {
-background-image: url(images/twitter.png);
-Xbackground: none,url(images/twitter.svg);
-background-size: 100% 100%;
+#social-icons #sb_tweet {
+background-image: url(images/icone-twitter.png);
 }
 
-#social-buttons #sb_youtb {
-background-image: url(images/youtube.png);
-Xbackground: none,url(images/youtube.svg);
-background-size: 100% 100%;
+#social-icons #sb_youtb {
+background-image: url(images/icone-youtube.png);
 }
 
-#social-buttons #sb_flickr {
-background-image: url(images/flickr.png);
-Xbackground: none,url(images/flickr.svg);
-background-size: 100% 100%;
+#social-icons #sb_flickr {
+background-image: url(images/icone-flickr.png);
 }
 
-#social-buttons span { display: none; }
+#social-icons span { display: none; }
 
 /* Top links */
 #top-links {
@@ -476,7 +452,8 @@ div#article-parent {
     width: 300px;
 }
 
-.box-1 .display-content-block ul {
+#content .box-1 .statistics-block li,
+#content .box-1 .display-content-block li {
     list-style: none;
     margin: 0px;
 }
@@ -601,8 +578,6 @@ div#article-parent {
     color: #000;
     position: relative;
     padding: 5px;
-    Xbackground: #DFDFDF;
-    Xborder-top: 3px solid #545454;
 }
 
 #content .box-1 .block-footer-content a {
