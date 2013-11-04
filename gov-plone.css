@@ -453,7 +453,6 @@ dl.portlet li,
 div.portletStaticText li {
 margin-bottom: 0.25em;
 line-height: 1.5em;
-display: list-item;
 }
 #content dt {
 font-weight: bold;
