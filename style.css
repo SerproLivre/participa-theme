@@ -40,6 +40,15 @@ body {
 }
 
 /* Overwriting Brasil gov style */
+
+body {
+  font-size: 12px;
+}
+
+label {
+  font-weight: normal;
+}
+
 #portal-siteactions {
    padding-bottom: 5px;
    margin-top: -10px;
@@ -559,11 +568,11 @@ div#article-parent {
 }
 
 .action-home-index #content .communities-block .block-title,
-.action-home-index #content .people-block .block-title {
+.action-home-index #content .display-people-block .block-title {
     display: none;
 }
 
-#content .people-block .vcard a.profile_link {
+#content .display-people-block .vcard a.profile_link {
     height: 52px;
     margin: 0;
     width: 52px;
@@ -835,7 +844,7 @@ div#article-parent {
 }
 
 .action-home-index #content .communities-block,
-.action-home-index #content .people-block {
+.action-home-index #content .display-people-block {
     display: inline-block;
     width: 50%;
     vertical-align: top;

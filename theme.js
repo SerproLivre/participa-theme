@@ -35,7 +35,7 @@
   profile_blocks_div_inner = $('<div>',{ class : 'home-blocks-inner'});
   profile_blocks_div.prepend(profile_blocks_div_inner);
   profile_blocks_div_inner.prepend($('.action-home-index #box-1 .communities-block'));
-  profile_blocks_div_inner.prepend($('.action-home-index #box-1 .people-block'));
+  profile_blocks_div_inner.prepend($('.action-home-index #box-1 .display-people-block'));
 
   blocks_area.prepend(profile_blocks_div);
   blocks_area.prepend(content_blocks_div);
