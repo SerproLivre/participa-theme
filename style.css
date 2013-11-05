@@ -572,6 +572,19 @@ div#article-parent {
     display: none;
 }
 
+#content .display-people-block .banner-span {
+    background-color: #f15921;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.box-1 .display-people-block .banner-span,
+.common-profile-list-block .vcard a {
+    width: 108px;
+    height: 57px;
+}
+
 #content .display-people-block .vcard a.profile_link {
     height: 52px;
     margin: 0;
