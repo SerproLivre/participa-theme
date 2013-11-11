@@ -2,6 +2,11 @@
 @import url(gov-style.css);
 @import url(gov-plone.css);
 
+/*gov-plone.css fix*/
+#content a:hover, dl.portlet a:hover {
+	color: black !important;
+}
+
 /* Main style page */
 body {
     background: #FFF;
@@ -24,7 +29,8 @@ body {
     max-width: 960px;
     margin: auto;
     border: 0px;
-    margin-top: 160px;
+    /*margin-top: 160px;*/
+    margin-top: 170px;
 }
 
 #main-content-wrapper-1,
@@ -37,6 +43,10 @@ body {
 #main-content-wrapper-8 {
     background-image: none;
     background: none;
+}
+
+#wrap-2 #user{
+	 padding: 0 2em;
 }
 
 /* Overwriting Brasil gov style */
@@ -54,7 +64,7 @@ label {
    margin-top: -10px;
 }
 
-/* Bar Psocial Style */
+/* Bar Psocial Style - Menu Horizontal*/
 
 #user {
    top: -30px;
@@ -126,7 +136,7 @@ label {
 }
 
 #cat_menu {
-    background: url(images/logo-PS-barra.png) no-repeat center left;
+    background: url(images/marca-participacao-social.png) no-repeat center left;
     height: 40px;
     padding-left: 60px;
 }
@@ -636,6 +646,27 @@ div#article-parent {
     text-decoration: underline;
 }
 
+
+/*outre blocks - blocos de baixo*/
+
+.action-home-index #wrap-2 .block-outer /*div.block*/ {
+ /*   left: -480px;
+    margin-left: 50%;
+    width: 960px;
+*/
+}
+
+.action-home-index #wrap-2 .block-outer div.block.statistics-block  {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.action-home-index #wrap-2 .block-outer .block-inner-1 {
+	 margin: auto;
+    /*width: 960px;*/
+}
+
 /* Menu List footer */
 
 #content .box-3 .block-title {
@@ -769,47 +800,254 @@ div#article-parent {
   text-align: left;
 }
 
+/*video*/
+
+.action-home-index #content .box-1 .video-block {
+	width: 960px;
+	position: relative;
+	left:-480px;
+	margin-left: 50%;
+}
+
+/* circulos bloco de html puro*/
+
+.action-home-index #content .box-1 .raw-html-block {
+	width: 960px;
+	position: relative;
+	left:-480px;
+	margin-left: 50%;
+}
+
 /* padrao da barra verde - estatistica */
 .action-home-index #content .box-1 .statistics-block {
-   width: 100%;
    display: inline-block;
    margin: 0px;
-   padding: 28px 0px 15px 0px;
+   /*padding: 28px 0px 15px 0px;*/
+	background-color: #0C763E;
 }
 
 .action-home-index .statistics-block .block-title {
    display: none;
 }
 
+.action-home-index .statistics-block-data{
+    left: -480px;
+    margin-left: 50%;
+    padding: 35px 0 40px;
+    position: relative;
+    text-align: center;
+    width: 960px;
+}
+
 .action-home-index .statistics-block-data ul{
 	list-style:none;
+	display: inline-block;
 }
 
 .action-home-index .statistics-block-data ul li{
-	float:left;
-	width:146px;
+	display: inline-block;
+	/*width:146px;*/
 	margin:0 20px 20px 0px;
 	text-align:center;
 	color:#fff;
 }
 
+.action-home-index .statistics-block-data ul li span{
+	display: block;
+}
+
 .action-home-index .statistics-block-data ul li .amount{
-	font-size:40px !important;
+	font-size: 800%/*40px !important*/;
 	font-weight:bold;
-	width:136px;
+	/*width:136px;*/	
+   line-height: 1em;
+	padding-bottom: 5px;
 }
 
 .action-home-index .statistics-block-data ul li .label{
-	font-size:14px !important;
-	clear:both;
-	float:left;
-	width:136px;
-	color:#98baa5;
+
+	/*width:136px;*/
+	/*color:#98baa5;*/
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
 }
 
 #header input.searchButton {
-  background-image: url(images/search-button.gif);
+  background-image: url("images/search-button.gif");
 }
+
+/*Destaques das áreas*/
+.track_list{
+    background: url("images/bg-pessoas.jpg") no-repeat center top transparent;
+    display: block;
+    overflow: hidden;
+    padding: 4em 2em;
+    left: -480px;
+    margin-left: 50%;
+    padding: 4em 2em;
+    position: relative;
+    width: 960px;
+}
+
+.track_list .item_card {
+    background-color: #fffafa;
+    border: 0 solid #DDDDDD;
+    float: none;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    width: 190px;
+	height: 100%;
+}
+
+.track_list .item_card:hover {
+    background-color: white;
+}
+
+.track_list .item_card .track_content{
+	height: 245px;
+	overflow: hidden;
+}
+
+.track_list .item_card .track_content .title{
+    color: white;
+    font-size: small;
+    font-weight: normal;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.track_list .category_politicas-publicas.item_card .track_content .title {
+	background-color: #3364a3;
+}
+
+.track_list .item_card .track_content .image{
+	border: 1px solid #ddd;
+	width: 175px;
+	height: 122px;
+	overflow: hidden;
+	margin: 0.5em;
+}
+
+.track_list .item_card .track_content .name {
+	 font-size: small;
+    font-weight: normal;
+    padding: 5px 0;
+    text-align: left;
+    margin: 0 0.5em;
+}
+
+.track_list .category_politicas-publicas.item_card .track_content .name {
+	color: #3364a3;
+}
+.track_list .item_card .track_content .lead {
+    font-weight: normal;
+    padding: 5px 0;
+    margin: 0 0.5em;
+    text-align: left;
+    color: black;
+}
+
+.track_list .item_card .track_stats {
+    padding: 5px;
+    /*overflow: hidden;*/
+	height: 25px;
+}
+
+.track_list .item_card .track_stats .comments {
+	background: url("images/comentarios.png") no-repeat left center #fffafa;
+    margin: 1px 0;
+    padding: 3px 0 3px 30px;
+    text-align: right;
+}
+
+.track_list .item_card .track_stats .hits {
+	background: url("images/visualizacoes.png") no-repeat left center #fffafa;	
+    margin: 1px 0;
+    padding: 3px 0 3px 30px;
+    text-align: right;
+}
+
+
+
+
+
+/*Artigos em Destaque*/
+
+/*Posicionamento dos artigos e pessoas ao centro*/
+
+
+.action-home-index #wrap-2 .block-outer #block-541 {
+
+}
+
+.action-home-index #wrap-2 .block-outer div.article-block {
+	 display: inline-block;
+    float: left;
+    left: 0;
+    margin-left: 0;
+    width: 300px;
+	 padding: 0 20px;
+}
+
+
+/*pessoas*/
+
+.people-block{
+
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block{
+	position: relative;	 
+	left: 0px;
+   margin-left: 10px;
+    width: 300px;
+	float: left;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .block-inner-1 {
+	width: 100%;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .block-title {
+	display: none;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .block-inner-2 {
+
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block{
+	margin-left: 0;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard{
+	border: 0px solid white; 
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard .profile_link .fn{
+	display: none;
+	visibility: hidden;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+	display: none;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .profile_link {
+	 height: 50px;
+    width: 50px;
+    margin: -1px 0px 0 -1px;
+    padding: 0;
+	 border: 1px solid white !important;
+}
+
+.action-home-index #wrap-2 .block-outer div.people-block .block-footer-content {
+	display: none;
+}
+
 
 /* HOME */
 
