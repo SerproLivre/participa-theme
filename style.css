@@ -481,25 +481,27 @@ div#article-parent {
 
 /* Block Article style */
 
-.action-home-index #content .box-1 .article-block {
+.recent-documents-block
+
+.action-home-index #content .box-1 .recent-documents-block {
     width: 100%;
     font-size: 14px;
 }
 
-.action-home-index #content .box-1 .article-block .block-title {
+.action-home-index #content .box-1 .recent-documents-block .block-title {
     display: none;
 }
 
-.action-home-index #content .box-1 .article-block h2 {
+.action-home-index #content .box-1 .recent-documents-block h2 {
     font-size: 34px;
     font-weight: bold;
 }
 
-.action-home-index #content .box-1 .article-block .read-more {
+.action-home-index #content .box-1 .recent-documents-block .read-more {
     float: right;
 }
 
-.action-home-index #content .box-1 .article-block .read-more a {
+.action-home-index #content .box-1 .recent-documents-block .read-more a {
     display: block;
     height: 39px;
     width: 161px;
@@ -508,12 +510,12 @@ div#article-parent {
     background: url(images/button-read-more2.png) no-repeat;
 }
 
-.action-home-index #content .box-1 .article-block .read-more a,
-.action-home-index #content .box-1 .article-block .read-more a:hover {
+.action-home-index #content .box-1 .recent-documents-block .read-more a,
+.action-home-index #content .box-1 .recent-documents-block .read-more a:hover {
    color: transparent !important;
 }
 
-.action-home-index #content .box-1 .article-block .read-more a:first-child {
+.action-home-index #content .box-1 .recent-documents-block .read-more a:first-child {
     display: none;
 }
 
@@ -539,7 +541,15 @@ div#article-parent {
     margin-bottom: 5px;
 }
 
-/* Blocks profiles and enterprises */
+/*Container Block*/
+
+.action-home-index #content .box-1 .container-block {
+    left: -480px;
+    margin-left: 50%;
+    width: 960px;	
+}
+
+/* Blocks profiles and enterprises - pessoas*/
 .recent-documents-block ul {
     padding: 0px 0px 0px 30px;
 }
@@ -650,7 +660,8 @@ div#article-parent {
 /*outre blocks - blocos de baixo*/
 
 .action-home-index #wrap-2 .block-outer /*div.block*/ {
- /*   left: -480px;
+ /*
+    left: -480px;
     margin-left: 50%;
     width: 960px;
 */
@@ -983,7 +994,7 @@ div#article-parent {
 
 }
 
-.action-home-index #wrap-2 .block-outer div.article-block {
+.action-home-index #wrap-2 .block-outer div.recent-documents-block {
 	 display: inline-block;
     float: left;
     left: 0;

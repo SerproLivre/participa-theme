@@ -1,3 +1,4 @@
+/*
 (function($) {
 
   // Adds a link to block title - can't do that on noosfero because of
@@ -45,3 +46,4 @@
 
   footer.prepend(tags_block);
 })(jQuery);
+*/
