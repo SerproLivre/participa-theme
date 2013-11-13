@@ -635,6 +635,7 @@ div#article-parent {
     padding: 5px;
 }
 
+
 #content .box-1 .block-footer-content a {
     position: relative;
 }
@@ -858,7 +859,7 @@ div#article-parent {
 .action-home-index .statistics-block-data{
     left: -480px;
     margin-left: 50%;
-    padding: 35px 0 40px;
+    padding: 25px 0 30px;
     position: relative;
     text-align: center;
     width: 960px;
@@ -882,7 +883,7 @@ div#article-parent {
 }
 
 .action-home-index .statistics-block-data ul li .amount{
-	font-size: 800%/*40px !important*/;
+	font-size: 600%/*40px !important*/;
 	font-weight:bold;
 	/*width:136px;*/	
    line-height: 1em;
@@ -913,30 +914,30 @@ div#article-parent {
     padding: 4em 2em;
     position: relative;
     width: 960px;
+    text-align: center;
 }
 
 .track_list .item_card {
     background-color: #fffafa;
     border: 0 solid #DDDDDD;
     float: none;
-    margin-bottom: 8px;
-    margin-left: 3px;
-    margin-right: 3px;
+    margin: 10px 50px;
     padding: 0;
     width: 190px;
 	height: 100%;
+	display: inline-block;
 }
 
 .track_list .item_card:hover {
     background-color: white;
 }
 
-.track_list .item_card .track_content{
+#content .track_list .item_card .track_content{
 	height: 245px;
 	overflow: hidden;
 }
 
-.track_list .item_card .track_content .title{
+#content .track_list .item_card .track_content .title{
     color: white;
     font-size: small;
     font-weight: normal;
@@ -944,11 +945,8 @@ div#article-parent {
     text-align: center;
 }
 
-.track_list .category_politicas-publicas.item_card .track_content .title {
-	background-color: #3364a3;
-}
 
-.track_list .item_card .track_content .image{
+#content .track_list .item_card .track_content .image{
 	border: 1px solid #ddd;
 	width: 175px;
 	height: 122px;
@@ -956,7 +954,7 @@ div#article-parent {
 	margin: 0.5em;
 }
 
-.track_list .item_card .track_content .name {
+#content .track_list .item_card .track_content .name {
 	 font-size: small;
     font-weight: normal;
     padding: 5px 0;
@@ -964,16 +962,42 @@ div#article-parent {
     margin: 0 0.5em;
 }
 
-.track_list .category_politicas-publicas.item_card .track_content .name {
-	color: #3364a3;
-}
-.track_list .item_card .track_content .lead {
+
+#content .track_list .item_card .track_content .lead {
     font-weight: normal;
     padding: 5px 0;
     margin: 0 0.5em;
     text-align: left;
     color: black;
 }
+
+/*category_not_defined*/
+#content .track_list .category_not_defined .track_content .title {
+	background-color: #666;
+}
+#content .track_list .category_not_defined .track_content .name {
+	color: #666;
+}
+
+/*category_politicas-publicas*/
+#content .track_list .category_politicas-publicas.item_card .track_content .title {
+	background-color: #3364a3;
+}
+#content .track_list .category_politicas-publicas.item_card .track_content .name {
+	color: #3364a3;
+}
+
+/*category_saude*/
+#content .track_list .category_saude.item_card .track_content .title {
+	background-color: red;
+}
+#content .track_list .category_saude.item_card .track_content .name {
+	color: red;
+}
+
+
+
+
 
 .track_list .item_card .track_stats {
     padding: 5px;
@@ -994,9 +1018,6 @@ div#article-parent {
     padding: 3px 0 3px 30px;
     text-align: right;
 }
-
-
-
 
 
 /*Artigos em Destaque*/
@@ -1099,6 +1120,10 @@ div#article-parent {
 
 /*Container - Mapa e Comunidades*/
 
+.mapa_comunidades.container-block {
+	background-image: url("images/bg-linhas-cinza.png");
+}
+
 /**Mapa**/
 
 /*.action-home-index #content .box-1 .container-block */
@@ -1109,6 +1134,7 @@ div#article-parent {
 .action-home-index #content .box-1 .container-block .raw-html-block {
 	width: 525px !important;
 	margin: 0 25px;
+	padding-top: 4em;
 }
 
 .container-block .raw-html-block .block-title {
@@ -1117,6 +1143,14 @@ div#article-parent {
 
 
 /*Comunidades*/
+
+
+/*ver todas as comunidades*/
+.action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
+	position: absolute;
+	top: 0px;
+	left: 290px;
+}
 
 .container-block .communities-block {
     display: inline-block;
@@ -1132,17 +1166,20 @@ div#article-parent {
 .container-block .communities-block .block-inner-1 {
 	width: 380px !important;
 	float: left;
+	padding-top: 4em;
 }
+
 
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover {
-	border: 0px;
+	/*border: 0px;*/
+	border: 1px solid #DDDDDD;
 }
-
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a { }
 
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a:hover{
 	border: 1px solid #DDDDDD;
 }
+
 
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger,
 .action-environment_design-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
@@ -1157,11 +1194,11 @@ div#article-parent {
 
 #content .box-1 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
 	 height: 95px;
-    width: 95px;
+    /*width: 95px;*/
     min-height: 95px;
-    min-width: 95px;
-    background-color: #ddd;
-    border: 2px solid #999999;
+    /*min-width: 95px;*/
+    background-color: #fff;
+    border: 2px solid #dfdfdf;
 	padding-bottom: 0px;
 }
 
@@ -1170,6 +1207,7 @@ div#article-parent {
     min-width: 95px;
 	 height: 95px;
     width: 95px;
+
 }
 
 #content .box-1 .communities-block .common-profile-list-block .vcard .profile_link .org {
@@ -1177,7 +1215,10 @@ div#article-parent {
     font-size: 85%;
     text-align: left;
     text-transform: uppercase;
+	 line-height: 1.1em;
+	 margin-top: 5px;
 }
+
 
 /* HOME */
 

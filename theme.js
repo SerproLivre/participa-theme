@@ -47,3 +47,11 @@
   footer.prepend(tags_block);
 })(jQuery);
 */
+
+(function($) {
+  // Run code
+	$( ".block-inner-1 .block-inner-2 .box .block-outer .communities-block" ).parent().addClass( "mapa_comunidades" );
+})(jQuery);
+
+
+
