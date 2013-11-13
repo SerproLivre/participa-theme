@@ -544,13 +544,13 @@ div#article-parent {
 /*Container Block*/
 
 .action-home-index #content .box-1 .container-block {
-   /* left: -480px;
-    margin-left: 50%;
-    width: 960px;	*/
     left: -480px;
     margin-left: 50%;
+    width: 960px;	
+/*    left: -480px;
+    margin-left: 50%;
     width: 1064px;
-	
+*/	
 }
 
 /* Blocks profiles and enterprises - pessoas*/
@@ -602,6 +602,8 @@ div#article-parent {
     font-size: 24px;
     font-weight: normal;
 }
+
+
 
 .box-1 .display-people-block .banner-span,
 .common-profile-list-block .vcard a {
@@ -917,6 +919,11 @@ div#article-parent {
     text-align: center;
 }
 
+.track_list .view_all {
+	display: none;
+	visibility: hidden;
+}
+
 .track_list .item_card {
     background-color: #fffafa;
     border: 0 solid #DDDDDD;
@@ -926,7 +933,7 @@ div#article-parent {
     width: 190px;
 	height: 100%;
 	display: inline-block;
-}
+}.common-profile-list-block .vcard a, 
 
 .track_list .item_card:hover {
     background-color: white;
@@ -1031,55 +1038,47 @@ div#article-parent {
 
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block,
-.action-environment_design-index #wrap-2 .block-outer div.people-block {
+.people-block {
 	position: relative;	 
 	left: 0px;
+	width: 390px !important;
   /* margin-left: 10px;*/
    /*width: 300px !important;*/
 	/*float: left;*/
 }
 
-              .action-home-index #wrap-2 .block-outer div.people-block .block-inner-1,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .block-inner-1{
+.people-block .block-inner-1{
 	/*width: 100%;*/
    width: 355px !important;
 	margin-left: 35px;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .block-title,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .block-title {
+.people-block .block-title {
 	display: none;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .block-inner-2,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .block-inner-2  {
+.people-block .block-inner-2  {
 
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .common-profile-list-block {
+.people-block .common-profile-list-block {
 	margin-left: 0;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard {
+.people-block .common-profile-list-block .vcard {
 	border: 0px solid white; 
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard .profile_link .fn,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard .profile_link .fn {
+.people-block .common-profile-list-block .vcard .profile_link .fn {
 	display: none;
 	visibility: hidden;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+.people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
 	display: none;
 }
-
-.action-home-index #wrap-2 .block-outer div.people-block .common-profile-list-block .profile_link,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .common-profile-list-block .profile_link {
+.people-block .common-profile-list-block .vcard a.profile_link,
+.people-block .common-profile-list-block .profile_link {
 	 height: 50px;
     width: 50px;
     margin: -1px 0px 0 -1px;
@@ -1088,18 +1087,21 @@ div#article-parent {
 	 background-color: #ddd;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .block-footer-content,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .block-footer-content {
+.people-block .block-footer-content {
 	display: none;
 }
 
-.action-home-index #wrap-2 .block-outer div.people-block .banner-span,
-.action-environment_design-index #wrap-2 .block-outer div.people-block .banner-span{
+.box-1 .people-block .banner-span{
     background-color: #F7E074;
     color: #004B82;
     height: 50px;
-    line-height: 3em;
-    width: 100px;
+    line-height: 50px;
+    width: 101px;
+}
+
+
+.common-profile-list-block .vcard .banner-div a:hover {
+	
 }
 
 /*conteudo em destaque display content*/
@@ -1120,8 +1122,9 @@ div#article-parent {
 
 /*Container - Mapa e Comunidades*/
 
-.mapa_comunidades.container-block {
+.action-home-index #content .box-1 .mapa_comunidades.container-block {
 	background-image: url("images/bg-linhas-cinza.png");
+	width: 960px;
 }
 
 /**Mapa**/
@@ -1161,6 +1164,7 @@ div#article-parent {
 	position: relative;
 	left:-480px;
 	margin-left: 50%;*/
+	width: 390px !important;
 }
 
 .container-block .communities-block .block-inner-1 {
@@ -1181,18 +1185,17 @@ div#article-parent {
 }
 
 
-.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger,
-.action-environment_design-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+.communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
 	display: none;
 }
 
-#content .box-1 .communities-block .common-profile-list-block .vcard .profile_link {
+.communities-block .common-profile-list-block .vcard .profile_link {
     margin: 5px;
     min-height: 130px;
     min-width: 100px;
 }
 
-#content .box-1 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
+.communities-block .common-profile-list-block .vcard .profile_link .profile-image {
 	 height: 95px;
     /*width: 95px;*/
     min-height: 95px;
@@ -1202,7 +1205,7 @@ div#article-parent {
 	padding-bottom: 0px;
 }
 
-#content .box-1 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {	
+.communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {	
 	 min-height: 95px;
     min-width: 95px;
 	 height: 95px;
@@ -1210,7 +1213,7 @@ div#article-parent {
 
 }
 
-#content .box-1 .communities-block .common-profile-list-block .vcard .profile_link .org {
+.communities-block .common-profile-list-block .vcard .profile_link .org {
 	 color: black;
     font-size: 85%;
     text-align: left;
@@ -1274,7 +1277,6 @@ div#article-parent {
     margin: 0px;
 }
 
-/*.action-home-index #content .communities-block,*/
 .action-home-index #content .display-people-block {
     display: inline-block;
     width: 50%;
@@ -1283,7 +1285,7 @@ div#article-parent {
 }
 
 .action-home-index #content .box-1 .block {
-    /*margin-right: 0px;*/
+
 }
 
 .action-home-index #statistics-blocks {
@@ -1308,3 +1310,13 @@ div#article-parent {
 .action-home-index #profile-blocks {
     background: url(images/bg-linhas-cinza.png);
 }
+
+
+
+/*Páginas Internas*/
+
+/*Artigos*/
+.tiny-mce-article {
+	font-size: 13px;
+}
+

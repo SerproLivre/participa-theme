@@ -50,7 +50,7 @@
 
 (function($) {
   // Run code
-	$( ".block-inner-1 .block-inner-2 .box .block-outer .communities-block" ).parent().addClass( "mapa_comunidades" );
+	$( "div.block-inner-1 div.block-inner-2 div.box div.block-outer .communities-block" ).parent().parent().parent().parent().parent().addClass( "mapa_comunidades" );
 })(jQuery);
 
 
