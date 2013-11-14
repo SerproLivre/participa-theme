@@ -980,15 +980,20 @@ div#article-parent {
 /*Destaques das áreas*/
 
 /*.track_list*/
-#content .track-card-list-block{
+.action-home-index #content .track-card-list-block{
     background: url("images/bg-pessoas.jpg") no-repeat center top transparent;
+	 padding: 4em 0;
+}
+
+#content .track-card-list-block{
+
     display: block;
     overflow: hidden;
     padding: 4em 2em;
     left: -480px;
     margin-left: 50%;
 	 margin-bottom: 15px;
-    padding: 4em 0;
+    padding: 2em 0 0;
     position: relative;
     width: 960px;
     text-align: center;
@@ -1207,6 +1212,14 @@ _software,_cultura_e_conhecimentos_livres*/
     text-align: right;
 }
 
+
+/*track list Internas*/
+.track_list .item .track_content .lead {
+    float: left;
+    padding: 2em;
+    text-align: left;
+    width: 40%;
+}
 
 /*Artigos em Destaque*/
 
