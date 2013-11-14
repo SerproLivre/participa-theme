@@ -339,6 +339,11 @@ div#article-parent {
     margin: 0;
 }
 
+#content .box-2 .recent-documents-block .block-title {
+	border-bottom: 1px solid #757575;
+	padding    padding: 8px;
+}
+
 #content .box-2 .link-list-block li a.link-this-page {
     width: auto;
     border-right: none;
@@ -905,30 +910,49 @@ div#article-parent {
   background-image: url("images/search-button.gif");
 }
 
+#searchGadget {
+	text-indent: 0px
+}
+
+/*#searchGadget, .LSBox input.searchButton {
+    text-indent: 0;
+}*/
+
 /*Destaques das áreas*/
-.track_list{
+
+/*.track_list*/
+#content .track-card-list-block{
     background: url("images/bg-pessoas.jpg") no-repeat center top transparent;
     display: block;
     overflow: hidden;
     padding: 4em 2em;
     left: -480px;
     margin-left: 50%;
-    padding: 4em 2em;
+	 margin-bottom: 15px;
+    padding: 4em 0;
     position: relative;
     width: 960px;
     text-align: center;
 }
 
+all_tracks .track_list {
+	background-image: url("images/no-image.gif") no-repeat center top transparent;
+}
+
 .track_list .view_all {
-	display: none;
-	visibility: hidden;
+	background-image: url("images/button-read-more-vazio.png") no-repeat center top transparent;
+	width: 161px;
+	height: 39px;
+	color: #000;
+	font-weight: bold;
+	padding-left: 50px;
 }
 
 .track_list .item_card {
     background-color: #fffafa;
     border: 0 solid #DDDDDD;
     float: none;
-    margin: 10px 0 10px 40px;
+    margin: 10px 15px;
     padding: 0;
     width: 190px;
 	height: 100%;
@@ -977,6 +1001,20 @@ div#article-parent {
     text-align: left;
     color: black;
 }
+/*Track list - Categorias*//*Variação de cor dos títulos do track list*/
+/*_agroecologia
+_comércio_justo_e_solidário
+_comunicação
+_cultura
+_finanças_solidárias
+_formação
+_marco_legal
+_organização_do_movimento
+_pesquisa_e_tecnologia
+_políticas_públicas
+_produção,_comercialização_e_consumo
+_relações_internacionais
+_software,_cultura_e_conhecimentos_livres*/
 
 /*category_not_defined*/
 #content .track_list .category_not_defined .track_content .title {
@@ -986,14 +1024,6 @@ div#article-parent {
 	color: #666;
 }
 
-/*category_politicas-publicas*/
-#content .track_list .category_politicas-publicas.item_card .track_content .title {
-	background-color: #3364a3;
-}
-#content .track_list .category_politicas-publicas.item_card .track_content .name {
-	color: #3364a3;
-}
-
 /*category_saude*/
 #content .track_list .category_saude.item_card .track_content .title {
 	background-color: red;
@@ -1001,6 +1031,98 @@ div#article-parent {
 #content .track_list .category_saude.item_card .track_content .name {
 	color: red;
 }
+/*category_agroecologia*/
+#content .track_list .category_agroecologia.item_card .track_content .title {
+	background-color: blue;
+}
+#content .track_list .category_agroecologia.item_card .track_content .name {
+	color: blue;
+}
+/*category_comercio-justo-e-solidario*/
+#content .track_list .category_comercio-justo-e-solidario.item_card .track_content .title {
+	background-color: green;
+}
+#content .track_list .category_comercio-justo-e-solidario.item_card .track_content .name {
+	color: green;
+}
+/*category_comunicacao*/
+#content .track_list .category_comunicacao.item_card .track_content .title {
+	background-color: orange;
+}
+#content .track_list .category_comunicacao.item_card .track_content .name {
+	color: orange;
+}
+/*category_cultura*/
+#content .track_list .category_cultura.item_card .track_content .title {
+	background-color: #541f5d;
+}
+#content .track_list .category_cultura.item_card .track_content .name {
+	color: #541f5d;
+}
+/*category_finanças_solidarias*/
+#content .track_list .category_financas-solidarias.item_card .track_content .title {
+	background-color: GoldenRod;
+}
+#content .track_list .category_financas-solidarias.item_card .track_content .name {
+	color: GoldenRod;
+}
+/*category_formacao*/
+#content .track_list .category_formacao.item_card .track_content .title {
+	background-color: Fuchsia;
+}
+#content .track_list .category_formacao.item_card .track_content .name {
+	color: Fuchsia;
+}
+/*category_marco_legal*/
+#content .track_list .category_marco-legal.item_card .track_content .title {
+	background-color: FireBrick;
+}
+#content .track_list .category_marco-legal.item_card .track_content .name {
+	color: FireBrick;
+}
+/*category_organizacao_do_movimento*/
+#content .track_list .category_organizacao-do-movimento.item_card .track_content .title {
+	background-color: DodgerBlue;
+}
+#content .track_list .category_organizacao-do-movimento.item_card .track_content .name {
+	color: DodgerBlue;
+}
+/*category_pesquisa_e_tecnologia*/
+#content .track_list .category_pesquisa-e-tecnologia.item_card .track_content .title {
+	background-color: DarkViolet;
+}
+#content .track_list .category_pesquisa-e-tecnologia.item_card .track_content .name {
+	color: DarkViolet;
+}
+/*category_politicas-publicas*/
+#content .track_list .category_politicas-publicas.item_card .track_content .title {
+	background-color: #3364a3;
+}
+#content .track_list .category_politicas-publicas.item_card .track_content .name {
+	color: #3364a3;
+}
+/*category_producao_comercializacao_e_consumo*/
+#content .track_list .category_producao-comercializacao-e-consumo.item_card .track_content .title {
+	background-color: Crimson;
+}
+#content .track_list .category_producao-comercializacao-e-consumo.item_card .track_content .name {
+	color: Crimson;
+}
+/*category_relações_internacionais*/
+#content .track_list .category_relacoes-internacionais.item_card .track_content .title {
+	background-color: BlueViolet;
+}
+#content .track_list .category_relacoes-internacionais.item_card .track_content .name {
+	color: BlueViolet;
+}
+/*category_software,_cultura_e_conhecimentos_livres*/
+#content .track_list .category_software-cultura-e-conhecimentos-livres.item_card .track_content .title {
+	background-color: OrangeRed;
+}
+#content .track_list .category_software-cultura-e-conhecimentos-livres.item_card .track_content .name {
+	color: OrangeRed;
+}
+
 
 
 
@@ -1099,7 +1221,6 @@ div#article-parent {
     width: 101px;
 }
 
-
 .common-profile-list-block .vcard .banner-div a:hover {
 	
 }
@@ -1125,6 +1246,7 @@ div#article-parent {
 .action-home-index #content .box-1 .mapa_comunidades.container-block {
 	background-image: url("images/bg-linhas-cinza.png");
 	width: 960px;
+	margin-bottom: 0;
 }
 
 /**Mapa**/
@@ -1146,8 +1268,6 @@ div#article-parent {
 
 
 /*Comunidades*/
-
-
 /*ver todas as comunidades*/
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
 	position: absolute;
@@ -1236,6 +1356,7 @@ div#article-parent {
 
 .action-home-index #content {
   margin: 0px;
+  background: url("images/bg-palacio-do-planalto.jpg") no-repeat center top #transparent;
 }
 
 .action-home-index .home-blocks-inner {
@@ -1316,7 +1437,86 @@ div#article-parent {
 /*Páginas Internas*/
 
 /*Artigos*/
-.tiny-mce-article {
+/*.tiny-mce-article*/
+
+.article-body p{
 	font-size: 13px;
 }
+
+#article-tags {
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+/*.community-track-plugin-track*/ /**/
+
+/*action-content_viewer-view_page*/
+
+/*action-profile-index*/
+
+/*Conteúdo Recente*/
+#content .recent-documents-block ul{
+
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px 0px 0px 0px;
+	 margin-left: 0px;
+}
+
+#content .recent-documents-block li {
+    background: none repeat scroll 0 0 #EEEFFF;
+    border-bottom: 1px solid #CCCCCC;
+    display: block;
+    margin: 0;
+    min-height: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+/*titulo documents recentes*/
+/*
+#content .box-2 .recent-documents-block li h3.block-title {
+    border-bottom: 1px solid gray;
+    padding: 8px;
+}
+*/
+#content .recent-documents-block li a {
+	display: inline;
+	float: none;
+	color: #464A55;
+	font-size: 12px;
+}
+/*botão enviar cometário*/
+#comments_list a.display-comment-form {
+	 background: none repeat scroll 0 0 #EEEEEE;
+    border: 0px solid #888888;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 20px;
+}
+
+
+/*Nuvem de tags rodapé*/
+#content .tags-block {
+	 background: url("images/bg_tags.png") repeat-x scroll center center transparent;	
+    margin-bottom: 0;
+    padding: 20px;
+	margin-bottom: -15px;
+}
+
+#content .tags-block .block-title,
+#content .tags-block .block-footer-content{
+	display: none;
+}
+
+#content .tags-block .tag_cloud {
+    max-height: 150px;
+}
+
+#content .tags-block .tag_cloud a {
+	color: white;
+	font-weight: bold;
+}
+
 
