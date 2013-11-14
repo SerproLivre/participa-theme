@@ -339,9 +339,13 @@ div#article-parent {
     margin: 0;
 }
 
-#content .box-2 .recent-documents-block .block-title {
-	border-bottom: 1px solid #757575;
-	padding    padding: 8px;
+/*documentos recentes - todo o site*/
+#content .recent-documents-block .block-title, 
+#content .box-3 .recent-documents-block .block-title {
+    background-color: #EEEFFF;
+    border-bottom: 1px solid #757575;
+    border-top: 4px solid #757575;
+    padding: 8px;
 }
 
 #content .box-2 .link-list-block li a.link-this-page {
@@ -758,6 +762,34 @@ div#article-parent {
 
 #box-organizer .block-target { clear: both; }
 
+/*.profile-info-options*/
+#content .profile-info-options {
+	padding-right: 0;
+}
+
+#content .profile-info-options ul {
+	margin-left: 0px;
+}
+
+#content .profile-info-options input.button.with-text, 
+#content .profile-info-options a.button.with-text {
+    background-color: #EEEFFF;
+    border-radius: 0 0 0 0;
+    display: block;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+#content .profile-info-options input.button:hover, 
+#content .profile-info-options a.button:hover {
+	 background-color: #DFE1FF;
+    border: 1px solid #CCC;
+}
+
+
+
 /* Custom Icons */
 
 .box-2 .link-list-block ul li .icon-ok,
@@ -765,10 +797,12 @@ div#article-parent {
 .box-2 .link-list-block ul li .icon-edit,
 .box-2 .link-list-block ul li .icon-photos {
     background-position: 0px -325px !important;
+/*
     height: 27px;
     padding: 13px 0px 0px 45px !important;
     margin-top: 5px;
     margin-bottom: 5px;
+*/
 }
 
 .box-2 .link-list-block ul li .icon-ok {
@@ -781,6 +815,31 @@ div#article-parent {
     background-position: 0px -245px !important;
 }
 
+.link-list-block {
+
+}
+#content .link-list-block ul {
+	margin-left: 0px;
+}
+
+#content .box-2 .link-list-block li a {
+    background-color: #EEEFFF;
+    border-bottom: 1px solid #64946E !important;
+    border-radius: 0 0 0 0;
+    border-right: medium none;
+    border-top: 0px solid #64946E !important;
+    color: #436976 !important;
+    font-weight: normal;
+    width: auto;
+	 font-size: 12px;
+    padding-left: 30px;
+    padding-right: 5px;
+	 
+	 background-position: 7px 50%;
+}
+#content .box-2 .link-list-block li a.link-this-page {
+	 font-size: 14px;
+}
 /* Footer */
 
 #theme-footer {
