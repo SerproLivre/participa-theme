@@ -631,9 +631,9 @@ input.button.with-text {
 #content input.button, #content a.button {
     background-color: #EEEEEE;
     background-repeat: no-repeat;
-    border: 1px solid #CCCCCC;
+    border: 0px solid #CCCCCC;
+	 border-bottom: 1px solid #CCCCCC;
     color: #555555;
-
     line-height: 16px;
     text-decoration: none;
 }
@@ -773,6 +773,22 @@ div#article-parent {
     top: 0px;
 }
 
+#content .box-1 h3.block-title {
+    background: url("images/bg_h1.gif") repeat transparent;
+    border-bottom: 0 solid #2E3436;
+    color: #444;
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+}
+
+.box-1 h3.block-title span {
+    background-color: white;
+    display: inline;
+    padding: 5px 10px;
+}
+
+
 /* Menu List left */
 
 #content .box-2 .block-title {
@@ -814,7 +830,8 @@ div#article-parent {
 
 #content .box-2 .link-list-block li a {
     background-color: #fff;
-    border-bottom: 1px solid #64946E !important;
+    /*border-bottom: 1px solid #64946E !important;*/
+    border-bottom: 1px solid #ccc !important;
     border-radius: 0 0 0 0;
     border-right: medium none;
     border-top: 0px solid #64946E !important;
@@ -1259,7 +1276,7 @@ div#article-parent {
 #content .profile-info-options input.button:hover, 
 #content .profile-info-options a.button:hover {
 	 background-color: #dfdfdf;
-    border: 1px solid #CCC;
+    border: 0px solid #CCC;
 }
 
 
@@ -1727,6 +1744,60 @@ _software,_cultura_e_conhecimentos_livres*/
     font-weight: bold;
 }
 
+/*** step list ***/
+
+
+#track .step_list .step {
+	/*background-color: #ddd;*/
+	/*background: url("images/steps_bg.png") repeat-x center top #fff;*/
+	background-color: #E8F3E9;
+    display: inline-block;
+    width: 100%;
+}
+
+#track .step_list .step .position {
+	/*background: #666666;*/
+	background-color: #397941;
+   display: inline-block;
+   font-size: 250%;
+	color: #E8F3E9;
+
+    margin: 15px;
+    padding: 15px;
+}
+
+#track .step_list .step .content {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+	 border-bottom: 0 none;
+}
+
+#track .step_list .step .content .date {
+    font-weight: normal;
+}
+
+#track .step_list .step .content .name {}
+
+#track .step .name, 
+#track .step .name a {
+	/*color: #397941;*/
+	color: gray;
+}
+
+#track .step_list .step .content .lead {
+	font-weight: normal;
+	margin-left: 0px;
+	margin-right: 0px;
+	color: #666;
+}
+
+#track .step_list .step .content .lead p{
+	margin-bottom: 0px;
+}
+
+
+
 /*ativo*/
 
 .step_active, #article .step_active a {
@@ -1735,6 +1806,7 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .track_list .item .track_content .step_active .position{
 	  background-color: #397941;
+	  color: #E8F3E9;
 }
 
 .step_finished, #article .step_finished a {
@@ -1747,10 +1819,12 @@ _software,_cultura_e_conhecimentos_livres*/
 
 
 /*finalizado*/
+
 .track_list .item .track_content .step_finished .position{
 	  background-color: #c6a142;
+	  color: #FFF0CF;
 }
-.step_finished, #article .step_finished a{
+.step_finished/*, #article .step_finished a*/{
 	background-color: #fff0cf;
 }
 
@@ -1759,40 +1833,7 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 
-/*** step list ***/
 
-#track .step_list .step {
-	/*background-color: #ddd;*/
-	background: url("images/steps_bg.png") repeat-x center top #fff;
-    display: inline-block;
-    width: 100%;
-}
-
-#track .step_list .step .position {
-	background: #666666;
-   display: inline-block;
-	margin: 5px 10px;
-}
-
-#track .step_list .step .content {
-    display: inline-block;
-    margin-left: 5px;
-    vertical-align: middle;
-	 border-bottom: 0 none;
-}
-
-#track .step_list .step .content .date {
-	display: none;
-}
-
-#track .step_list .step .content .name {}
-
-#track .step_list .step .content .lead {
-	font-weight: normal;
-}
-#track .step_list .step .content .lead p{
-	margin-bottom: 0px;
-}
 
 
 /*Artigos em Destaque*/
@@ -1972,8 +2013,9 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .communities-block .common-profile-list-block .vcard .profile_link {
     margin: 5px;
-    min-height: 130px;
+    min-height: 140px;
     min-width: 100px;
+	 background-color: transparent;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
