@@ -212,6 +212,78 @@ background-size: 100% 100%;
 
 #search-button span { display: none; }
 
+/**** BUSCA ****/
+
+#public-profile-search, #profile-search-results form, .profile-search-block form {
+ background-color: transparent;
+}
+
+.formfield input, .formfield textarea{
+    /*background: url("../images/input-bg.gif") no-repeat scroll left top transparent;*/
+    background-image: none;
+    border: 1px solid #DDDDDD;
+    color: #585858;
+    font-size: 16px;
+    max-height: 19px;
+}
+
+.formfield.type-file input {
+	 height: 28px;
+    max-height: 30px;
+}
+
+.formfield input {
+    padding: 5px 0;
+}
+
+.icon-search {
+    background-image: url("Tango/16x16/actions/search.png");
+}
+
+
+input.button.with-text {
+    background-position: 3px 50%;
+    font-size: 12px;
+    padding: 0 2px 2px 20px;
+}
+
+
+input.button.with-text {
+    max-height: 31px;
+}
+
+#content input.button, #content a.button {
+    background-color: #EEEEEE;
+    background-repeat: no-repeat;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+
+    line-height: 16px;
+    text-decoration: none;
+}
+
+/*label dos radio buttons da busca*/
+#content .search-field label {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#public-profile-search .formfield, #public-profile-search .submit {
+    margin-bottom: 5px;
+}
+
+#content form input.button.submit {
+    height: 31px;
+}
+
+#content .profile ul{
+	margin-left: 1em;
+}
+
+/**** FIM DE BUSCA ****/
+
 /* Social Buttons */
 #social-buttons a {
     width: 18px;
@@ -348,6 +420,42 @@ div#article-parent {
     padding: 8px;
 }
 
+#content .box-2 .link-list-block li {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*#content .box-2 .link-list-block li a {
+    font-size: 14px;
+    line-height: 1em;
+    color: #436976;
+    background-color: #FFF;
+    border-radius: none;
+    padding: 0.6em 1.5em;
+}*/
+
+#content .box-2 .link-list-block li a {
+    background-color: #fff;
+    border-bottom: 1px solid #64946E !important;
+    border-radius: 0 0 0 0;
+    border-right: medium none;
+    border-top: 0px solid #64946E !important;
+    color: #436976 !important;
+    font-weight: normal;
+    width: auto;
+	 font-size: 12px;
+    padding-left: 30px;
+    padding-right: 5px;	 
+	 background-position: 7px 50%;
+}
+
+#content .box-2 .link-list-block li a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
 #content .box-2 .link-list-block li a.link-this-page {
     width: auto;
     border-right: none;
@@ -359,26 +467,11 @@ div#article-parent {
     border-radius: 0px;
 }
 
-#content .box-2 .link-list-block li a {
-    font-size: 14px;
-    line-height: 1em;
-    color: #436976;
-    background-color: #FFF;
-    border-radius: none;
-    padding: 0.6em 1.5em;
+#content .box-2 .link-list-block li a.link-this-page {
+	 font-size: 14px;
 }
 
-#content .box-2 .link-list-block li a:hover {
-    background-color: #FFF;
-    color: #000;
-}
 
-#content .box-2 .link-list-block li {
-    border-bottom: 1px solid #ddd;
-    border-top: none;
-    padding: 0;
-    margin: 0;
-}
 
 /* Blocks main on home */
 
@@ -612,8 +705,6 @@ div#article-parent {
     font-weight: normal;
 }
 
-
-
 .box-1 .display-people-block .banner-span,
 .common-profile-list-block .vcard a {
     /*width: 108px;
@@ -650,6 +741,14 @@ div#article-parent {
 #content .box-1 .block-footer-content a {
     position: relative;
 }
+
+/*people block - blocos laterais*/
+
+#content .box-2 .common-profile-list-block li,
+#content .box-3 .common-profile-list-block li {
+	margin: 0.5em !important;
+}
+
 
 /* Blocks tags */
 .action-home-index #theme-footer .block.tags-block {
@@ -773,7 +872,7 @@ div#article-parent {
 
 #content .profile-info-options input.button.with-text, 
 #content .profile-info-options a.button.with-text {
-    background-color: #EEEFFF;
+    background-color: #fff;
     border-radius: 0 0 0 0;
     display: block;
     padding-bottom: 5px;
@@ -784,7 +883,7 @@ div#article-parent {
 
 #content .profile-info-options input.button:hover, 
 #content .profile-info-options a.button:hover {
-	 background-color: #DFE1FF;
+	 background-color: #dfdfdf;
     border: 1px solid #CCC;
 }
 
@@ -822,24 +921,7 @@ div#article-parent {
 	margin-left: 0px;
 }
 
-#content .box-2 .link-list-block li a {
-    background-color: #EEEFFF;
-    border-bottom: 1px solid #64946E !important;
-    border-radius: 0 0 0 0;
-    border-right: medium none;
-    border-top: 0px solid #64946E !important;
-    color: #436976 !important;
-    font-weight: normal;
-    width: auto;
-	 font-size: 12px;
-    padding-left: 30px;
-    padding-right: 5px;
-	 
-	 background-position: 7px 50%;
-}
-#content .box-2 .link-list-block li a.link-this-page {
-	 font-size: 14px;
-}
+
 /* Footer */
 
 #theme-footer {
@@ -1241,11 +1323,15 @@ _software,_cultura_e_conhecimentos_livres*/
 	/*float: left;*/
 }
 
-.people-block .block-inner-1{
+.people-block .block-inner-1 {
+	margin-left: 0px;
+}
+
+.action-home-index .people-block .block-inner-1{
 	/*width: 100%;*/
    width: 355px !important;
-	margin-left: 35px;
 }
+
 
 .people-block .block-title {
 	display: none;
@@ -1567,7 +1653,6 @@ _software,_cultura_e_conhecimentos_livres*/
     margin: 0;
     padding: 1px 20px;
 }
-
 
 /*Nuvem de tags rodapé*/
 #content .tags-block {
