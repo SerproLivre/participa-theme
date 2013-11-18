@@ -1,10 +1,15 @@
 @import url(../profile-base/style.css);
 @import url(gov-style.css);
-@import url(gov-plone.css);
+/*@import url(gov-plone.css);*/
 
 /*gov-plone.css fix*/
 #content a:hover, dl.portlet a:hover {
 	color: black !important;
+}
+
+/*** herança do gov-plone.css ***/
+#content li {
+	list-style: none outside none;
 }
 
 /* Main style page */
@@ -354,24 +359,11 @@ background-image: url(images/icone-flickr.png);
     font-family:  'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-/*
-#content .main-block h1,
-#not-found h1,
-#access-denied h1 {
-    color: #2C67CD;
-    font-size: 1.7em;
-    padding: 7px 0;
-    margin-left: 0 !important;
-    padding-left: 0.3em;
-    border-bottom: 1px solid #CCCCCC;
-    border-top: 2px solid #172838;
-}*/
-
 #content .main-block h1,
 #not-found h1,
 #access-denied h1 {
     color: #444;
-    font-size: 2.5em;
+    font-size: 1.7em;
     padding: 7px 0;
     margin-left: 0 !important;
     padding-left: 0.3em;
@@ -384,18 +376,13 @@ background-image: url(images/icone-flickr.png);
     padding-right: 70px;
 }
 
-/*#content .main-block h1 {
-    font-size: 2.3em !important;
-    font-weight: bold !important;
-}*/
-
 #content .main-block h1 {
-    font-size: 3.3em !important;
+    font-size: 2.3em !important;
     font-weight: bold !important;
 }
 
 #content .main-block h2 {
-    font-size: 2.5em !important;
+    font-size: 1.8em !important;
     min-height: 48px;
 }
 
@@ -723,6 +710,8 @@ div#article-parent {
     font-weight: normal;
 }
 
+
+
 .box-1 .display-people-block .banner-span,
 .common-profile-list-block .vcard a {
     /*width: 108px;
@@ -760,14 +749,6 @@ div#article-parent {
     position: relative;
 }
 
-/*people block - blocos laterais*/
-
-#content .box-2 .common-profile-list-block li,
-#content .box-3 .common-profile-list-block li {
-	margin: 0.5em !important;
-}
-
-
 /* Blocks tags */
 .action-home-index #theme-footer .block.tags-block {
     background: #034811;
@@ -800,6 +781,11 @@ div#article-parent {
     text-decoration: underline;
 }
 
+#content .tags-block .block-footer-content a {
+	position: relative;
+	background-image: none;
+	
+}
 
 /*outre blocks - blocos de baixo*/
 
@@ -1114,21 +1100,26 @@ all_tracks .track_list {
 
 .track_list .item_card {
     background-color: #fffafa;
-    border: 0 solid #DDDDDD;
+    border: 1px solid #DDDDDD;
     float: none;
     margin: 10px 15px;
     padding: 0;
     width: 190px;
 	height: 100%;
 	display: inline-block;
-}.common-profile-list-block .vcard a, 
+}
 
+.track_list .item_card a{
+	display: inline-block;
+}
+
+.common-profile-list-block .vcard a, 
 .track_list .item_card:hover {
     background-color: white;
 }
 
 #content .track_list .item_card .track_content{
-	height: 245px;
+	height: 305px;
 	overflow: hidden;
 }
 
@@ -1287,8 +1278,6 @@ _software,_cultura_e_conhecimentos_livres*/
 	color: OrangeRed;
 }
 
-
-
 .track_list .item_card .track_stats {
     padding: 5px;
     /*overflow: hidden;*/
@@ -1319,29 +1308,76 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 /*track list - páginas internas - main content*/
+
 .track_list .track_content {
 	 display: inline-block;
+    height: 100%;
 }
+
+.track_list .item .step {
+    padding: 5px;
+}
+
 .track_list .item .track_content .lead {
 	width: 30%;
 }
+
+.track_list .item .track_content .lead p.lead{
+	color: #444;
+}
+
+.track_list .item .track_content .lead h3 {
+    font-weight: bold;
+}
+
 .track_list .item .track_content .steps {
-	width: 60%;
+	 width: 60%;
+    font-weight: normal;
 }
 
 .track_list .item .track_content .steps h3{
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 14px !important;
     text-transform: uppercase;	
+    font-weight: normal;
 }
 
 .track_list .item .track_content .steps .position {
-    background-color: #397941;
     border-radius: 50% 50% 50% 50%;
     color: white;
-    font-size: 20px;
-    padding: 14px;
+    display: inline-block;
+    float: none;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px 10px;
     text-align: center;
+    font-weight: bold;
+}
+
+/*ativo*/
+
+.track_list .item .track_content .step_active .position{
+	  background-color: #397941;
+}
+
+.step_finished, #article .step_finished a {
+	background-color: #e7f2e9;
+}
+
+.step_active a:link, #content .step_active a:link, dl.portlet .step_active a:link {
+	color: #397941;
+}
+
+
+/*finalizado*/
+.track_list .item .track_content .step_finished .position{
+	  background-color: #c6a142;
+}
+.step_finished, #article .step_finished a{
+	background-color: #fff0cf;
+}
+
+.step_finished a:link, #content .step_finished a:link, dl.portlet .step_finished a:link {
+	color: #c6a142;
 }
 
 /*Artigos em Destaque*/
@@ -1365,7 +1401,7 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 .people-block .block-inner-1 {
-	margin-left: 0px;
+	/*margin-left: 35px;*/
 }
 
 .action-home-index .people-block .block-inner-1{
@@ -1398,8 +1434,19 @@ _software,_cultura_e_conhecimentos_livres*/
 .people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
 	display: none;
 }
+
 .people-block .common-profile-list-block .vcard a.profile_link,
 .people-block .common-profile-list-block .profile_link {
+	 height: 50px;
+    width: 50px;
+    margin: 0.5em;
+    padding: 0;
+	 border: 1px solid white !important;
+	 background-color: #ddd;
+}
+
+.action-home-index .people-block .common-profile-list-block .vcard a.profile_link,
+.action-home-index .people-block .common-profile-list-block .profile_link {
 	 height: 50px;
     width: 50px;
     margin: -1px 0px 0 -1px;
@@ -1695,24 +1742,25 @@ _software,_cultura_e_conhecimentos_livres*/
     padding: 1px 20px;
 }
 
+
 /*Nuvem de tags rodapé*/
-#content .tags-block {
+.action-home-index #content .tags-block {
 	 background: url("images/bg_tags.png") repeat-x scroll center center transparent;	
     margin-bottom: 0;
     padding: 20px;
-	margin-bottom: -15px;
+	margin-bottom: -17px;
 }
 
-#content .tags-block .block-title,
-#content .tags-block .block-footer-content{
+.action-home-index #content .tags-block .block-title,
+.action-home-index #content .tags-block .block-footer-content{
 	display: none;
 }
 
-#content .tags-block .tag_cloud {
+.action-home-index #content .tags-block .tag_cloud {
     max-height: 150px;
 }
 
-#content .tags-block .tag_cloud a {
+.action-home-index #content .tags-block .tag_cloud a {
 	color: white;
 	font-weight: bold;
 }
