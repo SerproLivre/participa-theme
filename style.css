@@ -391,9 +391,9 @@ background-image: url(images/icone-flickr.png);
     min-height: 48px;
 }
 
-#content .main-block h4 {
+#content .main-block #article-cat h4 {
     font-size: 1.3em !important;
-    min-height: 48px;
+    min-height: 0px;
 }
 
 div#article-parent {
@@ -1326,8 +1326,9 @@ _software,_cultura_e_conhecimentos_livres*/
 	color: #444;
 }
 
-.track_list .item .track_content .lead h3 {
+#content .track_list .item .track_content .lead a {
     font-weight: bold;
+	 color: #444;
 }
 
 .track_list .item .track_content .steps {
@@ -1341,7 +1342,8 @@ _software,_cultura_e_conhecimentos_livres*/
     font-weight: normal;
 }
 
-.track_list .item .track_content .steps .position {
+.track_list .item .track_content .steps .position,
+#track .step_list .step .position {
     border-radius: 50% 50% 50% 50%;
     color: white;
     display: inline-block;
@@ -1379,6 +1381,41 @@ _software,_cultura_e_conhecimentos_livres*/
 .step_finished a:link, #content .step_finished a:link, dl.portlet .step_finished a:link {
 	color: #c6a142;
 }
+
+
+/*** step list ***/
+
+#track .step_list .step {
+	/*background-color: #ddd;*/
+	background: url("images/steps_bg.png") repeat-x center top #fff;
+}
+
+#track .step_list .step .position {
+	background: #666666;
+   display: inline-block;
+	margin: 5px 10px;
+}
+
+#track .step_list .step .content {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+	 border-bottom: 0 none;
+}
+
+#track .step_list .step .content .date {
+	display: none;
+}
+
+#track .step_list .step .content .name {}
+
+#track .step_list .step .content .lead {
+	font-weight: normal;
+}
+#track .step_list .step .content .lead p{
+	margin-bottom: 0px;
+}
+
 
 /*Artigos em Destaque*/
 
@@ -1692,6 +1729,10 @@ _software,_cultura_e_conhecimentos_livres*/
 #article-tags {
 	margin-bottom: 0;
 	margin-right: 0;
+}
+
+#article-tags a {
+	background-color: transparent;
 }
 
 /*.community-track-plugin-track*/ /**/
