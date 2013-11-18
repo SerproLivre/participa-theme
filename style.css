@@ -612,8 +612,11 @@ background-size: 100% 100%;
     padding: 5px 0;
 }
 
-.icon-search {
-    background-image: url("Tango/16x16/actions/search.png");
+.search-field .formfield, .search-field .formfield input {
+	 margin-right: 0.5em;
+}
+#content form input.icon-search {
+
 }
 
 
@@ -651,11 +654,67 @@ input.button.with-text {
 }
 
 #content form input.button.submit {
+    background: url("images/btn_busca.png") no-repeat scroll 50% 50% transparent;
+    border: 1px solid #DDDDDD;
     height: 31px;
+    padding-right: 20px;
+    text-indent: -10000px;
 }
+
+.controller-search #content form input.button.submit {
+	 height: 31px;
+    max-height: 32px;
+}
+
 
 #content .profile ul{
 	margin-left: 1em;
+}
+
+
+/****RESULTADO DA BUSCA *****/
+
+#search-results {
+	width: 100% !important;
+}
+.controller-search .search-results-box {
+	width: 100%;
+	background: url("images/bg_h3_busca.gif") repeat-x top center transparent;
+}
+
+.controller-search #search-results h3 {
+    background-color: white;
+    display: inline;
+    margin: 0 0 0 0;
+    padding: 0.5em;
+    position: relative;
+}
+
+.controller-search #search-results .search-results-innerbox li .search-result-title {
+	margin-left: 148px;
+	color: #444444;
+}
+
+.search-article-description {
+	color: #999999;
+}
+
+#search-page .map-or-list-search-results list {
+	
+}
+
+.controller-search .search-results-innerbox {
+	height: 100%;
+}
+
+.search-results-type-article li.article-item, 
+.search-tagged-items li.article-item, 
+.only-one-result-box li.search-product-item {
+	border-bottom: 0px solid #fff;
+}
+
+.controller-search .search-results-innerbox td.search-field-label{
+	display: none;
 }
 
 /**** FIM DE BUSCA ****/
@@ -732,7 +791,8 @@ background-image: url(images/icone-flickr.png);
 
 #content .main-block h1,
 #not-found h1,
-#access-denied h1 {
+#access-denied h1,
+#content .no-boxes h1 {
     color: #444;
     font-size: 1.7em;
     padding: 7px 0;
@@ -747,7 +807,8 @@ background-image: url(images/icone-flickr.png);
     padding-right: 70px;
 }
 
-#content .main-block h1 {
+#content .main-block h1,
+#content .no-boxes h1 {
     font-size: 2.3em !important;
     font-weight: bold !important;
 }
@@ -782,12 +843,17 @@ div#article-parent {
     text-align: left;
 }
 
-.box-1 h3.block-title span {
+.box-1 h3.block-title span{
     background-color: white;
     display: inline;
     padding: 5px 10px;
 }
 
+
+.search-results-innerbox {
+	background-image: url("images/no-image.gif");
+	border: 0px;
+}
 
 /* Menu List left */
 
@@ -853,11 +919,18 @@ div#article-parent {
     width: auto;
     border-right: none;
     font-weight: bold;
-    color: #436976 !important;
-    border-top: 2px solid #64946e !important;
-    border-bottom: 2px solid #64946e !important;
-    background-color: #eeefff;
+    /*color: #436976 !important;*/
+    /*border-top: 2px solid #ccc !important;*/
+    /*border-bottom: 2px solid #ccc !important;*/
+    /*background-color: #eeefff;*/
     border-radius: 0px;
+
+
+    background-color: #EEEFFF;
+    border-bottom: 1px solid #757575 !important;
+    border-top: 4px solid #757575 !important;
+    padding: 8px;
+	 color: #757575 !important;
 }
 
 #content .box-2 .link-list-block li a.link-this-page {
@@ -1115,6 +1188,11 @@ div#article-parent {
     margin: -1px 0 0 -1px;
     max-height: 50px;
     padding-top: 0;   
+}
+.no-boxes .common-profile-list-block .vcard a, .comment-actions .vcard a{
+    border: 0 none;
+    height: 120px;
+    max-height: 120px;
 }
 
 #content .display-people-block .vcard a.profile_link {
@@ -1970,6 +2048,11 @@ _software,_cultura_e_conhecimentos_livres*/
 
 
 /*Comunidades*/
+
+.common-profile-list-block .vcard a, .common-profile-list-block .vcard a:hover {
+	border: 1px solid #eee;
+}
+
 /*ver todas as comunidades*/
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
 	position: absolute;
