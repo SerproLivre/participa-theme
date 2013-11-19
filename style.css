@@ -1614,7 +1614,7 @@ div#article-parent {
 	 padding: 2em 0 0;
 }
 
-.action-home-index #content .block-footer-content {
+.action-home-index .track-card-list-block .block-footer-content {
     margin-bottom: 15px;
     margin-top: -5px;
 }
