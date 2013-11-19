@@ -641,6 +641,10 @@ input.button.with-text {
     text-decoration: none;
 }
 
+#content a.button:hover {
+	border: 0px solid #CCCCCC;
+}
+
 /*label dos radio buttons da busca*/
 #content .search-field label {
     display: inline-block;
@@ -654,16 +658,40 @@ input.button.with-text {
 }
 
 #content form input.button.submit {
-    background: url("images/btn_busca.png") no-repeat scroll 50% 50% transparent;
+    background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
     border: 1px solid #DDDDDD;
     height: 31px;
     padding-right: 20px;
     text-indent: -10000px;
 }
 
+#content form input.button.submit[name~=commit] {
+    background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
+}
+
+#content form input.button.submit[name~=continue] {
+    background: url("images/btn_continue.png") no-repeat scroll 50% 50% transparent;
+}
+
 .controller-search #content form input.button.submit {
 	 height: 31px;
     max-height: 32px;
+}
+
+#content .button-bar a.button.with-text {
+	vertical-align: middle;
+}
+
+#content .button-bar a.button.with-text {
+	line-height: 20px;
+   height: 31px;
+	border: 1px solid #ddd;
+}
+
+#content .button-bar .button.with-text span {
+display: inline-block;
+width: auto;
+padding: 6px 4px;
 }
 
 
@@ -956,10 +984,14 @@ div#article-parent {
 /* Blocks main style */
 
 .action-home-index #content .box-1 .block-title {
+	 display: none;
+	 visibility: hidden;
+/*
     padding: 0.6em 1.5em;
     color: #444;
     text-transform: uppercase;
     font-variant: normal;
+*/
 }
 
 .action-home-index #content .box-1 .main-block {
@@ -1348,7 +1380,10 @@ div#article-parent {
     padding-bottom: 5px;
     padding-left: 30px;
     padding-top: 5px;
-    text-align: left;
+    text-align: left;	 
+}
+#content .profile-info-options a.button.with-text{
+	border-bottom: 1px solid #CCCCCC !important;
 }
 
 #content .profile-info-options input.button:hover, 
@@ -1525,6 +1560,11 @@ div#article-parent {
 	text-indent: 0px
 }
 
+.common-profile-list-block .vcard .menu-submenu .menu-submenu-list li a {
+	background-color: transparent;
+	border: 0px;
+}
+
 /*#searchGadget, .LSBox input.searchButton {
     text-indent: 0;
 }*/
@@ -1586,7 +1626,7 @@ all_tracks .track_list {
 }
 
 #content .track_list .item_card .track_content{
-	 height: 325px;
+	 height: 335px;
 	 overflow: hidden;
 }
 
@@ -2050,7 +2090,7 @@ _software,_cultura_e_conhecimentos_livres*/
 /*Comunidades*/
 
 .common-profile-list-block .vcard a, .common-profile-list-block .vcard a:hover {
-	border: 1px solid #eee;
+	border: 0px solid #eee;
 }
 
 /*ver todas as comunidades*/
@@ -2060,8 +2100,10 @@ _software,_cultura_e_conhecimentos_livres*/
 	left: 290px;
 }
 
+.action-home-index .container-block .communities-block,
 .container-block .communities-block {
     display: inline-block;
+	
 }
 
 .action-home-index #content .box-1 .communities-block {
@@ -2086,11 +2128,11 @@ _software,_cultura_e_conhecimentos_livres*/
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a { }
 
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a:hover{
-	border: 1px solid #DDDDDD;
+	border: 0px solid #DDDDDD;
 }
 
 
-.communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+.action-home-index #wrap-2 .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
 	display: none;
 }
 
@@ -2099,6 +2141,7 @@ _software,_cultura_e_conhecimentos_livres*/
     min-height: 140px;
     min-width: 100px;
 	 background-color: transparent;
+	 border: 0 none;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
