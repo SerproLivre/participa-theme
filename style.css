@@ -601,6 +601,7 @@ background-size: 100% 100%;
     color: #585858;
     font-size: 16px;
     max-height: 19px;
+	 width: 100%;
 }
 
 .formfield.type-file input {
@@ -705,6 +706,11 @@ padding: 6px 4px;
 #search-results {
 	width: 100% !important;
 }
+
+.controller-search .multiple-results-boxes .search-results-innerbox.common-profile-list-block {
+	overflow: visible;
+}
+
 .controller-search .search-results-box {
 	width: 100%;
 	background: url("images/bg_h3_busca.gif") repeat-x top center transparent;
@@ -857,7 +863,9 @@ background-image: url(images/icone-flickr.png);
 }
 
 div#article-parent {
-    position: absolute;
+    /*position: absolute;*/
+	 display: block;
+	 position: relative;
     right: 0px;
     top: 0px;
 }
@@ -885,7 +893,7 @@ div#article-parent {
 
 /* Menu List left */
 
-#content .box-2 .block-title {
+#content .box .block-title {
     font-size: 12px;
     text-align: left;
     border-top: 4px solid #757575;
@@ -895,6 +903,10 @@ div#article-parent {
     padding: 8px 8px 24px 10px;
     text-transform: uppercase;
     margin: 0;
+}
+#content .box-1 .block-title {
+	border-top: 0px hidden transparent;
+	padding: 0px;
 }
 
 /*documentos recentes - todo o site*/
@@ -1158,9 +1170,22 @@ div#article-parent {
     padding: 0px 0px 0px 30px;
 }
 
-.box-1 .menu-submenu {
-    bottom: 80px;
-    right: -40px;
+.menu-submenu,
+.box-1 .menu-submenu,
+.box-2 .menu-submenu,
+.box-3 .menu-submenu{
+    /*bottom: 80px;
+    right: -40px;*/
+	 bottom: 100%;
+    left: -50%;
+}
+
+.action-friends-index .profile-list li, .common-profile-list-block .vcard {
+    border: 1px solid transparent;
+}
+
+.action-friends-index .profile-list li:hover, .common-profile-list-block .vcard:hover {
+	 border: 1px solid white;
 }
 
 .box-1 .common-profile-list-block .vcard {
@@ -1171,6 +1196,9 @@ div#article-parent {
 .box-1 .common-profile-list-block .profile_link {
     width: 65px;
     height: 80px;
+}
+.box-1 .common-profile-list-block .profile_link {
+	overflow: visible;
 }
 
 .box-1 .common-profile-list-block span {
@@ -1221,11 +1249,19 @@ div#article-parent {
     max-height: 50px;
     padding-top: 0;   
 }
+
+/*comunidades ver todas*/
 .no-boxes .common-profile-list-block .vcard a, .comment-actions .vcard a{
     border: 0 none;
     height: 120px;
     max-height: 120px;
 }
+
+.common-profile-list-block .vcard .menu-submenu li a {
+	     height: 100%;
+}
+
+/*fim comunidades ver todas*/
 
 #content .display-people-block .vcard a.profile_link {
     height: 52px;
@@ -1308,6 +1344,7 @@ div#article-parent {
 
 /* Menu List footer */
 
+/*
 #content .box-3 .block-title {
     font-size: 12px;
     text-align: left;
@@ -1318,7 +1355,7 @@ div#article-parent {
     padding: 5px;
     text-transform: uppercase;
     margin: 0;
-}
+}*/
 
 #content .box-3 .link-list-block li a.link-this-page {
     width: auto;
@@ -1884,11 +1921,14 @@ _software,_cultura_e_conhecimentos_livres*/
     padding: 15px;
 }
 
+
 #track .step_list .step .content {
     display: inline-block;
     margin-left: 5px;
     vertical-align: middle;
 	 border-bottom: 0 none;
+	 vertical-align: top;
+	 max-width: 600px;
 }
 
 #track .step_list .step .content .date {
@@ -1914,6 +1954,9 @@ _software,_cultura_e_conhecimentos_livres*/
 	margin-bottom: 0px;
 }
 
+#track .step_list .step .content .lead img{
+	max-width: 600px;
+}
 
 
 /*ativo*/
@@ -1957,8 +2000,6 @@ _software,_cultura_e_conhecimentos_livres*/
 /*Artigos em Destaque*/
 
 /*Posicionamento dos artigos e pessoas ao centro*/
-
-
 /*pessoas*/
 
 .people-block{
@@ -1968,7 +2009,7 @@ _software,_cultura_e_conhecimentos_livres*/
 .people-block {
 	position: relative;	 
 	left: 0px;
-	width: 390px !important;
+	/*width: 390px !important;*/
   /* margin-left: 10px;*/
    /*width: 300px !important;*/
 	/*float: left;*/
@@ -1978,13 +2019,17 @@ _software,_cultura_e_conhecimentos_livres*/
 	/*margin-left: 35px;*/
 }
 
+.action-home-index .people-block {
+	width: 390px !important;
+}
+
 .action-home-index .people-block .block-inner-1{
 	/*width: 100%;*/
    width: 355px !important;
 }
 
 
-.people-block .block-title {
+.action-home-index .people-block .block-title {
 	display: none;
 }
 
@@ -2005,7 +2050,7 @@ _software,_cultura_e_conhecimentos_livres*/
 	visibility: hidden;
 }
 
-.people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+.action-home-index .people-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
 	display: none;
 }
 
@@ -2089,6 +2134,30 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*Comunidades*/
 
+
+
+
+.common-profile-list-block .vcard a.menu-submenu-trigger,
+.common-profile-list-block .vcard .menu-submenu-trigger, 
+.menu-submenu-trigger, 
+.comment-actions .vcard .menu-submenu-trigger {
+    background: url("/images/top-arrow.png") no-repeat scroll center center #EFEFEF;
+    /*border: 1px solid #CCCCCC;*/
+    border: 0px solid #eee;
+	 border-bottom-width: 1px !important
+    border-radius: 5px 5px 5px 5px;
+    display: none;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 2;
+}
+.common-profile-list-block .vcard a.menu-submenu-trigger {
+
+}
 .common-profile-list-block .vcard a, .common-profile-list-block .vcard a:hover {
 	border: 0px solid #eee;
 }
@@ -2171,6 +2240,32 @@ _software,_cultura_e_conhecimentos_livres*/
 	 margin-top: 5px;
 }
 
+/*estilo nos blocos laterais*/
+.box-2 .communities-block .common-profile-list-block .vcard .profile_link,
+.box-3 .communities-block .common-profile-list-block .vcard .profile_link {
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.box-2 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo,
+.box-3 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {
+	 min-height: 50px;
+    min-width: 50px;
+	 height: 100%;
+    width: 100%;
+}
+
+.box-2 .common-profile-list-block .vcard a.profile_link, 
+.box-3 .common-profile-list-block .vcard a.profile_link {
+    height: 100%;
+    max-height: 100%;	
+}
+
+.box-2 .communities-block .common-profile-list-block .vcard .profile_link .profile-image,
+.box-3 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
+	 height: 100%;
+    min-height: 50px;
+}
 
 /* HOME */
 
