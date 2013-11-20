@@ -616,20 +616,31 @@ background-size: 100% 100%;
 .search-field .formfield, .search-field .formfield input {
 	 margin-right: 0.5em;
 }
-#content form input.icon-search {
 
+#content form input.icon-search {
+    background: url("images/btn_busca.png") no-repeat scroll 50% 50% transparent;
+    border: 1px solid #DDDDDD;
+    min-height: 31px;
+    padding-right: 20px;
+    text-indent: -10000px;
+	 max-height: 31px;
 }
 
+#content .button-bar a.icon-cancel span{
+	vertical-align: text-top;
+}
 
 input.button.with-text {
     background-position: 3px 50%;
     font-size: 12px;
     padding: 0 2px 2px 20px;
+	 max-height: 28px;
 }
 
-
-input.button.with-text {
-    max-height: 31px;
+#content a.button.with-text, 
+#content a.button.with-text {
+	height: 28px;
+	max-height: 28px;
 }
 
 #content input.button, #content a.button {
@@ -658,13 +669,6 @@ input.button.with-text {
     margin-bottom: 5px;
 }
 
-#content form input.icon-search {
-    background: url("images/btn_busca.png") no-repeat scroll 50% 50% transparent;
-    border: 1px solid #DDDDDD;
-    min-height: 31px;
-    padding-right: 20px;
-    text-indent: -10000px;
-}
 
 /*#content form input.button.submit {
     background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
@@ -1929,35 +1933,45 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*** step list ***/
 
-
+/*geral*/
 #track .step_list .step {
-	/*background-color: #ddd;*/
-	/*background: url("images/steps_bg.png") repeat-x center top #fff;*/
-	background-color: #E8F3E9;
+    background: url("images/steps_bg.png") repeat-x center top #fff;/*branco com o fundo em degradê*/
     display: inline-block;
     width: 100%;
 }
 
+#track .step_list .step a {
+	 background-color: transparent;/*transparente*/
+    color: #999;/*cinza escuro escuro*/
+}
+
+#track .step_list .step .position{
+	  background-color: #999;/*cinza escuro escuro*/
+	  color: #fff;/*branco*/
+}
+
+.step a:link, #content .step a:link, dl.portlet .step a:link {
+	color: #999; /*cinza escuro*/
+}
+
 #track .step_list .step .position {
 	/*background: #666666;*/
-	background-color: #397941;
+	background-color: #999;
    display: inline-block;
    font-size: 250%;
-	color: #E8F3E9;
-
+	color: #fff;
     margin: 15px;
     padding: 15px;
 }
 
-
 #track .step_list .step .content {
     display: inline-block;
-    margin-left: 5px;
+    margin: 10px;
     vertical-align: middle;
 	 border-bottom: 0 none;
 	 vertical-align: top;
-	 min-width: 80%;
-	 max-width: 600px;
+	 max-width: 80%;
+	 /*max-width: 600px;*/
 }
 
 #track .step_list .step .content .date {
@@ -1968,8 +1982,7 @@ _software,_cultura_e_conhecimentos_livres*/
 
 #track .step .name, 
 #track .step .name a {
-	/*color: #397941;*/
-	color: gray;
+	color: #999;
 }
 
 #track .step_list .step .content .lead {
@@ -1984,44 +1997,78 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 #track .step_list .step .content .lead img{
-	max-width: 600px;
+	max-width: 80%;
+}
+
+/*ítens específicos*/
+
+/*oculto*/
+#track #hidden_steps .step_list .step .position {
+	background-color: transparent;
 }
 
 
 /*ativo*/
 
-.step_active, #article .step_active a {
-	 background-color: #e8f3e9
+#track .step_list .step.step_active {
+    background-color: #E8F3E9;/*verde claro*/
+    background-image: url("images/no-image.gif");
 }
 
-.track_list .item .track_content .step_active .position{
-	  background-color: #397941;
-	  color: #E8F3E9;
+#track .step_list .step.step_active a {
+	 background-color: #e8f3e9;/*verde claro*/
+	 color: #397941;/*verde escuro*/
 }
 
-.step_finished, #article .step_finished a {
-	  background-color: #e7f2e9;
+#track .step_list .step.step_active .position{
+	  background-color: #397941;/*verde escuro*/
+	  color: #E8F3E9;/*verde claro*/
 }
 
 .step_active a:link, #content .step_active a:link, dl.portlet .step_active a:link {
-	color: #397941;
+	color: #397941; /*verde escuro*/
 }
 
+/*em andamento*/
+
+#track .step_list .step.step_waiting {
+    background-color: #fff0cf;/*laranja claro*/
+    background-image: url("images/no-image.gif");
+}
+
+#track .step_list .step.step_waiting a {
+	 background-color: #fff0cf;/*laranja claro*/
+	 color: #C6A142;/*laranja escuro*/
+}
+
+#track .step_list .step.step_waiting .position{
+	  background-color: #c6a142;/*laranja escuro*/
+	  color: #fff0cf;/*laranja claro*/
+}
+
+.step_waiting a:link, #content .step_waiting a:link, dl.portlet .step_waiting a:link {
+	color: #c6a142; /*laranja escuro*/
+}
 
 /*finalizado*/
 
-.track_list .item .track_content .step_finished .position{
-	  background-color: #c6a142;
-	  color: #FFF0CF;
+#track .step_list .step.step_finished {
+    background: url("images/steps_bg.png") repeat-x center top #fff;/*branco com o fundo em degradê*/
 }
-.step_finished/*, #article .step_finished a*/{
-	background-color: #fff0cf;
+
+#track .step_list .step.step_finished a {
+	 background-color: transparent;/*transparente*/
+    color: #999;/*cinza escuro escuro*/
+}
+
+#track .step_list .step.step_finished .position{
+	  background-color: #999;/*cinza escuro escuro*/
+	  color: #fff;/*branco*/
 }
 
 .step_finished a:link, #content .step_finished a:link, dl.portlet .step_finished a:link {
-	color: #c6a142;
+	color: #999; /*cinza escuro*/
 }
-
 
 
 
