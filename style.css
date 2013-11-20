@@ -1538,6 +1538,25 @@ div#article-parent {
 	margin-left: 50%;
 }
 
+/*bloco participação*/
+
+#participe-comunidade{
+    background-color: #F7E074;
+    width: 100%;
+    color: #004B82;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 150%;
+}
+
+#participe-comunidade a {
+	text-decoration: underline;
+    color: #004B82;
+}
+
+
+
 /* circulos bloco de html puro*/
 
 .action-home-index #content .box-1 .raw-html-block {
