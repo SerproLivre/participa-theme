@@ -658,7 +658,15 @@ input.button.with-text {
     margin-bottom: 5px;
 }
 
-#content form input.button.submit {
+#content form input.icon-search {
+    background: url("images/btn_busca.png") no-repeat scroll 50% 50% transparent;
+    border: 1px solid #DDDDDD;
+    min-height: 31px;
+    padding-right: 20px;
+    text-indent: -10000px;
+}
+
+/*#content form input.button.submit {
     background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
     border: 1px solid #DDDDDD;
     height: 31px;
@@ -694,7 +702,7 @@ display: inline-block;
 width: auto;
 padding: 6px 4px;
 }
-
+*/
 
 #content .profile ul{
 	margin-left: 1em;
