@@ -1552,7 +1552,8 @@ div#article-parent {
 
 #participe-comunidade a {
 	text-decoration: underline;
-    color: #004B82;
+	color: #000;
+    /*color: #004B82;*/
 }
 
 
