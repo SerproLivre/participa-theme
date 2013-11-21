@@ -2029,17 +2029,17 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*ativo*/
 
-#track .step_list .step.step_active {
+#content .step.step_active {
     background-color: #E8F3E9;/*verde claro*/
     background-image: url("images/no-image.gif");
 }
 
-#track .step_list .step.step_active a {
+#content .step.step_active a {
 	 background-color: #e8f3e9;/*verde claro*/
 	 color: #397941;/*verde escuro*/
 }
 
-#track .step_list .step.step_active .position{
+#content .step.step_active .position{
 	  background-color: #397941;/*verde escuro*/
 	  color: #E8F3E9;/*verde claro*/
 }
@@ -2050,17 +2050,17 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*em andamento*/
 
-#track .step_list .step.step_waiting {
+#content .step.step_waiting {
     background-color: #fff0cf;/*laranja claro*/
     background-image: url("images/no-image.gif");
 }
 
-#track .step_list .step.step_waiting a {
+#content .step.step_waiting a {
 	 background-color: #fff0cf;/*laranja claro*/
 	 color: #C6A142;/*laranja escuro*/
 }
 
-#track .step_list .step.step_waiting .position{
+#content .step.step_waiting .position{
 	  background-color: #c6a142;/*laranja escuro*/
 	  color: #fff0cf;/*laranja claro*/
 }
@@ -2071,16 +2071,16 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*finalizado*/
 
-#track .step_list .step.step_finished {
+#content .step.step_finished {
     background: url("images/steps_bg.png") repeat-x center top #fff;/*branco com o fundo em degradê*/
 }
 
-#track .step_list .step.step_finished a {
+#content .step.step_finished a {
 	 background-color: transparent;/*transparente*/
     color: #999;/*cinza escuro escuro*/
 }
 
-#track .step_list .step.step_finished .position{
+#content .step.step_finished .position{
 	  background-color: #999;/*cinza escuro escuro*/
 	  color: #fff;/*branco*/
 }
