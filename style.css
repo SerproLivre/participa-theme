@@ -399,6 +399,7 @@ body {
 
 #theme-header {
     font-size: 12px;
+	 height: auto;
 }
 
 #wrap-2 {
@@ -406,7 +407,7 @@ body {
     margin: auto;
     border: 0px;
     /*margin-top: 160px;*/
-    margin-top: 170px;
+    margin-top: 3px;
 }
 
 #main-content-wrapper-1,
@@ -1556,8 +1557,6 @@ div#article-parent {
     /*color: #004B82;*/
 }
 
-
-
 /* circulos bloco de html puro*/
 
 .action-home-index #content .box-1 .raw-html-block {
@@ -1677,7 +1676,8 @@ all_tracks .track_list {
 	padding-left: 50px;
 }
 */
-.action-home-index  #content .box-1 .block-footer-content .view_all a{
+
+.action-home-index #content .box-1 .block-footer-content .view_all a{
     background: url("images/button-read-more-vazio.png") no-repeat scroll left 50% transparent;
     color: #000000;
     display: inline-block;
@@ -1685,20 +1685,24 @@ all_tracks .track_list {
     /*height: 39px;*/
 	 padding: 10px 20px 10px 50px;
     text-align: left;
-    margin-right: 45px;
+    margin-right: 50px;
 	
 }
 
 .track_list .item_card {
     background-color: #fffafa;
     border: 1px solid #DDDDDD;
-    float: none;
     margin: 10px 15px;
     padding: 0;
     width: 190px;
+	 max-width: 190px;
 	 height: 100%;
     min-height: 335px;
-	 display: inline-block;
+	 /*display: inline-block;*/
+}
+
+.action-home-index .track_list {
+	padding: 0 30px;
 }
 
 .action-home-index .track_list .item_card {
@@ -1725,6 +1729,7 @@ all_tracks .track_list {
     font-weight: normal;
     padding: 5px 0;
     text-align: center;
+	 min-height: 16px;
 }
 
 
@@ -2276,7 +2281,7 @@ _software,_cultura_e_conhecimentos_livres*/
 	position: relative;
 	left:-480px;
 	margin-left: 50%;*/
-	width: 390px !important;
+	/*width: 390px !important;*/
 }
 
 .container-block .communities-block .block-inner-1 {
@@ -2368,6 +2373,7 @@ _software,_cultura_e_conhecimentos_livres*/
 .action-home-index #wrap-2 {
   max-width: none;
   padding: 0px;
+  background: url("images/bg-palacio-do-planalto.jpg") no-repeat center top transparent;	
 }
 
 .action-home-index #boxes {
@@ -2376,7 +2382,7 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .action-home-index #content {
   margin: 0px;
-  background: url("images/bg-palacio-do-planalto.jpg") no-repeat center top #transparent;
+
 }
 
 .action-home-index .home-blocks-inner {
@@ -2543,3 +2549,19 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 
+
+/*IE FIX*/
+.action-home-index #content .box-1 .communities-block {
+/*width: 390px !important;*//*retirar esta linha*/
+}
+
+/*bonequinho do login - IE FIX*/
+
+#user a i.icon-menu-logout {
+	top: 0px; 
+	width: 16px; 
+	height: 16px; 
+	margin-right: 7px; 
+	vertical-align: middle; 
+	display: inline-block;
+}
