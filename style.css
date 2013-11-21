@@ -388,6 +388,10 @@ body {
     background: #FFF;
 }
 
+object {
+	max-width: 100%;
+}
+
 #link-go-content {
     display: none;
 }
@@ -762,6 +766,13 @@ padding: 6px 4px;
 
 .controller-search .search-results-innerbox td.search-field-label{
 	display: none;
+}
+
+/*busca de midia*/
+
+.media-search-box form span.formfield #media-search-query{
+	float: left;
+	margin-right: 5px;
 }
 
 /**** FIM DE BUSCA ****/
@@ -1911,8 +1922,13 @@ _software,_cultura_e_conhecimentos_livres*/
 /*track list - páginas internas - main content*/
 
 .track_list .track_content {
-	 display: inline-block;
+	 /*display: inline-block;*/
+	 display: block;
     height: 100%;
+}
+
+.track_list .item .track_content{
+	/*display: block;*/
 }
 
 .track_list .item .step {
@@ -1977,6 +1993,10 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .step a:link, #content .step a:link, dl.portlet .step a:link {
 	color: #999; /*cinza escuro*/
+	/*teste*/	 
+	display: inline-block;
+   max-width: 80%;
+   vertical-align: middle;
 }
 
 #track .step_list .step .position {
@@ -2021,9 +2041,11 @@ _software,_cultura_e_conhecimentos_livres*/
 	margin-bottom: 0px;
 }
 
+#track .step_list .step .content object,
 #track .step_list .step .content .lead img{
 	max-width: 80%;
 }
+
 
 /*ítens específicos*/
 
@@ -2176,7 +2198,7 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 .people-block .block-footer-content {
-	display: none;
+	margin-top: 0px;
 }
 
 .box-1 .people-block .banner-span{
@@ -2222,10 +2244,10 @@ _software,_cultura_e_conhecimentos_livres*/
 .container-block .raw-html-block {
 	display: inline-block;
 }
-.action-home-index #content .box-1 .container-block .raw-html-block {
+.action-home-index #content .container-block .raw-html-block {
 	width: 525px !important;
 	margin: 0 25px;
-	padding-top: 4em;
+	padding-top: 2em;
 }
 
 .container-block .raw-html-block .block-title {
@@ -2265,9 +2287,15 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*ver todas as comunidades*/
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
-	position: absolute;
+/*	position: absolute;
 	top: 0px;
-	left: 290px;
+	left: 290px;*/
+    padding-right: 40px;
+    padding-top: 0;	
+}
+
+.block-footer-content {
+	margin-top: 0;
 }
 
 .action-home-index .container-block .communities-block,
@@ -2284,10 +2312,10 @@ _software,_cultura_e_conhecimentos_livres*/
 	/*width: 390px !important;*/
 }
 
-.container-block .communities-block .block-inner-1 {
+.action-home-index .container-block .communities-block .block-inner-1 {
 	width: 380px !important;
 	float: left;
-	padding-top: 4em;
+	padding-top: 2em;
 }
 
 
@@ -2541,11 +2569,13 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .action-home-index #content .tags-block .tag_cloud {
     max-height: 150px;
+	 line-height: 3em;
 }
 
 .action-home-index #content .tags-block .tag_cloud a {
 	color: white;
 	font-weight: bold;
+	vertical-align: middle;
 }
 
 
