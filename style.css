@@ -605,8 +605,10 @@ background-size: 100% 100%;
     border: 1px solid #DDDDDD;
     color: #585858;
     font-size: 16px;
-    max-height: 19px;
 	 width: 100%;
+}
+.formfield input {
+    max-height: 19px;
 }
 
 .formfield.type-file input {
