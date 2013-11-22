@@ -609,6 +609,7 @@ background-size: 100% 100%;
     color: #585858;
     font-size: 16px;
 	 width: 100%;
+	 word-wrap: break-word;
 }
 
 .formfield.type-file input {
@@ -942,7 +943,7 @@ div#article-parent {
     background-color: #EEEFFF;
     border-bottom: 1px solid #757575;
     border-top: 4px solid #757575;
-    padding: 8px;
+    /*padding: 8px;*/
 }
 
 #content .box-2 .link-list-block li {
@@ -983,25 +984,13 @@ div#article-parent {
 }
 
 #content .box-2 .link-list-block li a.link-this-page {
-    width: auto;
-    border-right: none;
-    font-weight: bold;
-    /*color: #436976 !important;*/
-    /*border-top: 2px solid #ccc !important;*/
-    /*border-bottom: 2px solid #ccc !important;*/
-    /*background-color: #eeefff;*/
-    border-radius: 0px;
-
-
     background-color: #EEEFFF;
-    border-bottom: 1px solid #757575 !important;
-    border-top: 4px solid #757575 !important;
-    padding: 8px;
-	 color: #757575 !important;
+    font-weight: bold;
+    width: auto;
 }
 
 #content .box-2 .link-list-block li a.link-this-page {
-	 font-size: 14px;
+	 /*font-size: 14px;*/
 }
 
 
@@ -2297,7 +2286,7 @@ _software,_cultura_e_conhecimentos_livres*/
     padding-top: 0;	
 }
 
-.block-footer-content {
+.action-home-index .block-footer-content {
 	margin-top: 0;
 }
 
@@ -2529,7 +2518,7 @@ _software,_cultura_e_conhecimentos_livres*/
     display: block;
     margin: 0;
     min-height: 1em;
-    padding: 1em;
+    padding: 8px;
     text-align: left;
 }
 
@@ -2541,10 +2530,8 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 */
 #content .recent-documents-block li a {
-	display: inline;
-	float: none;
 	color: #464A55;
-	font-size: 12px;
+	line-height: 1em;
 }
 /*botão enviar cometário*/
 #comments_list a.display-comment-form {
