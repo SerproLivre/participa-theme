@@ -1148,7 +1148,7 @@ div#article-parent {
     border-bottom: 1px solid #ccc;
     display: block;
     margin-bottom: 1em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 	 
 }
 .action-home-index #wrap-2 .block-outer div.display-content-block .title,
@@ -1158,6 +1158,7 @@ div#article-parent {
     font-style: normal;
     font-weight: bold;
 	 line-height: 1em;
+	 
 
 }
 .action-home-index #wrap-2 .block-outer div.display-content-block .read-more {
@@ -1206,9 +1207,14 @@ div#article-parent {
     font-weight: bold;
     padding-right: 0;
     width: 390px;
+	 margin-top: 0;
 }
 .action-home-index #wrap-2 .block-outer div.display-content-block .title a {
 	color: #000;
+   max-height: 50px;
+	min-height: 28px;
+   overflow: hidden;
+	display: block;
 }
 
 
@@ -1247,7 +1253,7 @@ div#article-parent {
     left: 0;
     margin-left: 0;
     width: auto;
-	 margin-right: 2em;
+
 }
 
 .action-home-index #wrap-2 .block-outer .container-block div.display-content-block .image{
@@ -1263,7 +1269,7 @@ div#article-parent {
     margin-bottom: 0em;
     padding-bottom: 0em;
 	 width: auto;
-	 height: 25px;
+	 height: 1.3em;
 	 overflow: hidden;
 }
 
