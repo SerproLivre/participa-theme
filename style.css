@@ -1273,6 +1273,13 @@ div#article-parent {
     float: none;
 }
 
+/***Avisar ao usuário que a imagem será exibida será numa proporção de 275px X 150px***/
+
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .image img {
+	max-height: 150px;
+	max-width: 275px;
+}
+
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .title {
     border-bottom: 0px solid #ccc;
     display: block;
