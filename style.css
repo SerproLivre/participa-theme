@@ -1158,9 +1158,8 @@ div#article-parent {
     font-style: normal;
     font-weight: bold;
 	 line-height: 1em;
-	 
-
 }
+
 .action-home-index #wrap-2 .block-outer div.display-content-block .read-more {
 	float: none;
 	margin-top: 4px;
@@ -1236,34 +1235,45 @@ div#article-parent {
 	display: none;
 }
 
-/*.action-home-index #content .box-1 .display-content-block {
-    display: inline-block;
-    margin-right: 5px;
-	 margin-left: 25px;
-    text-align: left;
-    width: 250px !important;
+/**/
+
+
+/*conteudo com vídeo em destaque display content*/
+
+.action-home-index #content .box-1 .container-block .container-block {
+	margin-left: 0;	
+	width: 600px !important;
+	left:0px;
 }
 
-.action-home-index #content .box-1 .display-content-block ul {
-	margin-left: 0px; 
-}*/
+/*dois destaques pequenos*//*.container-block .container-block */
 
-/*dois destaques pequenos*/
 .action-home-index #wrap-2 .block-outer .container-block div.display-content-block {
     left: 0;
-    margin-left: 0;
-    width: auto;
-
+    margin-left: 40px;
+	 margin-bottom: 0;
+    width: 440px !important;
 }
 
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .image{
-    width: 230px;
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block {
+    left: 0;
+    margin-left: 0;
+    margin-right: 25px;
+    width: 275px !important;
+}
+
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block ul li {
+	display: block;
+}
+
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .image{
+    width: 275px;
 	 height: 150px;
 	 margin-right: 0em;
     float: none;
 }
 
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .title {
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .title {
     border-bottom: 0px solid #ccc;
     display: block;
     margin-bottom: 0em;
@@ -1273,8 +1283,8 @@ div#article-parent {
 	 overflow: hidden;
 }
 
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .title,
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .title a {
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .title,
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .title a {
     background-color: transparent;
     font-size: 120%;
     font-style: normal;
@@ -1283,21 +1293,15 @@ div#article-parent {
     padding: 0;
 }
 
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .lead {
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .lead {
     display: inline-block;
     width: auto;
     height: 55px;
     overflow: hidden;
 }
 
-.action-home-index .container-block .display-content-block .read_more {
-	/*margin-top: 4px;*/
-}
-/*
-.action-home-index #wrap-2 .block-outer .container-block div.display-content-block .read_more a {}
-*/
 
-.action-home-index .container-block .display-content-block .read_more a{
+.action-home-index .container-block .container-block .display-content-block .read_more a{
 	 background: url("images/no-imege.gif") no-repeat scroll 0 0 transparent;
     display: block;
     height: auto;
@@ -1308,6 +1312,7 @@ div#article-parent {
 	 font-size: 92%;
     text-decoration: underline;
 }
+
 
 
 /* Block My Network style */
@@ -1419,6 +1424,37 @@ div#article-parent {
 /*    height: 70px;
     width: 139px;*/
 }
+
+/*comentário*/
+
+.comment-info {
+	line-height: 1em;
+	margin-top: 5px;
+}
+
+#article .article-comments-list li {
+	 display: block;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+#article .comment-replies .article-comment {
+    background: url("/images/black-alpha-pixel-5.png") repeat scroll left top transparent;
+    border: 1px solid #808080;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.comment-replies .comment-picture {
+    height: auto;
+    max-width: 40px;
+	 overflow: visible;
+}
+
+/* fim de comentário*/
+
 /*imagem*/
 .common-profile-list-block .vcard a, .comment-actions .vcard a {
     border: 1px solid transparent;
@@ -1698,12 +1734,9 @@ div#article-parent {
 
 /*video*/
 
-.action-home-index #content .box-1 .video-block {
-/*	width: 960px;
-	position: relative;
-	left:-480px;
-	margin-left: 50%;
-*/
+.action-home-index #content .box-1 .container-block .video-block {
+	width: 480px !important;
+	text-align: center;
 }
 
 /*bloco participação*/
@@ -2299,12 +2332,13 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 .action-home-index .people-block {
-	width: 390px !important;
+	width: 360px !important;
+	overflow: hidden;
 }
 
 .action-home-index .people-block .block-inner-1{
-	/*width: 100%;*/
-   width: 355px !important;
+   /*float: right;*/
+   /*width: 355px !important;*/
 }
 
 
