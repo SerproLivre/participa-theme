@@ -1137,8 +1137,6 @@ div#article-parent {
 }
  
 /*Artigo em destaque Grande*/
-
-
 .action-home-index #wrap-2 .block-outer div.display-content-block {
     background: none;
 }
@@ -1237,7 +1235,6 @@ div#article-parent {
 
 /**/
 
-
 /*conteudo com vídeo em destaque display content*/
 
 .action-home-index #content .box-1 .container-block .container-block {
@@ -1260,6 +1257,7 @@ div#article-parent {
     margin-left: 0;
     margin-right: 25px;
     width: 275px !important;
+	 max-height: 350px;
 }
 
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block ul li {
@@ -1274,7 +1272,6 @@ div#article-parent {
 }
 
 /***Avisar ao usuário que a imagem será exibida será numa proporção de 275px X 150px***/
-
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .image img {
 	max-height: 150px;
 	max-width: 275px;
@@ -1283,10 +1280,10 @@ div#article-parent {
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .title {
     border-bottom: 0px solid #ccc;
     display: block;
-    margin-bottom: 0em;
+    margin-bottom: 5px;
     padding-bottom: 0em;
 	 width: auto;
-	 height: 1.3em;
+	 height: 2.5em;
 	 overflow: hidden;
 }
 
@@ -1303,10 +1300,9 @@ div#article-parent {
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .lead {
     display: inline-block;
     width: auto;
-    height: 55px;
+    height: 110px;
     overflow: hidden;
 }
-
 
 .action-home-index .container-block .container-block .display-content-block .read_more a{
 	 background: url("images/no-imege.gif") no-repeat scroll 0 0 transparent;
@@ -1321,9 +1317,8 @@ div#article-parent {
 }
 
 
-
 /* Block My Network style */
-
+/*
 .action-home-index #content .my-network-block {
     background: #eeefff;
 }
@@ -1343,17 +1338,13 @@ div#article-parent {
     display: block;
     margin-bottom: 5px;
 }
-
+*/
 /*Container Block*/
 
 .action-home-index #content .box-1 .container-block {
     left: -480px;
     margin-left: 50%;
     width: 960px;	
-/*    left: -480px;
-    margin-left: 50%;
-    width: 1064px;
-*/	
 }
 
 /* Blocks profiles and enterprises - pessoas*/
@@ -1365,8 +1356,6 @@ div#article-parent {
 .box-1 .menu-submenu,
 .box-2 .menu-submenu,
 .box-3 .menu-submenu{
-    /*bottom: 80px;
-    right: -40px;*/
 	 bottom: 100%;
     left: -50%;
 }
@@ -1382,14 +1371,17 @@ div#article-parent {
 .box-1 .common-profile-list-block .vcard {
     border-radius: 0px;
     -moz-border-radius: 0px;
+	 width: 95px;
 }
 
 .box-1 .common-profile-list-block .profile_link {
-    width: 65px;
-    height: 80px;
+	 overflow: visible;
+    margin: 0 5px;
+    width: 100%;
 }
-.box-1 .common-profile-list-block .profile_link {
-	overflow: visible;
+.box-1 .common-profile-list-block .profile_link .profile-image img {
+	 max-height: 100%;
+    max-width: 100%;
 }
 
 .box-1 .common-profile-list-block span {
@@ -1410,6 +1402,10 @@ div#article-parent {
     margin-left: 15px;
 }
 
+.action-home-index #content .box-1 .common-profile-list-block .vcard{
+	width: auto;
+}
+
 .action-home-index #content .communities-block .block-title,
 .action-home-index #content .display-people-block .block-title {
     display: none;
@@ -1426,11 +1422,10 @@ div#article-parent {
 
 .box-1 .display-people-block .banner-span,
 .common-profile-list-block .vcard a {
-    /*width: 108px;
-    height: 57px;*/
-/*    height: 70px;
-    width: 139px;*/
+
 }
+/* FIM Blocks profiles and enterprises - pessoas*/
+
 
 /*comentário*/
 
@@ -1459,16 +1454,15 @@ div#article-parent {
     max-width: 40px;
 	 overflow: visible;
 }
-
 /* fim de comentário*/
 
 /*imagem*/
 .common-profile-list-block .vcard a, .comment-actions .vcard a {
     border: 1px solid transparent;
     font-size: 11px;
-    height: 50px;
-    margin: -1px 0 0 -1px;
-    max-height: 50px;
+    /*height: 50px;*//*28-11-2013*/
+    /*margin: -1px 0 0 -1px;*//*28-11-2013*/
+    /*max-height: 50px;*//*28-11-2013*/
     padding-top: 0;   
 }
 
@@ -1485,11 +1479,14 @@ div#article-parent {
 
 /*fim comunidades ver todas*/
 
+/***Pessoas em todo o site***/
+/*
 #content .display-people-block .vcard a.profile_link {
     height: 52px;
     margin: 0;
     width: 52px;
 }
+*/
 
 .box-1 .block-footer-content {
     clear: both;
@@ -1499,7 +1496,6 @@ div#article-parent {
     position: relative;
     padding: 5px;
 }
-
 
 #content .box-1 .block-footer-content a {
     position: relative;
@@ -1540,18 +1536,9 @@ div#article-parent {
 #content .tags-block .block-footer-content a {
 	position: relative;
 	background-image: none;
-	
 }
 
 /*outre blocks - blocos de baixo*/
-
-.action-home-index #wrap-2 .block-outer /*div.block*/ {
- /*
-    left: -480px;
-    margin-left: 50%;
-    width: 960px;
-*/
-}
 
 .action-home-index #wrap-2 .block-outer div.block.statistics-block  {
     left: 0;
@@ -1565,19 +1552,6 @@ div#article-parent {
 }
 
 /* Menu List footer */
-
-/*
-#content .box-3 .block-title {
-    font-size: 12px;
-    text-align: left;
-    border-top: none;
-    background: #FFF;
-    border-bottom: none;
-    color: #757575;
-    padding: 5px;
-    text-transform: uppercase;
-    margin: 0;
-}*/
 
 #content .box-3 .link-list-block li a.link-this-page {
     width: auto;
@@ -1660,12 +1634,6 @@ div#article-parent {
 .box-2 .link-list-block ul li .icon-edit,
 .box-2 .link-list-block ul li .icon-photos {
     background-position: 0px -325px !important;
-/*
-    height: 27px;
-    padding: 13px 0px 0px 45px !important;
-    margin-top: 5px;
-    margin-bottom: 5px;
-*/
 }
 
 .box-2 .link-list-block ul li .icon-ok {
@@ -1746,7 +1714,7 @@ div#article-parent {
 	text-align: center;
 }
 
-/*bloco participação*/
+/****bloco participação****/
 
 #participe-comunidade{
     background-color: #F7E074;
@@ -1761,7 +1729,6 @@ div#article-parent {
 #participe-comunidade a {
 	text-decoration: underline;
 	color: #000;
-    /*color: #004B82;*/
 }
 
 /* circulos bloco de html puro*/
@@ -1819,7 +1786,6 @@ div#article-parent {
 }
 
 .action-home-index .statistics-block-data ul li .label{
-
 	/*width:136px;*/
 	/*color:#98baa5;*/
     color: white;
@@ -2321,9 +2287,7 @@ _software,_cultura_e_conhecimentos_livres*/
 /*Posicionamento dos artigos e pessoas ao centro*/
 /*pessoas*/
 
-.people-block{
-
-}
+.people-block{}
 
 .people-block {
 	position: relative;	 
@@ -2343,19 +2307,14 @@ _software,_cultura_e_conhecimentos_livres*/
 	overflow: hidden;
 }
 
-.action-home-index .people-block .block-inner-1{
-   /*float: right;*/
-   /*width: 355px !important;*/
-}
+.action-home-index .people-block .block-inner-1{}
 
 
 .action-home-index .people-block .block-title {
 	display: none;
 }
 
-.people-block .block-inner-2  {
-
-}
+.people-block .block-inner-2 {}
 
 .people-block .common-profile-list-block {
 	margin-left: 0;
@@ -2376,12 +2335,12 @@ _software,_cultura_e_conhecimentos_livres*/
 
 .people-block .common-profile-list-block .vcard a.profile_link,
 .people-block .common-profile-list-block .profile_link {
-	 height: 50px;
-    width: 50px;
-    margin: 0.5em;
+	 /*height: 50px;*/
+    /*width: 50px;*/
+    margin: 3px 0 3px 4px;
     padding: 0;
-	 border: 1px solid white !important;
-	 background-color: #ddd;
+	 border: 1px solid transparent !important;
+	 /*background-color: #ddd;*/
 }
 
 .action-home-index .people-block .common-profile-list-block .vcard a.profile_link,
@@ -2398,6 +2357,12 @@ _software,_cultura_e_conhecimentos_livres*/
 	margin-top: 0px;
 }
 
+
+.box-1 .people-block .banner-div a{
+    height: 50px;
+    margin: 0;
+}
+
 .box-1 .people-block .banner-span{
     background-color: #F7E074;
     color: #004B82;
@@ -2406,9 +2371,7 @@ _software,_cultura_e_conhecimentos_livres*/
     width: 101px;
 }
 
-.common-profile-list-block .vcard .banner-div a:hover {
-	
-}
+.common-profile-list-block .vcard .banner-div a:hover {}
 
 
 /*Container - Mapa e Comunidades*/
@@ -2439,9 +2402,6 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*Comunidades*/
 
-
-
-
 .common-profile-list-block .vcard a.menu-submenu-trigger,
 .common-profile-list-block .vcard .menu-submenu-trigger, 
 .menu-submenu-trigger, 
@@ -2460,85 +2420,52 @@ _software,_cultura_e_conhecimentos_livres*/
     left: 1px;
     z-index: 2;
 }
-.common-profile-list-block .vcard a.menu-submenu-trigger {
+.common-profile-list-block .vcard a.menu-submenu-trigger {}
 
-}
 .common-profile-list-block .vcard a, .common-profile-list-block .vcard a:hover {
 	border: 0px solid #eee;
 }
 
 /*ver todas as comunidades*/
-.action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
-/*	position: absolute;
-	top: 0px;
-	left: 290px;*/
-    padding-right: 40px;
-    padding-top: 0;	
+/*ver todas as comunidades nos as páginas internas*/
+.communities-block .common-profile-list-block li{
+	width: 95px;
 }
 
-.action-home-index .block-footer-content {
-	margin-top: 0;
+.communities-block .common-profile-list-block li a.profile_link {
+	min-height: 105px;
+	padding: 5px;
+	margin: 0;
 }
 
-.action-home-index .container-block .communities-block,
-.container-block .communities-block {
-    display: inline-block;
-	
-}
-
-.action-home-index #content .box-1 .communities-block {
-/*	width: 960px;
-	position: relative;
-	left:-480px;
-	margin-left: 50%;*/
-	/*width: 390px !important;*/
-}
-
-.action-home-index .container-block .communities-block .block-inner-1 {
-	width: 380px !important;
-	float: left;
-	padding-top: 2em;
-}
-
-
-.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover {
-	/*border: 0px;*/
-	border: 1px solid #DDDDDD;
-}
-.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a { }
-
-.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a:hover{
-	border: 0px solid #DDDDDD;
-}
-
-
-.action-home-index #wrap-2 .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
-	display: none;
+#content .communities-block .profile-image img{
+	 max-height: 95px;
+	 max-width: 85px;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link {
     margin: 5px;
-    min-height: 140px;
-    min-width: 100px;
+    /*min-height: 140px;*/
+    /*min-width: 100px;*/
 	 background-color: transparent;
 	 border: 0 none;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
-	 height: 95px;
+	 /*height: 95px;*/
     /*width: 95px;*/
-    min-height: 95px;
+    /*min-height: 95px;*/
     /*min-width: 95px;*/
     background-color: #fff;
     border: 2px solid #dfdfdf;
-	padding-bottom: 0px;
+	 padding-bottom: 0px;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {	
-	 min-height: 95px;
+	 /*min-height: 95px;
     min-width: 95px;
 	 height: 95px;
-    width: 95px;
+    width: 95px;*/
 
 }
 
@@ -2552,31 +2479,86 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 /*estilo nos blocos laterais*/
+
 .box-2 .communities-block .common-profile-list-block .vcard .profile_link,
 .box-3 .communities-block .common-profile-list-block .vcard .profile_link {
-    min-height: 50px;
-    min-width: 50px;
+    /*min-height: 50px;*/
+    /*min-width: 50px;*/
 }
 
 .box-2 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo,
 .box-3 .communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {
-	 min-height: 50px;
-    min-width: 50px;
-	 height: 100%;
-    width: 100%;
+	 /*min-height: 50px;*/
+    /*min-width: 50px;*/
+	 /*height: 100%;*/
+    /*width: 100%;*/
 }
 
 .box-2 .common-profile-list-block .vcard a.profile_link, 
 .box-3 .common-profile-list-block .vcard a.profile_link {
-    height: 100%;
-    max-height: 100%;	
+    /*height: 100%;*/
+    /*max-height: 100%;	*/
 }
 
 .box-2 .communities-block .common-profile-list-block .vcard .profile_link .profile-image,
 .box-3 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
-	 height: 100%;
-    min-height: 50px;
+	 /*height: 100%;*/
+    /*min-height: 50px;*/
 }
+
+/*ver todas as comunidades na Página inicial*/
+.action-home-index .communities-block .common-profile-list-block li{
+    height: 130px;
+    width: 120px;
+}
+
+.action-home-index .communities-block .common-profile-list-block li a.profile_link {
+	min-height: 130px;
+	width: 110px;
+	padding: 5px;
+	margin: 0;
+}
+
+.action-home-index #content .communities-block .profile-image img{
+    max-height: 95px;
+    max-width: 110px;
+}
+
+.action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
+    padding-right: 40px;
+    padding-top: 0;	
+}
+
+.action-home-index .block-footer-content {
+	margin-top: 0;
+}
+
+.action-home-index .container-block .communities-block,
+.container-block .communities-block {
+    display: inline-block;
+}
+
+.action-home-index #content .box-1 .communities-block {}
+
+.action-home-index .container-block .communities-block .block-inner-1 {
+	width: 380px !important;
+	float: left;
+	padding-top: 2em;
+}
+
+.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard:hover {
+	border: 1px solid #DDDDDD;
+}
+.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a { }
+
+.action-home-index #wrap-2 .block-outer .container-block .communities-block .common-profile-list-block .vcard a:hover{
+	border: 0px solid #DDDDDD;
+}
+
+.action-home-index #wrap-2 .communities-block .common-profile-list-block .vcard:hover .menu-submenu-trigger {
+	display: none;
+}
+
 
 /* HOME */
 
