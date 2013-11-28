@@ -700,45 +700,6 @@ input.button.with-text {
     margin-bottom: 5px;
 }
 
-
-/*#content form input.button.submit {
-    background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
-    border: 1px solid #DDDDDD;
-    height: 31px;
-    padding-right: 20px;
-    text-indent: -10000px;
-}
-
-#content form input.button.submit[name~=commit] {
-    background: url("images/btn_commit.png") no-repeat scroll 50% 50% transparent;
-}
-
-#content form input.button.submit[name~=continue] {
-    background: url("images/btn_continue.png") no-repeat scroll 50% 50% transparent;
-}
-
-.controller-search #content form input.button.submit {
-	 height: 31px;
-    max-height: 32px;
-}
-
-#content .button-bar a.button.with-text {
-	vertical-align: middle;
-}
-
-#content .button-bar a.button.with-text {
-	line-height: 20px;
-   height: 31px;
-	border: 1px solid #ddd;
-}
-
-#content .button-bar .button.with-text span {
-display: inline-block;
-width: auto;
-padding: 6px 4px;
-}
-*/
-
 #content .profile ul{
 	margin-left: 1em;
 }
@@ -799,6 +760,30 @@ padding: 6px 4px;
 .media-search-box form span.formfield #media-search-query{
 	float: left;
 	margin-right: 5px;
+}
+
+/*Busca em Profile*/
+#profile-search-results ul.results-list {
+
+}
+
+#profile-search-results ul.results-list .result-title{
+    color: #444444;
+    display: inline-block;
+    font-size: 180%;
+    font-weight: bold;
+    padding: 4px 0;
+}
+
+#profile-search-results ul.results-list .article-details {
+    color: #999999;
+    display: inline-block;
+    margin-left: 20px;/*largura do icone de identificação do conteúdo*/
+}
+
+#profile-search-results ul.results-list .article-url {
+    display: inline-block;
+    margin-left: 20px;/*largura do icone de identificação do conteúdo*/
 }
 
 /**** FIM DE BUSCA ****/
@@ -2224,6 +2209,10 @@ _software,_cultura_e_conhecimentos_livres*/
     background-image: url("images/no-image.gif");
 }
 
+#content .step.step_active:hover {
+	background-color: #B8D4C1;
+}
+
 #content .step.step_active a {
 	 color: #397941;/*verde escuro*/
 }
@@ -2437,39 +2426,24 @@ _software,_cultura_e_conhecimentos_livres*/
 	margin: 0;
 }
 
-#content .communities-block .profile-image img{
-	 max-height: 95px;
-	 max-width: 85px;
+.common-profile-list-block .vcard .profile_link span{
+	display: inline-block;
 }
 
-.communities-block .common-profile-list-block .vcard .profile_link {
-    margin: 5px;
-    /*min-height: 140px;*/
-    /*min-width: 100px;*/
-	 background-color: transparent;
-	 border: 0 none;
+#content .communities-block .profile-image {
+ width: 100%;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .profile-image {
-	 /*height: 95px;*/
-    /*width: 95px;*/
-    /*min-height: 95px;*/
-    /*min-width: 95px;*/
     background-color: #fff;
     border: 2px solid #dfdfdf;
 	 padding-bottom: 0px;
 }
 
-.communities-block .common-profile-list-block .vcard .profile_link .profile-image .logo {	
-	 /*min-height: 95px;
-    min-width: 95px;
-	 height: 95px;
-    width: 95px;*/
-
-}
-
-.common-profile-list-block .vcard .profile_link span{
-	display: inline-block;
+#content .communities-block .profile-image img{
+	 max-height: 95px;
+	 max-width: 85px;
+	 width: 100%;
 }
 
 .communities-block .common-profile-list-block .vcard .profile_link .org {
@@ -2480,7 +2454,17 @@ _software,_cultura_e_conhecimentos_livres*/
 	 line-height: 1.1em;
 	 margin-top: 5px;
 	 text-align: center;
+	 width: 100%;
 }
+
+.communities-block .common-profile-list-block .vcard .profile_link {
+    margin: 5px;
+    /*min-height: 140px;*/
+    /*min-width: 100px;*/
+	 background-color: transparent;
+	 border: 0 none;
+}
+
 
 /*estilo nos blocos laterais*/
 
@@ -2663,6 +2647,16 @@ _software,_cultura_e_conhecimentos_livres*/
 
 #article-tags a {
 	background-color: transparent;
+}
+
+#article li.event-dates {
+float: none;
+}
+
+#article div.event-info {
+    display: block;
+    padding: 10px 0;
+    text-align: right;
 }
 
 /*.community-track-plugin-track*/ /**/
