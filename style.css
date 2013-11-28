@@ -2390,7 +2390,8 @@ _software,_cultura_e_conhecimentos_livres*/
 	display: inline-block;
 }
 .action-home-index #content .container-block .raw-html-block {
-	width: 525px !important;
+	/*width: 525px !important;*/
+	width: 430px !important;
 	margin: 0 25px;
 	padding-top: 2em;
 }
@@ -2469,6 +2470,10 @@ _software,_cultura_e_conhecimentos_livres*/
 
 }
 
+.communities-block .common-profile-list-block .vcard .profile_link span{
+	display: inline-block;
+}
+
 .communities-block .common-profile-list-block .vcard .profile_link .org {
 	 color: black;
     font-size: 85%;
@@ -2476,6 +2481,7 @@ _software,_cultura_e_conhecimentos_livres*/
     text-transform: uppercase;
 	 line-height: 1.1em;
 	 margin-top: 5px;
+	 text-align: center;
 }
 
 /*estilo nos blocos laterais*/
