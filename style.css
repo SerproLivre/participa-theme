@@ -2225,7 +2225,6 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 #content .step.step_active a {
-	 background-color: #e8f3e9;/*verde claro*/
 	 color: #397941;/*verde escuro*/
 }
 
@@ -2246,7 +2245,6 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 #content .step.step_waiting a {
-	 background-color: #fff0cf;/*laranja claro*/
 	 color: #C6A142;/*laranja escuro*/
 }
 
@@ -2266,7 +2264,7 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 #content .step.step_finished a {
-	 background-color: transparent;/*transparente*/
+	 background-color:transparent;/*transparente*/
     color: #999;/*cinza escuro escuro*/
 }
 
