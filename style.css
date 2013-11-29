@@ -767,6 +767,11 @@ input.button.with-text {
 
 }
 
+#profile-search-results ul.results-list li{
+    display: block;
+    margin-bottom: 18px;
+}
+
 #profile-search-results ul.results-list .result-title{
     color: #444444;
     display: inline-block;
@@ -777,13 +782,10 @@ input.button.with-text {
 
 #profile-search-results ul.results-list .article-details {
     color: #999999;
-    display: inline-block;
-    margin-left: 20px;/*largura do icone de identificação do conteúdo*/
 }
 
 #profile-search-results ul.results-list .article-url {
-    display: inline-block;
-    margin-left: 20px;/*largura do icone de identificação do conteúdo*/
+
 }
 
 /**** FIM DE BUSCA ****/
