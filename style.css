@@ -2389,6 +2389,9 @@ _software,_cultura_e_conhecimentos_livres*/
 	display: none;
 }
 
+.action-home-index #content .container-block.mapa_comunidades .raw-html-block {
+	width: 525px !important;
+}
 
 /*Comunidades*/
 
