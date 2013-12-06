@@ -1623,8 +1623,7 @@ div#article-parent {
     height: 49px;
 }
 
-#footer-logos div,
-#footer-license {
+#footer-logos div {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -1660,7 +1659,9 @@ div#article-parent {
 }
 
 #footer-license {
-  text-align: left;
+   max-width: 960px;
+   margin: 0 auto;
+   text-align: center;
 }
 
 /*video*/
