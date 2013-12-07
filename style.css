@@ -2403,7 +2403,7 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 .common-profile-list-block .vcard .profile_link span{
-	display: inline-block;
+	display: block;
 }
 
 #content .communities-block .profile-image {
@@ -2472,20 +2472,20 @@ _software,_cultura_e_conhecimentos_livres*/
 
 /*ver todas as comunidades na Página inicial*/
 .action-home-index .communities-block .common-profile-list-block li{
-    height: 130px;
+    height: 110px;
     width: 120px;
 }
 
 .action-home-index .communities-block .common-profile-list-block li a.profile_link {
 	min-height: 130px;
-	width: 110px;
-	padding: 5px;
+	width: 80px;
+	padding: 3px;
 	margin: 0;
 }
 
 .action-home-index #content .communities-block .profile-image img{
-    max-height: 95px;
-    max-width: 110px;
+    max-height: 60px;
+    max-width: 60px;
 }
 
 .action-home-index #wrap-2 .block-outer .container-block .communities-block .block-footer-content {
