@@ -1,14 +1,19 @@
 @import url(../profile-base/style.css);
 @import url(gov-style.css);
-/*@import url(gov-plone.css);*/
 
+.header-content * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: baseline;
+}
+.header-content li { display: inline; }
 
 /******* itens do gov-plone.css *******/
-/* */
-* { margin: 0; padding: 0; }
+/* 
+* { margin: 0; padding: 0; }*/
 * :link,:visited { text-decoration:none }
 * ul,ol { list-style:none; }
-.header-content li { display: inline; }
 * h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
 * a img,:link img,:visited img { border:none }
 a { outline: none; }
@@ -1017,10 +1022,6 @@ div#article-parent {
 }
 
 /* Box styles */
-.box-1 {
-    Xmargin: 0 0 0 170px;
-}
-
 .action-home-index .box-2 {
     width: 160px;
 }
