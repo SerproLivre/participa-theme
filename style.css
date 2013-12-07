@@ -767,11 +767,18 @@ input.button.with-text {
     margin-top: 10px;
 }
 
-#social-icons a {
-    width: 19px;
-    height: 19px;
+#social-icons li a {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
     display: inline-block;
     background-repeat: no-repeat;
+}
+
+#social-icons li {
+    float: right;
+    width: 20px;
+    margin-left: 4px;
 }
 
 #social-icons a:hover {
@@ -815,10 +822,17 @@ background-image: url(images/icone-flickr.png);
     opacity: 0.6;
 }
 
-#top-links #link-faq {
-    border-right: 1px solid #E7F1E9;
-    padding-right:5px;
+#theme-header .header-content #link-faq a {
+    border-right: 1px solid #6c9072;
+    padding: 0 10px;
 }
+#theme-header .header-content #link-contact a {
+    padding-left: 10px;
+}
+
+#theme-header #sobre {
+    line-height: 20px;
+} 
 
 /* Title Header */
 
