@@ -236,16 +236,20 @@ color: #666666;
 /* */
 /* */
 #portal-siteactions {
-font-size: 85%;
-padding-bottom: 2em;
-text-align: center;
-clear: left;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  font-size: 85%;
+  text-align: center;
+  clear: left;
 }
 #portal-siteactions li {
 margin-right: 0.5em;
 }
 #portal-siteactions li a:hover {
 color: #75ad0a
+}
+#portal-siteactions li a {
+  padding: 4px 0px;
 }
 /* */
 /* */
@@ -445,11 +449,6 @@ body {
 
 label {
   font-weight: normal;
-}
-
-#portal-siteactions {
-   padding-bottom: 5px;
-   margin-top: -10px;
 }
 
 /* Bar Psocial Style - Menu Horizontal*/
