@@ -8,7 +8,7 @@
 * { margin: 0; padding: 0; }
 * :link,:visited { text-decoration:none }
 * ul,ol { list-style:none; }
-* li { display: inline; }
+.header-content li { display: inline; }
 * h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
 * a img,:link img,:visited img { border:none }
 a { outline: none; }
