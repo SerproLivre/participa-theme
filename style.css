@@ -2719,7 +2719,10 @@ float: none;
 	vertical-align: middle;
 }
 
-
+.action-home-index #content .tags-block .tag_cloud a:hover {
+  font-size: 12pt !important;
+  color: #FFF !important;
+}
 
 /*IE FIX*/
 .action-home-index #content .box-1 .communities-block {
