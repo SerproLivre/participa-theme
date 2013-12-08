@@ -480,15 +480,6 @@ label {
     display:none;
 }
 
-#user .not-logged-in {
-	position: relative;
-	top: -30px;
-}
-
-#user .logged-in {
-	
-}
-
 #barra-brasil {
     box-shadow: 0px 0px 10px #DFDFDF inset;
     z-index: 9999;
@@ -1283,7 +1274,7 @@ div#article-parent {
 }
 
 .action-home-index .container-block .container-block .display-content-block .read_more a{
-	 background: url("images/no-imege.gif") no-repeat scroll 0 0 transparent;
+	 background: url("images/no-image.gif") no-repeat scroll 0 0 transparent;
     display: block;
     height: auto;
     padding: 0px;
@@ -1792,6 +1783,25 @@ div#article-parent {
 /*Destaques das áreas*/
 
 /*.track_list*/
+.track_list .item_card .track_stats .comments .counter {
+  background: url("images/comentarios.png") no-repeat left center #fffafa;
+}
+.track_list .item_card .track_stats .hits .counter {
+  background: url("images/visualizacoes.png") no-repeat left center #fffafa;	
+}
+.track_list .item_card .track_stats .counter {
+  margin-top: 1px;
+  padding: 3px 0 0 30px;
+  text-align: left;
+  font-size: 10pt;
+  display: block;
+}
+.track_list .item_card .track_stats .hits .label,
+.track_list .item_card .track_stats .comments .label {
+  font-size: 7pt;
+  float: right;
+}
+
 .action-home-index #content .track-card-list-block{
     background: url("images/bg-pessoas.jpg") no-repeat center top transparent;
 	 padding: 2em 0 0;
@@ -2032,25 +2042,10 @@ _software,_cultura_e_conhecimentos_livres*/
 }
 
 .track_list .item_card .track_stats {
-    padding: 5px;
+  padding: 0 5px;
     /*overflow: hidden;*/
 	height: 25px;
 }
-
-.track_list .item_card .track_stats .comments {
-	background: url("images/comentarios.png") no-repeat left center #fffafa;
-    margin: 1px 0;
-    padding: 3px 0 3px 30px;
-    text-align: right;
-}
-
-.track_list .item_card .track_stats .hits {
-	background: url("images/visualizacoes.png") no-repeat left center #fffafa;	
-    margin: 1px 0;
-    padding: 3px 0 3px 30px;
-    text-align: right;
-}
-
 
 /*track list Internas*/
 .track_list .item .track_content .lead {
