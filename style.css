@@ -472,15 +472,6 @@ label {
     display:none;
 }
 
-#user .not-logged-in {
-	position: relative;
-	top: -30px;
-}
-
-#user .logged-in {
-	
-}
-
 #barra-brasil {
     box-shadow: 0px 0px 10px #DFDFDF inset;
     z-index: 9999;
