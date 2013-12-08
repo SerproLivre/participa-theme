@@ -235,7 +235,7 @@ div.width-5 {
 }
 
 #logo a, #logo #portal-title {
-  color: #FFDC19 !important;
+  color: #FFF !important;
 }
 
 #logo #portal-title {
@@ -349,7 +349,7 @@ div.width-5 {
 	clear: both;
 	max-width: 100% !important;
 	margin: 0;
-	background: #0a5517;
+	background: #00420c;
 	padding: 5px 0;
 }
 
@@ -361,6 +361,7 @@ div.width-5 {
 
 #sobre a {
 	color: #fff;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 #sobre .portalservicos-item a {
