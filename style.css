@@ -1270,6 +1270,10 @@ div#article-parent {
     padding: 0;
 }
 
+.action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .published-at {
+    width: auto;
+}
+
 .action-home-index #wrap-2 .block-outer .container-block .container-block div.display-content-block .lead {
     display: inline-block;
     width: auto;
