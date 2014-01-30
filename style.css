@@ -167,34 +167,7 @@ p {
     /*margin: 0;*/
 }
 
-/**/
 
-/*titulos dos blocos no box do meio*/
-/*título de bloco*/
-
-#content .box-1 .block-title {
-    background-color: transparent;
-    border-bottom: 0 solid #AAAAAA;
-    border-top: 0 none;
-    left: -20px;
-    margin-bottom: 0;
-    margin-top: -43px;
-    position: relative;
-}
-
-#content .box-1 .block-title span {
-    background-color: #497b16;
-    color: white;
-    font-size: 14px;
-    font-variant: normal;
-    padding: 0.5em 1em;
-    text-align: left;
-}
-
-.block .block-inner-2{
-	background-color: white;
-	padding: 1em;
-}
 /**/
 
 /*#content .box-1 .block-title {
@@ -283,6 +256,12 @@ p {
 .container-block-plugin_container-block .block .block-inner-2{
 	background-color: white;
 	padding: 1em;
+}
+
+.container-block-plugin_container-block .container-block-plugin_container-block .block-inner-2 {
+    background-color: white;
+    padding-left: 6px;
+    padding-top: 5px;
 }
 
 .block-outer {
@@ -426,9 +405,10 @@ p {
 
 
 
-/***********Imagem de Fundo*********/
+/***********Imagem de Fundo - somente na página inicial*********/
 
-#wrap-2 {
+.action-home-index #wrap-2,
+.action-environment_design-index #wrap-2  {
 	background: url(images/bg-palacio-do-planalto.jpg) no-repeat fixed center top;
 }
 
@@ -1142,13 +1122,13 @@ input.button.with-text {
     margin-top: 0px;
 }
 
-.action-home-index .box-1 .block-outer,
-.action-environment_design-index .box-1 .block-outer {
+.action-home-index .box-1 .block,
+.action-environment_design-index .box-1 .block {
 	margin-top: 90px;
 }
 
-.action-home-index .box-1 .container-block-plugin_container-block .block-outer,
-.action-environment_design-index .box-1 .container-block-plugin_container-block .block-outer{
+.action-home-index .container-block-plugin_container-block .block-outer,
+.action-environment_design-index .container-block-plugin_container-block .block-outer{
 	margin-top: 0px;
 }
 
@@ -1156,6 +1136,43 @@ input.button.with-text {
 .action-environment_design-index .box-1 {
     margin-top: -50px;
 }
+
+
+/**/
+
+/*titulos dos blocos no box do meio*/
+/*título de bloco*/
+
+.action-home-index #content .box-1 .block-title,
+.action-environment_design-index #content .box-1 .block-title {
+    background-color: transparent;
+    border-bottom: 0 solid #AAAAAA;
+    border-top: 0 none;
+    left: -20px;
+    margin-bottom: 0;
+    margin-top: -43px;
+    position: relative;
+}
+
+.action-home-index #content .box-1 .block-title span,
+.action-environment_design-index #content .box-1 .block-title span {
+    background-color: #497b16;
+    color: white;
+    font-size: 14px;
+    font-variant: normal;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.action-home-index .block .block-inner-2,
+.action-environment_design-index .block .block-inner-2 {
+	background-color: white;
+	padding: 1em;
+	margin: -10px -8px -8px;
+}
+
+
+/**/
 
 /*Block People*/
 /*
@@ -1263,6 +1280,69 @@ input.button.with-text {
 	display: none;
 }
 
+
+/* Bloco Estatistica na página inicial*/
+
+.action-home-index .block.statistics-block .block-inner-2,
+.action-environment_design-index .block.statistics-block .block-inner-2{
+	background-color: transparent;
+}
+
+.action-home-index #content .box-1 .statistics-block,
+.action-environment_design-index #content .box-1 .statistics-block {
+   display: block;
+   margin: 0px;
+	background-color: #0C763E;
+}
+
+.action-home-index .statistics-block .block-title,
+.action-environment_design-index .statistics-block .block-title {
+   display: none;
+}
+
+.action-home-index .statistics-block-data,
+.action-environment_design-index .statistics-block-data{
+    padding: 0px;
+    text-align: center;
+}
+
+.action-home-index .statistics-block-data ul,
+.action-environment_design-index .statistics-block-data ul{
+	list-style:none;
+	display: inline-block;
+}
+
+.action-home-index .statistics-block-data ul li,
+.action-environment_design-index .statistics-block-data ul li{
+	display: inline-block;
+	margin:0 40px 20px 0px;
+	text-align:center;
+	color:#fff;
+}
+
+.action-home-index .statistics-block-data ul li span,
+.action-environment_design-index .statistics-block-data ul li span
+{
+	display: block;
+}
+
+.action-home-index .statistics-block-data ul li .amount,
+.action-environment_design-index .statistics-block-data ul li .amount{
+	font-size: 600%/*40px !important*/;
+	font-weight:bold;
+	/*width:136px;*/	
+   line-height: 1em;
+	padding-bottom: 5px;
+}
+
+.action-home-index .statistics-block-data ul li .label,
+.action-environment_design-index .statistics-block-data ul li .label{
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
+}
+
+/* Fim Bloco Estatistica */
 
 
 
