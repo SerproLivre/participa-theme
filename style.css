@@ -268,8 +268,8 @@ p {
 	margin-top: 2em;
 }
 
-.box-1 .block-outer,
-.no-boxes .block-outer {
+.box-1 .block,
+.no-boxes .block {
 	margin-top: 50px;
 }
 
@@ -1111,33 +1111,33 @@ input.button.with-text {
 
 
 /*Página Inicial - .action-home-index*/
-.action-home-index .main-block,
-.action-environment_design-index #box-organizer .main-block{
-	display: none;
-	visibility: hidden;
-}
 
 .action-home-index .box-1 .blocks,
 .action-environment_design-index .box-1 .blocks {
     margin-top: 0px;
 }
 
-.action-home-index .box-1 .block,
-.action-environment_design-index .box-1 .block {
-	margin-top: 90px;
+.action-home-index #content .box-1 .block,
+.action-environment_design-index #content .box-1 .block {
+	margin-bottom: 90px;
 }
 
-.action-home-index .container-block-plugin_container-block .block-outer,
-.action-environment_design-index .container-block-plugin_container-block .block-outer{
-	margin-top: 0px;
+.action-home-index #content .container-block-plugin_container-block .block,
+.action-environment_design-index #content .container-block-plugin_container-block .block{
+	margin-bottom: 0px;
 }
 
 .action-home-index .box-1,
 .action-environment_design-index .box-1 {
-    margin-top: -50px;
+   /* margin-top: -50px;*/
 }
 
-
+.action-home-index .main-block,
+.action-environment_design-index #box-organizer .main-block{
+	display: none;
+	visibility: hidden;
+	margin-bottom: 0px;
+}
 /**/
 
 /*titulos dos blocos no box do meio*/
@@ -1230,6 +1230,11 @@ input.button.with-text {
     width: 1440px;
 }
 
+.action-home-index #content .box-1 .tags-block, 
+.action-environment_design-index #content .box-1 .tags-block {
+    margin-bottom: 2em;
+}
+
 .action-home-index #content .tags-block a,
 .action-environment_design-index #content .tags-block a{
     color: #497B16;
@@ -1291,7 +1296,6 @@ input.button.with-text {
 .action-home-index #content .box-1 .statistics-block,
 .action-environment_design-index #content .box-1 .statistics-block {
    display: block;
-   margin: 0px;
 	background-color: #0C763E;
 }
 
