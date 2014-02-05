@@ -222,7 +222,7 @@ p {
     border-radius: 0 0 0 0;
     border-right: medium none;
     border-top: 0px solid #64946E !important;
-    color: #436976 !important;
+    color: #436976;
     font-weight: normal;
     width: auto;
 	 font-size: 12px;
@@ -244,8 +244,6 @@ p {
 
 
 /*****************/
-
-
 
 .container-block-plugin_container-block,
 .container-block-plugin_container-block .block-inner-2{
@@ -1171,7 +1169,6 @@ input.button.with-text {
 	margin: -10px -8px -8px;
 }
 
-
 /**/
 
 /*Block People*/
@@ -1349,5 +1346,138 @@ input.button.with-text {
 /* Fim Bloco Estatistica */
 
 
+/*Acessibilidade*/
+/* Contraste */
+
+body.contraste,
+body.contraste #wrap-2,
+body.contraste #header,
+body.contraste #sobre,
+body.contraste #footer,
+body.contraste #main,
+body.contraste #doormat-container,
+body.contraste #em-destaque ul,
+body.contraste #em-destaque li#em-destaque-titulo,
+body.contraste .outstanding-header .outstanding-title,
+body.contraste .audiogallery-tile,
+body.contraste .videogallery-tile,
+body.contraste ul.css-tabs a,
+body.contraste .timeline,
+body.contraste .timeline a {
+	background: #000;
+	color: #fff;
+}
+
+/***********Imagem de Fundo - somente na página inicial*********/
+
+body.contraste #content .tags-block .block-footer-content a, 
+body.contraste #content .people-block .block-footer-content a, 
+body.contraste #content .profile-list-block .block-footer-content a, 
+body.contraste #content .enterprises-block .block-footer-content a, 
+body.contraste #content .members-block .block-footer-content a, 
+body.contraste #content .communities-block .block-footer-content a, 
+body.contraste #content .friends-block .block-footer-content a,
+body.contraste .more_button .view_all a, 
+body.contraste .read_more a {
+    background: url("images/button-read-more-vazio-contraste.png") no-repeat scroll left 50% transparent;
+}
+
+body.contraste a,
+body.contraste h1,
+body.contraste h2,
+body.contraste h3,
+body.contraste h4,
+body.contraste h5,
+body.contraste h6,
+body.contraste #plone-document-byline,
+body.contraste #doormat-container dt,
+body.contraste #content .documentDescription,
+body.contraste #content #description,
+body.contraste .nitfByline,
+body.contraste p.section {
+	color: #fff;
+}
+
+body.contraste #content a:link, 
+body.contraste #content a:link,
+body.contraste #content a {
+    color: #ffff00;
+}
+
+body.contraste #content .display-content-block .title a {
+    color: #ffff00;
+}
+
+body.contraste.action-home-index #wrap-2,
+body.contraste.action-environment_design-index #wrap-2  {
+	background-image: none;
+}
+
+body.contraste.action-home-index .block .block-inner-2, body.contraste.action-environment_design-index .block .block-inner-2,
+body.contraste.action-home-index #content .tags-block .block-inner-2, body.contraste.action-environment_design-index #content .tags-block .block-inner-2 {
+    background-color: #333;
+}
+body.contraste.action-home-index #content .tags-block .block-inner-2, body.contraste.action-environment_design-index #content .tags-block .block-inner-2 {
+    border-top: 1px solid #fff;
+}
+
+body.contraste.action-home-index #content .box-1 .block-title span, body.contraste.action-environment_design-index #content .box-1 .block-title span {
+    color: #497B16;
+    background-color: white;
+}
+
+body.contraste #accessibility span {
+	background: #fff !important;
+	color: #000 !important;
+}
+
+body.contraste #content .box .block-title {
+    background-color: #333;
+}
+
+body.contraste.action-home-index #content .box .block-title,
+body.action-environment_design-index #content .box .block-title {
+    background-color: transparent;
+}
+
+body.contraste #content .link-list-block li a {
+    background-color: #000;
+	 color: white;
+}
+body.contraste #content .link-list-block li a:hover {
+    background-color: #333;
+	 color: #ffff00;
+}
+
+body.contraste #comments_list a.display-comment-form,
+body.contraste #content input.button, body.contraste #content a.button {
+    background-color:#333;
+}
+
+body.contraste #content .recent-documents-block li{
+    background-color:#000;
+}
+
+body.contraste #content .track_list .item_card,
+body.contraste #content .track_list .item_card .track_stats .comments .counter,
+body.contraste #content .track_list .item_card .track_stats .hits .counter {
+	background-color: #333;
+	color: #fff;
+}
+body.contraste #content .track_list .item_card .track_content .lead {
+	color: #fff;
+}
+
+body.contraste .ui-widget-content {
+	background-color: #000;
+	color: #fff;
+}
+
+body.contraste .ui-state-active, 
+body.contraste .ui-widget-content .ui-state-active, 
+body.contraste .ui-widget-header .ui-state-active {
+	 background-image: none;
+	 background-color: #000;
+}
 
 

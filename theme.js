@@ -1,6 +1,9 @@
 (function($) {
   // Run code
- 
+$( "#siteaction-contraste a" ).click(function() {
+	$( "body" ).toggleClass( "contraste" );
+	});
+
 })(jQuery);
 
 
