@@ -1671,4 +1671,32 @@ body.contraste #footer-logos {
     background-color: #000;
 }
 
+/* Plugin para curtir artigos e comentários */
 
+.action .dislike:before {
+  content: url(images/negative-hand.png);
+}
+
+.action .like:before {
+  content: url(images/positive-hand.png);
+}
+
+.vote-action .like-action-active .action-icon {
+  opacity: 1;
+}
+
+.vote-action .action-icon {
+  opacity: 0.5;
+}
+
+#article .action .action-icon {
+  top: 3px;
+}
+
+#article .like-action .like-action-counter {
+  color: #2A8C32;
+}
+
+#article .dislike-action .like-action-counter {
+  color: #CC0000;
+}
