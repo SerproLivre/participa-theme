@@ -1,10 +1,6 @@
 (function($) {
 
   // Run code
-	if($.cookie("high_contrast") === 'true'){
-		$( "body" ).toggleClass( "contraste" );
-	}
-
 	$( "#siteaction-contraste a" ).click(function() {
 		$( "body" ).toggleClass( "contraste" );
 		if($('body').hasClass('contraste')){
