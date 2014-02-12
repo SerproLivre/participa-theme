@@ -1,5 +1,7 @@
 (function($) {
-
+  if($.cookie("high_contrast") === 'true'){
+    $( "body" ).toggleClass( "contraste" );
+  }
   // Run code
 	$( "#siteaction-contraste a" ).click(function() {
 		$( "body" ).toggleClass( "contraste" );
