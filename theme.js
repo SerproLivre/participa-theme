@@ -1,7 +1,18 @@
 (function($) {
+
   // Run code
-$( "#siteaction-contraste a" ).click(function() {
-	$( "body" ).toggleClass( "contraste" );
+	if($.cookie("high_contrast") === 'true'){
+		$( "body" ).toggleClass( "contraste" );
+	}
+
+	$( "#siteaction-contraste a" ).click(function() {
+		$( "body" ).toggleClass( "contraste" );
+		if($('body').hasClass('contraste')){
+			$.cookie('high_contrast', 'true', {path: '/'});	
+		} else {
+			$.cookie('high_contrast', null, { path: '/' });
+		}
+		
 	});
 
 })(jQuery);
