@@ -86,7 +86,7 @@ background-color: #fcdd4e;/*(amarelo-claro)*/
 }
 
 #logo a, #logo #portal-title {
-  color: #03316f !important;
+  color: #03316f;
 }
 
 #logo #portal-title {
@@ -131,7 +131,7 @@ background-color: #fcdd4e;/*(amarelo-claro)*/
 }
 
 #portal-siteactions a:hover {
-	color: #03316f !important;
+	color: #03316f;
 }
 
 #portal-siteactions li {
@@ -519,5 +519,11 @@ background-image: url(images/icone-flickr-escuro.png);
    max-width: 960px;
    margin: 0 auto;
    text-align: center;
+   padding: 19px;
 }
+
+#footer-license p {
+    color: #F28F00;
+}
+
 

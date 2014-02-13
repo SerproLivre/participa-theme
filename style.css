@@ -377,8 +377,9 @@ p {
 
 .action-home-index #content .display-content-block .lead p,
 .action-environment_design-index #content .display-content-block .lead p{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4em;
+	 color: #484848;
 }
 
 .action-home-index #content .display-content-block .lead .img,
@@ -440,6 +441,8 @@ p {
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a{
 	 color: #0B0C0C;
     font-size: 20px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-weight: bold;
 }
 .action-home-index #content .container-block-plugin_container-block .display-content-block .image,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image{
@@ -968,7 +971,7 @@ input.button.with-text {
 #content .track_list .item_card .track_content .title{
     color: white;
     font-family: Arial,sans-serif;
-    font-size: small;
+    font-size: 15px;
     font-weight: bold;
     min-height: 15px;
     padding: 5px 0;
@@ -987,7 +990,7 @@ input.button.with-text {
 }
 
 #content .track_list .item_card .track_content .name {
-	 font-size: small;
+	 font-size: 12px;
     font-weight: normal;
     padding: 5px 0;
     text-align: left;
@@ -1478,7 +1481,7 @@ input.button.with-text {
 .action-environment_design-index .people-block .banner-span {
     background-color: #f15921;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
     height: 56px;
     line-height: 56px;
@@ -1709,7 +1712,9 @@ body.contraste #content #description,
 body.contraste .nitfByline,
 body.contraste p.section,
 body.contraste .track_list .item_card .track_stats .hits .label, 
-body.contraste .track_list .item_card .track_stats .comments .label {
+body.contraste .track_list .item_card .track_stats .comments .label,
+body.contraste .action-home-index #content .display-content-block .lead p,
+body.contraste .action-environment_design-index #content .display-content-block .lead p {
 	color: #fff;
 }
 
@@ -1722,7 +1727,9 @@ body.contraste #content a {
 }
 
 body.contraste #content .display-content-block .title a,
-body.contraste #content .track_list .item_card .track_content .name {
+body.contraste #content .track_list .item_card .track_content .name,
+body.contraste .action-home-index #content .container-block-plugin_container-block .display-content-block .title a,
+body.contraste .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a {
     color: #ffff00;
 }
 
