@@ -277,7 +277,7 @@ input.searchField {
 
 #header input.searchButton {
   background-image: url("images/search-button.gif");
-  background-position: 3px 2px;
+  background-position: 8px 2px;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }

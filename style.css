@@ -554,7 +554,43 @@ p {
     width: 960px;
 }
 
+.action-home-index #wrap-2{
+	padding:0;
+}
 
+.action-home-index #content {
+    left: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+.action-home-index #content .block-outer .block {
+    left: -480px;
+    margin-left: 50%;
+    margin-top: 0;
+    position: relative;
+    width: 960px;
+}
+
+.action-home-index #content .block-outer .block .block{
+    left: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+}
+
+.action-home-index #content .block-outer .tags-block{
+    left: 0px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+
+}
 
 
 /*data - evento*/
