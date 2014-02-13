@@ -388,13 +388,13 @@ p {
 .action-home-index #wrap-2 .block-outer .container-block-plugin_container-block div.display-content-block,
 .action-environment_design-index #wrap-2 .block-outer .container-block-plugin_container-block div.display-content-block {
     margin-right: 24px;
-    width: 270px !important;
+    /*width: 270px !important;*/
 }
 
 .action-home-index .people-block,
 .action-environment_design-index .people-block {
    /* overflow: hidden;*/
-    width: 314px !important;
+    /*width: 314px !important;*/
 }
 
 .action-home-index #content .container-block-plugin_container-block .display-content-block .block-inner-2,
@@ -406,6 +406,7 @@ p {
     float: none;
     width: 100%;
 	 padding-right: 0;
+	 margin: 14px 0;
 }
 .action-home-index #content .container-block-plugin_container-block .display-content-block .image,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image{
@@ -553,6 +554,9 @@ p {
     width: 960px;
 }
 
+
+
+
 /*data - evento*/
 
 li.event-dates {
@@ -586,7 +590,7 @@ li.event-dates {
 }
 
 #content .title {
-    font-weight: normal; !important;
+    font-weight: normal;
     padding-right: 70px;
 }
 
@@ -850,13 +854,13 @@ input.button.with-text {
 
 .track_list .item_card {
     background-color: #FFFAFA;
-    border: 1px solid #DDDDDD;
+    border: 0px solid #DDDDDD;
     display: inline-block;
     float: left;
 	 clear: right;
-    margin: 10px 9px;
+    margin: 0 9px 9px;
     max-width: 214px;
-    height: 390px;
+    height: 405px;
     padding: 0;
     width: 214px;
 }
@@ -891,6 +895,7 @@ input.button.with-text {
     min-height: 15px;
     padding: 5px 0;
     text-align: center;
+	 text-transform: uppercase;
 }
 
 
@@ -900,6 +905,7 @@ input.button.with-text {
 	height: 146px;
 	overflow: hidden;
 	margin: 8px;
+	background-color: #FFF;
 }
 
 #content .track_list .item_card .track_content .name {
@@ -979,12 +985,18 @@ input.button.with-text {
   display: block;
   color: #444;
 }
+.track_list .item_card .track_stats .comments{
+  float: left;
+}
+.track_list .item_card .track_stats .hits{
+  float: right;
+}
 .track_list .item_card .track_stats .hits .label,
 .track_list .item_card .track_stats .comments .label {
   font-size: 7pt;
-  float: right;
+  /*float: right;*/
   color: #444;
-  visibility: hidden;
+
 }
 /**/
 
@@ -1212,6 +1224,7 @@ input.button.with-text {
     font-weight: bold;
 	 padding: 10px 20px 10px 50px;
     text-align: left;
+	 font-family: Arial, sans-serif;
 }
 
 .community-track-plugin_track-card-list-block .more_button{
@@ -1241,12 +1254,19 @@ input.button.with-text {
     padding: 10px 20px 10px 50px;
     position: relative;
     text-align: left;
+	 font-family: Arial, sans-serif;
 }
 
 /*fim botoes ver todos*/
 
 
 /*Página Inicial - .action-home-index*/
+
+.action-home-index #content,
+.action-environment_design-index #content {
+ margin-bottom: -105px;
+}
+
 
 .action-home-index .box-1 .blocks,
 .action-environment_design-index .box-1 .blocks {
@@ -1257,6 +1277,7 @@ input.button.with-text {
 .action-environment_design-index #content .box-1 .block {
 	margin-bottom: 90px;
 }
+
 
 .action-home-index #content .container-block-plugin_container-block .block,
 .action-environment_design-index #content .container-block-plugin_container-block .block{
@@ -1353,11 +1374,13 @@ input.button.with-text {
 .action-environment_design-index .people-block .banner-span {
     background-color: #f15921;
     color: #fff;
-    font-size: medium;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     height: 56px;
     line-height: 56px;
     width: 112px;
+    font-family: 'Open Sans Extrabold',Arial,Helvetica,sans-serif;
+	 letter-spacing: -0.05em;
 }
 
 .action-home-index .vcard .menu-submenu,
@@ -1367,16 +1390,13 @@ input.button.with-text {
 
 .action-home-index #content .tags-block,
 .action-environment_design-index #content .tags-block {
-    bottom: -21px;
-    left: 25%;
-    margin-left: -50%;
-    position: absolute;
-    width: 1440px;
-}
-
-.action-home-index #content .box-1 .tags-block, 
-.action-environment_design-index #content .box-1 .tags-block {
-    margin-bottom: 2em;
+   /*bottom: -21px;*/
+ /*   left: 25%;*/
+/*    margin-left: -50%;*/
+    position: relative;
+/*    width: 1440px;*/
+    /*margin-bottom: 2em;*/
+	 width: 100%;
 }
 
 .action-home-index #content .tags-block a,
@@ -1625,7 +1645,7 @@ body.action-environment_design-index #content .box .block-title {
 }
 
 body.contraste #content .link-list-block li a {
-    background-color: #EEEFFF; {
+    background-color: #EEEFFF;
     background-color: #000;
 	 color: white;
 }
