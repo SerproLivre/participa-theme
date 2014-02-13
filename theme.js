@@ -13,6 +13,8 @@
 		
 	});
 
+  $( ".profile-image" ).prepend( "<span class='helper'></span>" );
+
 })(jQuery);
 
 
