@@ -276,6 +276,7 @@ p {
 .action-environment_design-index .communities-block .common-profile-list-block .profile-image img {
   max-width: 76px;
   max-height: 76px;
+  vertical-align: middle;
 }
 
 .action-home-index .communities-block .common-profile-list-block span.org,
@@ -288,6 +289,13 @@ p {
 
 .action-home-index  #content .communities-block .vcard .profile_link {
   display: inline-block;
+}
+
+.action-home-index .communities-block .common-profile-list-block .profile-image .helper,
+.action-environment_design-index .communities-block .common-profile-list-block .profile-image .helper {
+  vertical-align: middle;
+  height: 100%;
+  display: inline-block;
 }
 
 
