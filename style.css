@@ -245,6 +245,52 @@ p {
 }
 
 
+/*********************************/
+/* Main Page / Communities Block */
+/*********************************/
+
+.action-home-index .communities-block .common-profile-list-block,
+.action-environment_design-index .communities-block .common-profile-list-block {
+  margin: 5px 7px 5px 6px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.action-home-index .communities-block .common-profile-list-block .vcard,
+.action-environment_design-index .communities-block .common-profile-list-block .vcard {
+  width: 95px;
+  height: 100%;
+  display: inline-block;
+}
+
+.action-home-index .communities-block .common-profile-list-block .profile-image,
+.action-environment_design-index .communities-block .common-profile-list-block .profile-image {
+  width: 76px;
+  height: 76px;
+  display: inline-block;
+  border: 1px solid #CCCCCC;
+}
+
+.action-home-index .communities-block .common-profile-list-block .profile-image img,
+.action-environment_design-index .communities-block .common-profile-list-block .profile-image img {
+  max-width: 76px;
+  max-height: 76px;
+}
+
+.action-home-index .communities-block .common-profile-list-block span.org,
+.action-environment_design-index .communities-block .common-profile-list-block span.org {
+  text-transform: uppercase;
+  word-wrap: break-word;
+  display: inline-block;
+  width: 90px;
+}
+
+.action-home-index  #content .communities-block .vcard .profile_link {
+  display: inline-block;
+}
+
+
 /*****************/
 
 /*Container Block - Bloco de Blocos*/
