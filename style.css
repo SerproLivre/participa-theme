@@ -283,7 +283,7 @@ p {
 
 .block-outer .block .block-outer {
     float: left;
-    margin-right: 20px;
+    margin-right: 14px;
     margin-top: 0;
 }
 .action-home-index .block-outer .block .block-outer{
@@ -381,13 +381,13 @@ p {
 
 .action-home-index .container-block-plugin_container-block .container-block-plugin_container-block,
 .action-environment_design-index .container-block-plugin_container-block .container-block-plugin_container-block{
-    width: 630px !important;
+   /* width: 630px !important;*/
 	 background-color: white;
 }
 
 .action-home-index #wrap-2 .block-outer .container-block-plugin_container-block div.display-content-block,
 .action-environment_design-index #wrap-2 .block-outer .container-block-plugin_container-block div.display-content-block {
-    margin-right: 24px;
+    /*margin-right: 24px;*/
     /*width: 270px !important;*/
 }
 
