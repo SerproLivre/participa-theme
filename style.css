@@ -1974,3 +1974,10 @@ body.contraste #social-icons #sb_flickr {
 #article .dislike-action .like-action-counter {
   color: #CC0000;
 }
+
+.vote-actions {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
