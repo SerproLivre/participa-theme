@@ -408,6 +408,7 @@ p {
 	max-width: 460px;
 	height: 300px;
 }
+
 .action-home-index #content .display-content-block .image a,
 .action-environment_design-index #content .display-content-block .image a{
 }
@@ -497,14 +498,23 @@ p {
 	 text-align: center;
 	 margin-bottom: 1em;
 }
-.action-home-index #content .container-block-plugin_container-block .display-content-block .image img,
+/*.action-home-index #content .container-block-plugin_container-block .display-content-block .image img,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image img{
 	max-width: 258px;
 	max-height: 265px;
-}
+}*/
 .action-home-index #content .container-block-plugin_container-block .display-content-block .image a,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image a{
 }
+
+.action-home-index #content .container-block-plugin_container-block .display-content-block .image img, 
+.action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image img {
+	height: 100%;
+	max-height: 200px;
+	max-width: 295px;
+}
+
+
 .action-home-index #content .container-block-plugin_container-block .display-content-block .lead,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .lead{
     float: none;
@@ -1022,7 +1032,11 @@ input.button.with-text {
     min-height: 15px;
     padding: 5px 0;
     text-align: center;
-	 text-transform: uppercase;
+
+    vertical-align: middle;
+    width: 219px;
+    display: table-cell;
+	 height: 45px;
 }
 
 
