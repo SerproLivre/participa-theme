@@ -267,13 +267,13 @@ p {
   width: 76px;
   height: 76px;
   display: inline-block;
+  border: 1px solid #CCCCCC;
 }
 
 .action-home-index .communities-block .common-profile-list-block .profile-image img,
 .action-environment_design-index .communities-block .common-profile-list-block .profile-image img {
   max-width: 76px;
   max-height: 76px;
-  border: 1px solid #CCCCCC;
 }
 
 .action-home-index .communities-block .common-profile-list-block span.org,
@@ -281,6 +281,11 @@ p {
   text-transform: uppercase;
   word-wrap: break-word;
   display: inline-block;
+  width: 90px;
+}
+
+.action-home-index  #content .communities-block .vcard .profile_link {
+  display: inline-block;
 }
 
 
