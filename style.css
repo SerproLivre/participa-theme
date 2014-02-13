@@ -1524,8 +1524,8 @@ input.button.with-text {
 	margin: 0;
 }
 
-.action-home-index .container-block-plugin_container-block .block-inner-2,
-.action-environment_design-index .container-block-plugin_container-block .block-inner-2 {
+.action-home-index .container-block-plugin_container-block > .block-inner-2,
+.action-environment_design-index .container-block-plugin_container-block > .block-inner-2 {
   padding-left: 0px;
   padding-right: 0px;
 }
