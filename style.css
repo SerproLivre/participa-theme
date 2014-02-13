@@ -1524,6 +1524,11 @@ input.button.with-text {
 	margin: 0;
 }
 
+.action-home-index .container-block-plugin_container-block .block-inner-2,
+.action-environment_design-index .container-block-plugin_container-block .block-inner-2 {
+  padding: 0px;
+}
+
 
 .action-home-index .community-track-plugin_track-card-list-block .block-inner-2,
 .action-environment_design-index .community-track-plugin_track-card-list-block .block-inner-2 {
