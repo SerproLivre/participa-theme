@@ -874,6 +874,14 @@ input.button.with-text {
 
 /*nuvem de tags*/
 
+.action-home-index #content .tag_cloud {
+    left: -480px;
+    margin-left: 50%;
+    position: relative;
+    text-align: center;
+    width: 960px;
+}
+
 .tag_cloud a{
 	 white-space: normal;
 }
