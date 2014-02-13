@@ -46,7 +46,9 @@
 
 div#wrapper-barra-brasil {
     width: 960px;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
+
 
 /****************** Estilos basicos ******************/
 
@@ -1271,6 +1273,19 @@ input.button.with-text {
 	 font-family: Arial, sans-serif;
 }
 
+.action-home-index #content .article-block .short-post .read-more a {
+    background: url("images/button-read-more-vazio.png") no-repeat scroll left 50% transparent;
+    color: #333;
+    display: inline-block;
+    font-weight: bold;
+	 padding: 10px 20px 10px 50px;
+    text-align: left;
+	 font-family: Arial, sans-serif;
+	 margin-right: 1em;
+}
+
+
+
 .community-track-plugin_track-card-list-block .more_button{
 	text-align: right;
 }
@@ -1351,7 +1366,7 @@ input.button.with-text {
     border-top: 0 none;
     left: -20px;
     margin-bottom: 0;
-    margin-top: -43px;
+    margin-top: -47px;
     position: relative;
 }
 
@@ -1371,7 +1386,7 @@ input.button.with-text {
 .action-environment_design-index #content .box-1 .block-title span {
     background-color: #497b16;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-variant: normal;
     padding: 0.5em 1em;
     text-align: left;
@@ -1381,7 +1396,7 @@ input.button.with-text {
 .action-environment_design-index #content .display-content-block:first-of-type .block-title span {
     background-color: #f7b905;
     color: #0a4d06;
-    font-size: 14px;
+    font-size: 18px;
     font-variant: normal;
     padding: 0.5em 1em;
     text-align: left;
@@ -1644,6 +1659,11 @@ body.contraste .read_more a
 }
 
 body.contraste a,
+body.contraste #accessibility a,
+body.contraste #portal-siteactions a,
+body.contraste #logo a, 
+body.contraste #logo #portal-title,
+body.contraste #sobre a,
 body.contraste h1,
 body.contraste h2,
 body.contraste h3,
@@ -1655,9 +1675,13 @@ body.contraste #doormat-container dt,
 body.contraste #content .documentDescription,
 body.contraste #content #description,
 body.contraste .nitfByline,
-body.contraste p.section {
+body.contraste p.section,
+body.contraste .track_list .item_card .track_stats .hits .label, 
+body.contraste .track_list .item_card .track_stats .comments .label {
 	color: #fff;
 }
+
+
 
 body.contraste #content a:link, 
 body.contraste #content a:link,
@@ -1665,19 +1689,31 @@ body.contraste #content a {
     color: #ffff00;
 }
 
-body.contraste #content .display-content-block .title a {
+body.contraste #content .display-content-block .title a,
+body.contraste #content .track_list .item_card .track_content .name {
     color: #ffff00;
 }
+
+
 
 body.contraste.action-home-index #wrap-2,
 body.contraste.action-environment_design-index #wrap-2  {
 	background-image: none;
 }
 
-body.contraste.action-home-index .block .block-inner-2, body.contraste.action-environment_design-index .block .block-inner-2,
-body.contraste.action-home-index #content .tags-block .block-inner-2, body.contraste.action-environment_design-index #content .tags-block .block-inner-2 {
+body.contraste.action-home-index .block .block-inner-2, 
+body.contraste.action-environment_design-index .block .block-inner-2,
+body.contraste.action-home-index #content .tags-block .block-inner-2, 
+body.contraste.action-environment_design-index #content .tags-block .block-inner-2 {
     background-color: #333;
 }
+
+body.contraste.action-home-index .community-track-plugin_track-card-list-block .block-inner-2 {
+	background-image: none;
+   background-color: #fff;
+}
+
+
 body.contraste.action-home-index #content .tags-block .block-inner-2, body.contraste.action-environment_design-index #content .tags-block .block-inner-2 {
     border-top: 1px solid #fff;
 }
@@ -1711,6 +1747,21 @@ body.contraste #content .link-list-block li a.link-this-page,
 body.contraste #content .link-list-block li a:hover {
     background-color: #333;
 	 color: #ffff00;
+}
+
+body.contraste #content .article-comment {
+    background: none repeat scroll 0 0 #000;
+}
+
+body.contraste #comments_list .comment-info, 
+body.contraste #comments_list .comment-created-at{
+	color: #ffff00;
+}
+
+body.contraste #comments_list .comment-wrapper-8 {
+    background-color: #000000;
+    background-image: none;
+    border: 1px solid #DDDDDD;
 }
 
 body.contraste #comments_list a.display-comment-form,
@@ -1747,6 +1798,32 @@ body.contraste .ui-widget-header .ui-state-active {
 body.contraste #footer-logos {
     background-color: #000;
 }
+
+body.contraste #theme-header .header-content #link-faq a {
+    border-right: 1px solid #ffF;
+}
+
+body.contraste #portal-siteactions {
+    border-bottom: 1px dotted #fff;
+}
+
+body.contraste #social-icons #sb_face {
+    background-image: url("images/icone-facebook.png");
+}
+body.contraste #social-icons #sb_youtb {
+    background-image: url("images/icone-youtube.png");
+}
+body.contraste #social-icons #sb_tweet {
+    background-image: url("images/icone-twitter-branco.png");
+}
+body.contraste #social-icons #sb_flickr {
+    background-image: url("images/icone-flickr.png");
+}
+/*body.contraste #social-icons #sb_inst {
+    background-image: url("images/icone-instagram.png");
+}*/
+
+
 
 /* Plugin para curtir artigos e comentários */
 
