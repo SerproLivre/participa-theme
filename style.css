@@ -294,6 +294,11 @@ p {
 
 /****Display Content - Bloco de artigo****/
 
+.action-home-index .display-content-block ul,
+.action-home-index .display-content-block ul li{
+	display: inline-block;
+}
+
 .display-content-block .lead {
 	overflow: hidden;
 }
@@ -317,7 +322,7 @@ p {
     font-weight: bold;
     line-height: 1em;
     padding: 0;
-	 color: black;
+	 color: #000;
 }
 
 #content .main-block h1, 
@@ -335,48 +340,69 @@ p {
 }
 .action-home-index #content .display-content-block .title,
 .action-environment_design-index #content .display-content-block .title{
-    float: right;
-    width: 50%;
+    clear: right;
+    float: left;
+    min-width: 40%;
 	 padding-right: 0;
 }
+.action-home-index #content .display-content-block .title a,
+.action-environment_design-index #content .display-content-block .title a{
+	 color: #0B0C0C;
+    font-size: 34px;
+}
+
 .action-home-index #content .display-content-block .image,
 .action-environment_design-index #content .display-content-block .image{
     float: left;
-    width: 450px;
+    max-width: 460px;
+	 margin-right: 24px;
 }
 .action-home-index #content .display-content-block .image img,
 .action-environment_design-index #content .display-content-block .image img{
-	max-width: 450px;
-	max-height: 300px;
+	max-width: 460px;
+	height: 300px;
 }
 .action-home-index #content .display-content-block .image a,
 .action-environment_design-index #content .display-content-block .image a{
 }
 .action-home-index #content .display-content-block .lead,
 .action-environment_design-index #content .display-content-block .lead{
-    float: right;
-    width: 50%;
-	 clear: right;
+    border-top: 1px solid #CCCCCC;
+    clear: right;
+    float: left;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 40%;
 }
+
+.action-home-index #content .display-content-block .lead p,
+.action-environment_design-index #content .display-content-block .lead p{
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
 .action-home-index #content .display-content-block .lead .img,
 .action-environment_design-index #content .display-content-block .lead .img{
 }
 .action-home-index #content .display-content-block .tags,
 .action-environment_design-index #content .display-content-block .tags{
-    float: right;
-    width: 50%;
-	 clear: right;
+    clear: right;
+    float: left;
+    min-width: 40%;
 }
 .action-home-index #content .display-content-block .published-at,
 .action-environment_design-index #content .display-content-block .published-at{
-    float: right;
-    width: 50%;
+    clear: right;
+    float: left;
+    min-width: 40%;
+	 color: #666;
+	 font-size: 12px;
 }
 .action-home-index #content .display-content-block .read_more,
 .action-environment_design-index #content .display-content-block .read_more{
-    float: right;
-    width: 50%;
-	 clear: right;
+    clear: right;
+    float: left;
+    min-width: 40%;
 }
 
 /*Display Content em container na página inicial*/
@@ -410,6 +436,11 @@ p {
 	 padding-right: 0;
 	 margin: 14px 0;
 }
+.action-home-index #content .container-block-plugin_container-block .display-content-block .title a,
+.action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a{
+	 color: #0B0C0C;
+    font-size: 20px;
+}
 .action-home-index #content .container-block-plugin_container-block .display-content-block .image,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image{
     float: none;
@@ -430,6 +461,7 @@ p {
     float: none;
     width: 100%;
 	 clear: right;
+    border-top: 0px solid transparent;
 }
 .action-home-index #content .container-block-plugin_container-block .display-content-block .lead .img,
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .lead .img{
@@ -1334,7 +1366,7 @@ input.button.with-text {
 
 .action-home-index #content .box-1 .block,
 .action-environment_design-index #content .box-1 .block {
-	margin-bottom: 90px;
+	margin-bottom: 82px;
 }
 
 
