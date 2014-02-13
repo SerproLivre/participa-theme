@@ -1347,6 +1347,12 @@ input.button.with-text {
     position: relative;
 }
 
+.action-home-index #content .box-1 .container-block-plugin_container-block .block-title, 
+.action-environment_design-index #content .box-1 .container-block-plugin_container-block .block-title {
+    padding-left: 18px;
+    padding-bottom: 11px;
+}
+
 .action-home-index #content .box-1 .block-title span,
 .action-environment_design-index #content .box-1 .block-title span {
     background-color: #497b16;
