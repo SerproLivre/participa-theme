@@ -276,6 +276,7 @@ p {
 .action-environment_design-index .communities-block .common-profile-list-block .profile-image img {
   max-width: 76px;
   max-height: 76px;
+  vertical-align: middle;
 }
 
 .action-home-index .communities-block .common-profile-list-block span.org,
@@ -288,6 +289,13 @@ p {
 
 .action-home-index  #content .communities-block .vcard .profile_link {
   display: inline-block;
+}
+
+.action-home-index .communities-block .common-profile-list-block .profile-image .helper,
+.action-environment_design-index .communities-block .common-profile-list-block .profile-image .helper {
+  vertical-align: middle;
+  height: 100%;
+  display: inline-block;
 }
 
 
@@ -512,7 +520,7 @@ p {
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image img {
 	height: 100%;
 	max-height: 200px;
-	max-width: 295px;
+	max-width: 250px;
 }
 
 
@@ -998,7 +1006,7 @@ input.button.with-text {
 	 clear: right;
     margin: 0 9px 9px;
     max-width: 214px;
-    height: 405px;
+    height: 426px;
     padding: 0;
     width: 214px;
 }
@@ -1021,7 +1029,7 @@ input.button.with-text {
 /**/
 
 #content .track_list .item_card .track_content{
-	 height: 355px;
+	 height: 390px;
 	 overflow: hidden;
 }
 
@@ -1057,6 +1065,7 @@ input.button.with-text {
     text-align: left;
     margin: 0 8px;
     color: #444;
+	 text-transform: uppercase;
 }
 
 
@@ -1066,6 +1075,7 @@ input.button.with-text {
     margin: 0 8px;
     text-align: left;
     color: black;
+	 font-size: 12px;
 }
 
 /**/
@@ -1124,7 +1134,7 @@ input.button.with-text {
   padding: 3px 0 0 30px;
   text-align: left;
   font-size: 10pt;
-  display: block;
+  /*display: block;*/
   color: #444;
 }
 .track_list .item_card .track_stats .comments{
@@ -1138,8 +1148,12 @@ input.button.with-text {
   font-size: 7pt;
   /*float: right;*/
   color: #444;
-
 }
+.track_list .item_card .track_stats .comments .label {
+	display: none;
+	visibility: hidden;
+}
+
 /**/
 
 
@@ -1367,6 +1381,12 @@ input.button.with-text {
 	 padding: 10px 20px 10px 50px;
     text-align: left;
 	 font-family: Arial, sans-serif;
+}
+
+.action-home-index #content .community-track-plugin_track-card-list-block .view_all a{
+    position: absolute;
+    right: -12px;
+    top: -33px;
 }
 
 .action-home-index #content .article-block .short-post .read-more a {
@@ -1954,3 +1974,10 @@ body.contraste #social-icons #sb_flickr {
 #article .dislike-action .like-action-counter {
   color: #CC0000;
 }
+
+.vote-actions {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
