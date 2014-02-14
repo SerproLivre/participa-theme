@@ -1492,7 +1492,7 @@ input.button.with-text {
 
 .action-home-index #content .box-1 .container-block-plugin_container-block .block-title, 
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .block-title {
-    padding-left: 18px;
+    padding-left: 20px;
     padding-bottom: 11px;
 }
 /*título de container*/
@@ -1500,7 +1500,8 @@ input.button.with-text {
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .block .block-title {
     padding-left: 10px;
     padding-bottom: 24px;
-/*teste*/  top: 7px; left: -14px;
+    top: 9px; 
+    left: -11px;
 }
 /*título do bloco de pessoas dentro do container */
 .action-home-index #content .box-1 .container-block-plugin_container-block .people-block .block-title, 
