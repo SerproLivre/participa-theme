@@ -518,7 +518,7 @@ p {
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image img {
 	height: 100%;
 	max-height: 200px;
-	max-width: 250px;
+	max-width: 295px;
 }
 
 
@@ -1489,12 +1489,21 @@ input.button.with-text {
     padding-left: 18px;
     padding-bottom: 11px;
 }
-
+/*título de container*/
 .action-home-index #content .box-1 .container-block-plugin_container-block .block .block-title, 
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .block .block-title {
     padding-left: 10px;
     padding-bottom: 24px;
+/*teste*/  top: 7px; left: -14px;
 }
+/*título do bloco de pessoas dentro do container */
+.action-home-index #content .box-1 .container-block-plugin_container-block .people-block .block-title, 
+.action-environment_design-index #content .box-1 .container-block-plugin_container-block .people-block .block-title {
+    padding-left: 10px;
+    padding-bottom: 24px;
+/*teste*/  top: -5px; left: -23px;
+}
+
 
 .action-home-index #content .box-1 .block-title span,
 .action-environment_design-index #content .box-1 .block-title span {
@@ -1650,28 +1659,46 @@ input.button.with-text {
 /*Container na página inicial*/
 /*Container Block - Bloco de Blocos*/
 
+/*primeiro container*/
 .action-home-index .container-block-plugin_container-block,
 .action-home-index .container-block-plugin_container-block .block-inner-2,
 .action-environment_design-index .container-block-plugin_container-block,
 .action-environment_design-index .container-block-plugin_container-block .block-inner-2{
 	background-color: transparent;
-
+	padding:0;
+	margin: -2px;
+/*	border: 1px solid red;*/
 }
 
+/*blocos comuns dentro do container*/
 .action-home-index .container-block-plugin_container-block .block .block-inner-2,
 .action-environment_design-index .container-block-plugin_container-block .block .block-inner-2{
-	 background-color: white;
+    background-color: white;
+    padding: 14px;
+/*    border: 1px solid green;*/
 }
-
 
 .action-home-index .people-block .block-inner-2,
 .action-environment_design-index .people-block .block-inner-2{
     margin-left: 14px;
 }
 
+/*container dentro do container*/
 .action-home-index .container-block-plugin_container-block .container-block-plugin_container-block .block-inner-2,
 .action-environment_design-index .container-block-plugin_container-block .container-block-plugin_container-block .block-inner-2  {
+/*teste*/
     background-color: white;
+    padding: 1px;
+/*    border: 1px solid blue;*/
+}
+
+/*blocos dentro do container dentro do container*/
+.action-home-index #content .container-block-plugin_container-block .display-content-block .block-inner-2,
+.action-environment_design-index #content .container-block-plugin_container-block .display-content-block .block-inner-2{
+/*teste*/
+    overflow: hidden;
+    padding: 14px 0 14px 14px;
+/*    border: 1px solid brown;*/
 }
 
 /***************************************/
