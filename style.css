@@ -1387,7 +1387,8 @@ input.button.with-text {
 	 font-family: Arial, sans-serif;
 }
 
-.action-home-index #content .community-track-plugin_track-card-list-block .view_all a{
+.action-home-index #content .community-track-plugin_track-card-list-block .view_all a,
+.action-environment_design-index #content .community-track-plugin_track-card-list-block .view_all a{
     position: absolute;
     right: -12px;
     top: -33px;
