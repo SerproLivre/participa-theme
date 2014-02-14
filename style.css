@@ -1490,7 +1490,7 @@ input.button.with-text {
     border-top: 0 none;
     left: -20px;
     margin-bottom: 0;
-    margin-top: -47px;
+    margin-top: -44px;
     position: relative;
 }
 
@@ -1512,7 +1512,7 @@ input.button.with-text {
     color: white;
     font-size: 18px;
     font-variant: normal;
-    padding: 0.5em 1em;
+    padding: 6px 1em;
     text-align: left;
 }
 
@@ -1520,10 +1520,6 @@ input.button.with-text {
 .action-environment_design-index #content .display-content-block:first-of-type .block-title span {
     background-color: #f7b905;
     color: #0a4d06;
-    font-size: 18px;
-    font-variant: normal;
-    padding: 0.5em 1em;
-    text-align: left;
 }
 
 .action-home-index .block .block-inner-2,
