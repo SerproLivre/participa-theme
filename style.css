@@ -1671,8 +1671,6 @@ input.button.with-text {
 .action-environment_design-index .container-block-plugin_container-block .block-inner-2{
 	background-color: transparent;
 	padding:0;
-	margin: -2px;
-/*	border: 1px solid red;*/
 }
 
 /*blocos comuns dentro do container*/
@@ -1684,6 +1682,8 @@ input.button.with-text {
 .action-home-index .container-block-plugin_container-block .block-outer,
 .action-environment_design-index .container-block-plugin_container-block .block-outer{
     background-color: white;
+    margin-left: 0px;
+    margin-right: -3px;
 }
 
 .action-home-index .people-block .block-inner-2,
