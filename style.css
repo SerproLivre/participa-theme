@@ -1054,6 +1054,16 @@ input.button.with-text {
 	overflow: hidden;
 	margin: 8px;
 	background-color: #FFF;
+  position: relative;
+}
+
+.track_list .image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 #content .track_list .item_card .track_content .name {
