@@ -1001,8 +1001,8 @@ input.button.with-text {
     border: 0px solid #DDDDDD;
     display: inline-block;
     float: left;
-	 clear: right;
-    margin: 0 9px 9px;
+    clear: right;
+    margin: 12px 9px 9px;
     max-width: 214px;
     height: 426px;
     padding: 0;
