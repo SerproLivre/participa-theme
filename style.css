@@ -1678,9 +1678,12 @@ input.button.with-text {
 /*blocos comuns dentro do container*/
 .action-home-index .container-block-plugin_container-block .block .block-inner-2,
 .action-environment_design-index .container-block-plugin_container-block .block .block-inner-2{
-    background-color: white;
     padding: 14px;
-/*    border: 1px solid green;*/
+}
+
+.action-home-index .container-block-plugin_container-block .block-outer,
+.action-environment_design-index .container-block-plugin_container-block .block-outer{
+    background-color: white;
 }
 
 .action-home-index .people-block .block-inner-2,
