@@ -38,7 +38,6 @@
 }
 
 #barra-brasil {
-	 position: fixed;
     z-index: 99;
 	 width: 100%;
 	 border-bottom: 1px solid #CCCCCC;
