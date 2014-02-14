@@ -458,6 +458,35 @@ p {
 
 /*comentário*/
 
+
+#comments_list.comments{
+    border: 1px solid #CCCCCC;
+    margin: 20px 0;
+}
+
+#content .main-block  #comments_list h3 {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0;
+    min-height: 100% !important;
+    padding: 14px;
+	 color: #999;
+}
+#article .article-comments-list, 
+#article .article-comments-list ul, 
+#article .article-comments-list li {
+    list-style: none outside none;
+    margin: 5px 0 10px;
+    padding: 0;
+}
+
+#article .article-comments-list li {
+    padding: 14px;
+}
+
+.comments .comment-count-write-out {
+	min-height: 100%;
+}
+
 .comment-info {
 	line-height: 1em;
 	margin-top: 5px;
@@ -467,7 +496,7 @@ p {
 	 display: block;
     list-style: none outside none;
     margin: 10px 0 0;
-    padding: 0;
+	 padding: 1em;
 }
 
 #article .comment-replies .article-comment {
@@ -483,6 +512,43 @@ p {
     max-width: 40px;
 	 overflow: visible;
 }
+
+.comment-created-at{
+    display: block;
+    float: none;
+	 margin-left: 0;
+	 color: red;
+	 font-style: italic;
+	 margin-bottom: 1em;
+}
+
+#article .article-comment .comment-details h4 {
+    display: block;
+}
+
+.comment-text p {
+	line-height: 1.3em;
+}
+
+.article-comment .comment-details {
+	padding-top: 0;
+}
+
+
+#comments_list .comment-balloon {
+
+}
+#comments_list .comment-balloon .comment-wrapper-1,
+#comments_list .comment-balloon .comment-wrapper-2,
+#comments_list .comment-balloon .comment-wrapper-3,
+#comments_list .comment-balloon .comment-wrapper-4,
+#comments_list .comment-balloon .comment-wrapper-5,
+#comments_list .comment-balloon .comment-wrapper-6,
+#comments_list .comment-balloon .comment-wrapper-7,
+#comments_list .comment-balloon .comment-wrapper-8{
+ 	background-image: none;
+}
+
 /* fim de comentário*/
 
 /*Display Content na página inicial*/
@@ -954,7 +1020,7 @@ input.button.with-text {
     background-color: #EEEEEE;
     background-repeat: no-repeat;
     border: 0px solid #CCCCCC;
-	 border-bottom: 1px solid #CCCCCC;
+	 /*border-bottom: 1px solid #CCCCCC;*/
     color: #555555;
     line-height: 16px;
     text-decoration: none;
