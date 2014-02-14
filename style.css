@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a:link, #content a:link, dl.portlet a:link {
 	color: #2c67cd;
-	border-bottom: none;
+	/*border-bottom: none;*/
 }
 
 a:visited, #content a:visited, dl.portlet a:visited {
@@ -232,6 +232,7 @@ p {
 	 background-position: 7px 50%;
 }
 
+
 #content .box-2 .link-list-block li a:hover {
     background-color: #eee;
     color: #000;
@@ -242,6 +243,80 @@ p {
     font-weight: bold;
     width: auto;
 }
+/* Menu List footer */
+
+#content .box-3 .link-list-block li a.link-this-page {
+    width: auto;
+    border-right: none;
+    font-weight: bold;
+    background-color: #eeefff;
+    border-radius: 0px;
+}
+
+#content .box-3 .link-list-block li a {
+    font-size: 14px;
+    line-height: 1em;
+    color: #545454;
+    background-color: #FFF;
+    border-radius: none;
+    padding: 0.6em 1.5em;
+}
+
+#content .box-3 .link-list-block li a:hover {
+    background-color: #FFF;
+    color: #436976;
+}
+
+#content .box-3 .link-list-block li {
+    border-bottom: none;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+}
+
+.agenda-item a {
+  color: black;
+}
+.agenda-item a:visited {
+  color: black;
+  font-weight: normal;
+}
+.agenda-item a:hover {
+  color: black;
+  text-decoration: underline !important;
+}
+
+#box-organizer .block-target { clear: both; }
+
+/*.profile-info-options*/
+#content .profile-info-options {
+	padding-right: 0;
+}
+
+#content .profile-info-options ul {
+	margin-left: 0px;
+}
+
+#content .profile-info-options input.button.with-text, 
+#content .profile-info-options a.button.with-text {
+    background-color: #fff;
+    border-radius: 0 0 0 0;
+    display: block;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
+    text-align: left;	 
+}
+#content .profile-info-options a.button.with-text{
+	border-bottom: 1px solid #CCCCCC !important;
+}
+
+#content .profile-info-options input.button:hover, 
+#content .profile-info-options a.button:hover {
+	 background-color: #dfdfdf;
+    border: 0px solid #CCC;
+}
+
 
 
 /*********************************/
@@ -379,6 +454,36 @@ p {
 	
 }
 
+
+
+/*comentário*/
+
+.comment-info {
+	line-height: 1em;
+	margin-top: 5px;
+}
+
+#article .article-comments-list li {
+	 display: block;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+#article .comment-replies .article-comment {
+    background: url("/images/black-alpha-pixel-5.png") repeat scroll left top transparent;
+    border: 1px solid #808080;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.comment-replies .comment-picture {
+    height: auto;
+    max-width: 40px;
+	 overflow: visible;
+}
+/* fim de comentário*/
 
 /*Display Content na página inicial*/
 
