@@ -551,6 +551,47 @@ p {
 
 /* fim de comentário*/
 
+/*paginação*/
+
+.pagination {
+}
+
+#content .pagination a {
+    background-image: url("images/bg-paginacao.png");
+    background-repeat: no-repeat;
+    border-bottom: 0 none;
+    color: white;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    height: 35px;
+    padding-top: 4px;
+    text-decoration: none;
+    width: 35px;
+}
+
+.pagination .current {
+	background: url("images/bg-paginacao-preto.png") no-repeat center top transparent;
+    background-repeat: no-repeat;
+    border-bottom: 0 none;
+    color: white;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    height: 35px;
+    padding-top: 4px;
+    text-decoration: none;
+    width: 35px;
+}
+#content #article .pagination .next_page,
+#content #article .pagination .prev_page{
+	background-image: none;
+	color: #ccc;
+	width: auto;
+}
+
+/*fim paginação*/
+
 /*Display Content na página inicial*/
 
 .action-home-index #content .display-content-block .block-inner-2,
