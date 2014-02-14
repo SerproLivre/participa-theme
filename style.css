@@ -1938,21 +1938,32 @@ body.contraste #portal-siteactions {
 }
 
 body.contraste #social-icons #sb_face {
-    background-image: url("images/icone-facebook.png");
+    background-image: url("images/icone-branco-facebook.png");
 }
-body.contraste #social-icons #sb_youtb {
-    background-image: url("images/icone-youtube.png");
+body.contraste #social-icons #sb_face:hover {
+    background: url("images/icone-branco-facebook.png") 0 20px;
 }
-body.contraste #social-icons #sb_tweet {
-    background-image: url("images/icone-twitter-branco.png");
-}
-body.contraste #social-icons #sb_flickr {
-    background-image: url("images/icone-flickr.png");
-}
-/*body.contraste #social-icons #sb_inst {
-    background-image: url("images/icone-instagram.png");
-}*/
 
+body.contraste #social-icons #sb_youtb {
+    background-image: url("images/icone-branco-youtube.png");
+}
+body.contraste #social-icons #sb_youtb:hover {
+    background: url("images/icone-branco-youtube.png") 0 20px;
+}
+
+body.contraste #social-icons #sb_tweet {
+    background-image: url("images/icone-branco-twitter.png");
+}
+body.contraste #social-icons #sb_tweet:hover {
+    background: url("images/icone-branco-twitter.png") 0 20px;
+}
+
+body.contraste #social-icons #sb_flickr {
+    background-image: url("images/icone-branco-flickr.png");
+}
+body.contraste #social-icons #sb_flickr:hover {
+    background: url("images/icone-branco-flickr.png") 0 20px;
+}
 
 
 /* Plugin para curtir artigos e comentários */
