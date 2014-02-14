@@ -10,10 +10,14 @@
 		} else {
 			$.cookie('high_contrast', null, { path: '/' });
 		}
-		
 	});
 
   $( ".profile-image" ).prepend( "<span class='helper'></span>" );
+
+  //same height for container children
+  $('.container-block-plugin_container-block .block .block-inner-2').each(function() {
+    $(this).height($(this).closest('.box').height()-2);
+  });
 
 })(jQuery);
 
