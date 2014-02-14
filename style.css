@@ -1001,8 +1001,8 @@ input.button.with-text {
     border: 0px solid #DDDDDD;
     display: inline-block;
     float: left;
-	 clear: right;
-    margin: 0 9px 9px;
+    clear: right;
+    margin: 12px 9px 9px;
     max-width: 214px;
     height: 426px;
     padding: 0;
@@ -1054,6 +1054,16 @@ input.button.with-text {
 	overflow: hidden;
 	margin: 8px;
 	background-color: #FFF;
+  position: relative;
+}
+
+.track_list .image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 #content .track_list .item_card .track_content .name {
@@ -1480,7 +1490,7 @@ input.button.with-text {
     border-top: 0 none;
     left: -20px;
     margin-bottom: 0;
-    margin-top: -47px;
+    margin-top: -44px;
     position: relative;
 }
 
@@ -1511,7 +1521,7 @@ input.button.with-text {
     color: white;
     font-size: 18px;
     font-variant: normal;
-    padding: 0.5em 1em;
+    padding: 6px 1em;
     text-align: left;
 }
 
@@ -1519,10 +1529,6 @@ input.button.with-text {
 .action-environment_design-index #content .display-content-block:first-of-type .block-title span {
     background-color: #f7b905;
     color: #0a4d06;
-    font-size: 18px;
-    font-variant: normal;
-    padding: 0.5em 1em;
-    text-align: left;
 }
 
 .action-home-index .block .block-inner-2,
@@ -1959,21 +1965,32 @@ body.contraste #portal-siteactions {
 }
 
 body.contraste #social-icons #sb_face {
-    background-image: url("images/icone-facebook.png");
+    background-image: url("images/icone-branco-facebook.png");
 }
-body.contraste #social-icons #sb_youtb {
-    background-image: url("images/icone-youtube.png");
+body.contraste #social-icons #sb_face:hover {
+    background: url("images/icone-branco-facebook.png") 0 20px;
 }
-body.contraste #social-icons #sb_tweet {
-    background-image: url("images/icone-twitter-branco.png");
-}
-body.contraste #social-icons #sb_flickr {
-    background-image: url("images/icone-flickr.png");
-}
-/*body.contraste #social-icons #sb_inst {
-    background-image: url("images/icone-instagram.png");
-}*/
 
+body.contraste #social-icons #sb_youtb {
+    background-image: url("images/icone-branco-youtube.png");
+}
+body.contraste #social-icons #sb_youtb:hover {
+    background: url("images/icone-branco-youtube.png") 0 20px;
+}
+
+body.contraste #social-icons #sb_tweet {
+    background-image: url("images/icone-branco-twitter.png");
+}
+body.contraste #social-icons #sb_tweet:hover {
+    background: url("images/icone-branco-twitter.png") 0 20px;
+}
+
+body.contraste #social-icons #sb_flickr {
+    background-image: url("images/icone-branco-flickr.png");
+}
+body.contraste #social-icons #sb_flickr:hover {
+    background: url("images/icone-branco-flickr.png") 0 20px;
+}
 
 
 /* Plugin para curtir artigos e comentários */

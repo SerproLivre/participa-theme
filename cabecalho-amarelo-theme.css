@@ -333,24 +333,32 @@ background-size: 100% 100%;
     margin-left: 4px;
 }
 
-#social-icons a:hover {
-    opacity: 0.6;
-}
-
 #social-icons #sb_face {
-background-image: url(images/icone-facebook-escuro.png);
+background-image: url(images/icone-verde-facebook.png);
+}
+#social-icons #sb_face:hover {
+background: url(images/icone-verde-facebook.png) 0 20px;
 }
 
 #social-icons #sb_tweet {
-background-image: url(images/icone-twitter-escuro.png);
+background-image: url(images/icone-verde-twitter.png);
+}
+#social-icons #sb_tweet:hover {
+background: url(images/icone-verde-twitter.png) 0 20px;
 }
 
 #social-icons #sb_youtb {
-background-image: url(images/icone-youtube-escuro.png);
+background-image: url(images/icone-verde-youtube.png);
+}
+#social-icons #sb_youtb:hover {
+background: url(images/icone-verde-youtube.png) 0 20px;
 }
 
 #social-icons #sb_flickr {
-background-image: url(images/icone-flickr-escuro.png);
+background-image: url(images/icone-verde-flickr.png);
+}
+#social-icons #sb_flickr:hover {
+background: url(images/icone-verde-flickr.png) 0 20px;
 }
 
 #social-icons span { display: none; }
