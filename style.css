@@ -70,7 +70,7 @@ body {
 	background-color: #fff;
 	color: #000000;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 62.5%;
+	/*font-size: 62.5%;*/
  /* with this 1em = 10px */;
 }
 
@@ -549,6 +549,17 @@ p {
  	background-image: none;
 }
 
+#comments_list a.display-comment-form {
+	 background: url("images/bg-btn-ver-mais-1px.png") repeat scroll 0 0 #EEEEEE;
+	 border-color: #ddd;
+ 	 margin: 14px;
+}
+
+#content .comment-header .comment-actions-reply{
+	 margin-right: 10px;
+    margin-top: 5px;
+}
+
 /* fim de comentário*/
 
 /*paginação*/
@@ -601,8 +612,8 @@ p {
 .action-home-index #content .display-content-block .title,
 .action-environment_design-index #content .display-content-block .title{
     clear: right;
-    float: left;
-    min-width: 40%;
+    float: right;
+    width: 440px;
 	 padding-right: 0;
 }
 .action-home-index #content .display-content-block .title a,
@@ -611,12 +622,22 @@ p {
     font-size: 34px;
 }
 
-.action-home-index #content .display-content-block .image,
+/*.action-home-index #content .display-content-block .image,
 .action-environment_design-index #content .display-content-block .image{
     float: left;
     max-width: 460px;
 	 margin-right: 24px;
 }
+*/
+.action-home-index #content .display-content-block .image, 
+.action-environment_design-index #content .display-content-block .image {
+    float: left;
+    height: 300px;
+    margin-right: 24px;
+    max-width: 460px;
+    width: 460px;
+}
+
 .action-home-index #content .display-content-block .image img,
 .action-environment_design-index #content .display-content-block .image img{
 	max-width: 460px;
@@ -630,10 +651,10 @@ p {
 .action-environment_design-index #content .display-content-block .lead{
     border-top: 1px solid #CCCCCC;
     clear: right;
-    float: left;
+    float: right;
     margin-top: 1em;
     padding-top: 1em;
-    width: 40%;
+    width: 440px;
 }
 
 .action-home-index #content .display-content-block .lead p,
@@ -649,22 +670,22 @@ p {
 .action-home-index #content .display-content-block .tags,
 .action-environment_design-index #content .display-content-block .tags{
     clear: right;
-    float: left;
-    min-width: 40%;
+    float: right;
+    width: 440px;
 }
 .action-home-index #content .display-content-block .published-at,
 .action-environment_design-index #content .display-content-block .published-at{
     clear: right;
-    float: left;
-    min-width: 40%;
+    float: right;
+    width: 440px;
 	 color: #666;
 	 font-size: 12px;
 }
 .action-home-index #content .display-content-block .read_more,
 .action-environment_design-index #content .display-content-block .read_more{
     clear: right;
-    float: left;
-    min-width: 40%;
+    float: right;
+    width: 440px;
 }
 
 /*Display Content em container na página inicial*/
@@ -709,6 +730,8 @@ p {
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image{
     float: none;
     width: 100%;
+	 max-height: 200px;
+	 max-width: 295px;
 	 text-align: center;
 	 margin-bottom: 1em;
 	 margin-right: 0;
@@ -891,14 +914,23 @@ p {
     width: 100%;
 }
 
-.action-home-index #content .block-outer .tags-block{
+.action-home-index #content .block-outer .tags-block,
+.action-home-index #content .block-outer .statistics-block {
     left: 0px;
     margin-left: 0;
     margin-top: 0;
     position: relative;
     width: 100%;
-
 }
+.action-home-index #content .statistics-block .statistics-block-data {
+    left: -480px;
+    margin-left: 50%;
+    position: relative;
+    text-align: center;
+    width: 960px;
+}
+
+
 
 
 /*data - evento*/
@@ -1697,23 +1729,25 @@ input.button.with-text {
     background-color: transparent;
     border-bottom: 0 solid #AAAAAA;
     border-top: 0 none;
-    left: -20px;
+    left: -24px;
     margin-bottom: 0;
-    margin-top: -44px;
+    margin-top: -47px;
     position: relative;
+	 top: 0px;
 }
 
 .action-home-index #content .box-1 .container-block-plugin_container-block .block-title, 
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .block-title {
     padding-left: 20px;
     padding-bottom: 11px;
+	 left: -20px;
 }
 /*título de container*/
 .action-home-index #content .box-1 .container-block-plugin_container-block .block .block-title, 
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .block .block-title {
     padding-left: 10px;
     padding-bottom: 24px;
-    top: 9px; 
+    top: 10px; 
     left: -11px;
 }
 /*título do bloco de pessoas dentro do container */
@@ -1721,9 +1755,23 @@ input.button.with-text {
 .action-environment_design-index #content .box-1 .container-block-plugin_container-block .people-block .block-title {
     padding-left: 10px;
     padding-bottom: 24px;
-/*teste*/  top: -5px; left: -23px;
+/*teste*/  top: -2px; left: -24px;
 }
 
+.action-home-index #content .box-1 .community-track-plugin_track-card-list-block .block-title, 
+.action-environment_design-index #content .box-1 .community-track-plugin_track-card-list-block .block-title {
+	top: 3px;
+}
+
+.action-home-index #content .box-1 .article-block,
+.action-environment_design-index #content .box-1 .article-block {
+    overflow: visible;
+}
+.action-home-index #content .box-1 .container-block-plugin_container-block .article-block .block-title, 
+.action-environment_design-index #content .box-1 .container-block-plugin_container-block .article-block .block-title {
+    left: -24px !important;
+    top: -2px !important;
+}
 
 .action-home-index #content .box-1 .block-title span,
 .action-environment_design-index #content .box-1 .block-title span {
@@ -1759,6 +1807,7 @@ input.button.with-text {
 .action-home-index .community-track-plugin_track-card-list-block .block-inner-2,
 .action-environment_design-index .community-track-plugin_track-card-list-block .block-inner-2 {
 	background: url("images/bg-bloco-de-trilhas.png") no-repeat scroll center top transparent;
+	padding: 8px 14px;
 }
 
 /**/
