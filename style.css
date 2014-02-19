@@ -2252,9 +2252,8 @@ body.contraste.action-environment_design-index #content .display-content-block .
 	color: #fff;
 }
 
-#content .breadcrumbs-plugin_content-breadcrumbs-block a, 
-#content .breadcrumbs-plugin_content-breadcrumbs-block a:visited
-
+body.contraste #content .breadcrumbs-plugin_content-breadcrumbs-block a, 
+body.contraste #content .breadcrumbs-plugin_content-breadcrumbs-block a:visited,
 body.contraste #content a:link, 
 body.contraste #content a:link,
 body.contraste #content a:visited,
