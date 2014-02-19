@@ -168,6 +168,22 @@ p {
     /*margin: 0;*/
 }
 
+.action-content_viewer-view_page #content .box-1 .block-title {
+    background: url("images/bg-titulo-interno.png") repeat-x scroll 0 0 #FFF;
+    border-bottom: medium none;
+    border-top: 0px solid #757575;
+    color: #757575;
+    font-size: 12px;
+    padding: 0px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.action-content_viewer-view_page #content .box-1 .block-title span{
+	background-color: #fff;
+	background-image: none;
+	padding: 0 1em 0 0;
+}
 
 /**/
 
@@ -313,7 +329,7 @@ p {
 
 #content .profile-info-options input.button:hover, 
 #content .profile-info-options a.button:hover {
-	 background-color: #dfdfdf;
+	 background-color: #ccc;
     border: 0px solid #CCC;
 }
 
@@ -487,6 +503,19 @@ p {
 	min-height: 100%;
 }
 
+/*btn comentários*/
+
+#content .blog-post .short-post .read-more a{
+	 text-decoration: none;
+	 background: url("images/bg-btn-ver-mais-1px.png") repeat-x scroll 0 0 #DDD;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    color: #666;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
 .comment-info {
 	line-height: 1em;
 	margin-top: 5px;
@@ -573,7 +602,7 @@ p {
     border-bottom: 0 none;
     color: white;
     display: inline-block;
-    font-size: medium;
+    font-size: 16px;
     font-weight: bold;
     height: 35px;
     padding-top: 4px;
@@ -587,7 +616,7 @@ p {
     border-bottom: 0 none;
     color: white;
     display: inline-block;
-    font-size: medium;
+    font-size: 16px;
     font-weight: bold;
     height: 35px;
     padding-top: 4px;
@@ -599,6 +628,7 @@ p {
 	background-image: none;
 	color: #ccc;
 	width: auto;
+	font-size: 16px;
 }
 
 /*fim paginação*/
@@ -1099,6 +1129,33 @@ input.button.with-text {
     text-decoration: none;
 }
 
+#content #article-actions input.button, 
+#content #article-actions a.button,
+#content a.button,
+#content input.button {
+    background-color: transparent;
+	 border: 1px solid #CCCCCC;
+	 vertical-align: middle;	
+}
+
+#content a.button.with-text {
+    line-height: 28px;
+	height: 30px;
+	max-height: 30px;
+}
+#content form input.button.submit {
+    height: 32px;
+    max-height: 32px;
+}
+
+#content #article-actions input.button:hover, 
+#content #article-actions a.button:hover {
+    background-color: #ccc;
+	 border: 1px solid #CCCCCC;
+	 color: white;
+}
+
+
 #content a.button:hover {
 	border: 0px solid #CCCCCC;
 }
@@ -1212,6 +1269,18 @@ input.button.with-text {
 
 /*fim de busca*/
 
+
+/*lista de pendencias*/
+.task_box {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 1em;
+    position: relative;
+}
+
+/*fim lista de pendencias*/
+
 /*nuvem de tags*/
 
 .action-home-index #content .tag_cloud {
@@ -1238,7 +1307,7 @@ input.button.with-text {
 
 .track_list .item_card {
     background-color: #FFFAFA;
-    border: 0px solid #DDDDDD;
+    border: 1px solid #DDDDDD;
     display: inline-block;
     float: left;
     clear: right;
@@ -1248,6 +1317,12 @@ input.button.with-text {
     padding: 0;
     width: 214px;
 }
+
+.action-home-index .track_list .item_card,
+.action-environment_design-index .track_list .item_card {
+    border: 0px solid #DDDDDD;
+}
+
 
 .track_list .item_card a{
 	display: inline-block;
@@ -1261,7 +1336,8 @@ input.button.with-text {
 .box-2 .track_list .item_card,
 .box-3 .track_list .item_card {
 	margin: 10px 0px;
-	width: 188px;
+	/*width: 188px;*/
+	width: 100%;
 }
 
 /**/
@@ -1285,8 +1361,6 @@ input.button.with-text {
     display: table-cell;
 	 height: 45px;
 }
-
-
 #content .track_list .item_card .track_content .image{
 	border: 1px solid #ddd;
 	width: 196px;
@@ -1295,6 +1369,11 @@ input.button.with-text {
 	margin: 8px;
 	background-color: #FFF;
   position: relative;
+}
+/*imagem nos track list nos blocos laterais*/
+#content .box-2 .track_list .item_card .track_content .image,
+#content .box-3 .track_list .item_card .track_content .image {
+	width: 170px;
 }
 
 .track_list .image img {
@@ -1331,6 +1410,12 @@ input.button.with-text {
 /**/
 
 /*track list Internas*/
+
+.track_list .item {
+	 border-bottom: 1px solid #DDDDDD;
+    display: inline-block;
+}
+
 .track_list .item .track_content .lead {
     float: left;
     padding: 2em;
@@ -1669,7 +1754,22 @@ input.button.with-text {
 	margin-right: 8px;
 }
 
-/*#content .tags-block .block-footer-content a, */#content .people-block .block-footer-content a, #content .profile-list-block .block-footer-content a, #content .enterprises-block .block-footer-content a, #content .members-block .block-footer-content a, #content .communities-block .block-footer-content a, #content .friends-block .block-footer-content a {
+/*#content .tags-block .block-footer-content a, */
+
+.action-home-index #content .people-block .block-footer-content a, 
+.action-home-index #content .profile-list-block .block-footer-content a, 
+.action-home-index #content .enterprises-block .block-footer-content a, 
+.action-home-index #content .members-block .block-footer-content a, 
+.action-home-index #content .communities-block .block-footer-content a, 
+.action-home-index #content .friends-block .block-footer-content a,
+
+.action-environment_design-index .people-block .block-footer-content a, 
+.action-environment_design-index .profile-list-block .block-footer-content a, 
+.action-environment_design-index .enterprises-block .block-footer-content a, 
+.action-environment_design-index .members-block .block-footer-content a, 
+.action-environment_design-index .communities-block .block-footer-content a, 
+.action-environment_design-index .friends-block .block-footer-content a {
+
     background: url("images/button-read-more-vazio.png") no-repeat scroll left 50% transparent;
     color: #000000;
     display: inline-block;
@@ -1679,6 +1779,23 @@ input.button.with-text {
     position: relative;
     text-align: left;
 	 font-family: Arial, sans-serif;
+}
+
+#content .tags-block .block-footer-content a, 
+#content .people-block .block-footer-content a, 
+#content .profile-list-block .block-footer-content a, 
+#content .enterprises-block .block-footer-content a, 
+#content .members-block .block-footer-content a, 
+#content .communities-block .block-footer-content a, 
+#content .friends-block .block-footer-content a {
+    background: url("images/bg-btn-ver-mais-1px.png") repeat-x scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: inline;
+    margin: 14px 0 14px 14px;
+    padding: 5px 15px;
+    position: relative;
+    top: 5px;
 }
 
 /*fim botoes ver todos*/
@@ -2058,19 +2175,54 @@ body.contraste .timeline a {
 
 /***********Imagem de Fundo - somente na página inicial*********/
 
-body.contraste #content .tags-block .block-footer-content a, 
-body.contraste #content .people-block .block-footer-content a, 
-body.contraste #content .profile-list-block .block-footer-content a, 
-body.contraste #content .enterprises-block .block-footer-content a, 
-body.contraste #content .members-block .block-footer-content a, 
-body.contraste #content .communities-block .block-footer-content a, 
-body.contraste #content .friends-block .block-footer-content a,
+
+body.contraste #barra-psocial{
+	background: url("images/barra-psocial-bg-contarste.png") repeat-x scroll left 50% #fff;
+}
+
+body.contraste #barra-psocial #cat_menu {
+	background-image: url("images/logo-PS-barra-pb.png");
+}
+
+body.contraste #user a,
+body.contraste #user a strong{
+	color: #ffff00;
+}
+
+body.contraste #content .box-2 .tags-block .block-footer-content a, 
+body.contraste #content .box-2 .people-block .block-footer-content a, 
+body.contraste #content .box-2 .profile-list-block .block-footer-content a, 
+body.contraste #content .box-2 .enterprises-block .block-footer-content a, 
+body.contraste #content .box-2 .members-block .block-footer-content a, 
+body.contraste #content .box-2 .communities-block .block-footer-content a, 
+body.contraste #content .box-2 .friends-block .block-footer-content a,
 body.contraste #content .more_button .view_all a, 
 body.contraste #content .read_more a,
 body.contraste .more_button .view_all a, 
 body.contraste .read_more a
 {
-    background: url("images/button-read-more-vazio-contraste.png") no-repeat scroll left 50% transparent;
+    background-image: none;
+	 background-color: #333;
+	 color: #ffff00;
+}
+
+body.contraste.action-home-index #content .article-block .short-post .read-more a,
+body.contraste #content .box-1 .tags-block .block-footer-content a, 
+body.contraste #content .box-1 .people-block .block-footer-content a, 
+body.contraste #content .box-1 .profile-list-block .block-footer-content a, 
+body.contraste #content .box-1 .enterprises-block .block-footer-content a, 
+body.contraste #content .box-1 .members-block .block-footer-content a, 
+body.contraste #content .box-1 .communities-block .block-footer-content a, 
+body.contraste #content .box-1 .friends-block .block-footer-content a,
+body.contraste #content .more_button .view_all a, 
+body.contraste #content .read_more a,
+body.contraste .more_button .view_all a, 
+body.contraste .read_more a
+{
+    background: url("images/button-read-more-vazio-contraste.png") no-repeat scroll left 50% #333;
+	 color: #ffff00;
+	 border: 0px;
+	 border-radius: 0px;
 }
 
 body.contraste a,
@@ -2093,26 +2245,34 @@ body.contraste .nitfByline,
 body.contraste p.section,
 body.contraste .track_list .item_card .track_stats .hits .label, 
 body.contraste .track_list .item_card .track_stats .comments .label,
-body.contraste .action-home-index #content .display-content-block .lead p,
-body.contraste .action-environment_design-index #content .display-content-block .lead p {
+body.contraste.action-home-index #content .display-content-block .lead p,
+body.contraste.action-environment_design-index #content .display-content-block .lead p,
+body.contraste.action-home-index #content .display-content-block .published-at, 
+body.contraste.action-environment_design-index #content .display-content-block .published-at {
 	color: #fff;
 }
 
-
+#content .breadcrumbs-plugin_content-breadcrumbs-block a, 
+#content .breadcrumbs-plugin_content-breadcrumbs-block a:visited
 
 body.contraste #content a:link, 
 body.contraste #content a:link,
+body.contraste #content a:visited,
 body.contraste #content a {
     color: #ffff00;
 }
 
+
+body.contraste.action-home-index #content .container-block-plugin_container-block .display-content-block .title a, 
+body.contraste.action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a,
+
 body.contraste #content .display-content-block .title a,
 body.contraste #content .track_list .item_card .track_content .name,
 body.contraste .action-home-index #content .container-block-plugin_container-block .display-content-block .title a,
-body.contraste .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a {
+body.contraste .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .title a,
+body.contraste #content .track_list .item .track_content .lead a {
     color: #ffff00;
 }
-
 
 
 body.contraste.action-home-index #wrap-2,
@@ -2138,7 +2298,7 @@ body.contraste.action-home-index #content .tags-block .block-inner-2, body.contr
 }
 
 body.contraste.action-home-index #content .box-1 .block-title span, body.contraste.action-environment_design-index #content .box-1 .block-title span {
-    color: #497B16;
+    color: #000;
     background-color: white;
 }
 
@@ -2151,8 +2311,12 @@ body.contraste #content .box .block-title {
     background-color: #333;
 }
 
+body.contraste.action-home-index .container-block-plugin_container-block .container-block-plugin_container-block, 
+body.contraste.action-environment_design-index .container-block-plugin_container-block .container-block-plugin_container-block,
 body.contraste.action-home-index #content .box .block-title,
-body.action-environment_design-index #content .box .block-title {
+body.contraste.action-environment_design-index #content .box .block-title,
+body.contraste .container-block-plugin_container-block .block .block-inner-2,
+body.contraste #footer-content {
     background-color: transparent;
 }
 
@@ -2168,12 +2332,25 @@ body.contraste #content .link-list-block li a:hover {
 	 color: #ffff00;
 }
 
+body.contraste #content .profile-info-options input.button.with-text, 
+body.contraste #content .profile-info-options a.button.with-text{
+    background-color: #333;
+	 color: #ffff00;
+}
+
+body.contraste.action-content_viewer-view_page #content .box-1 .block-title span {
+	background-color: #000;
+	color: white;
+}
+
 body.contraste #content .article-comment {
     background: none repeat scroll 0 0 #000;
 }
 
 body.contraste #comments_list .comment-info, 
-body.contraste #comments_list .comment-created-at{
+body.contraste #comments_list .comment-created-at,
+body.contraste #footer-license a,
+body.contraste #footer-license p{
 	color: #ffff00;
 }
 
@@ -2215,7 +2392,7 @@ body.contraste .ui-widget-header .ui-state-active {
 }
 
 body.contraste #footer-logos {
-    background-color: #000;
+    background-color: #222;
 }
 
 body.contraste #theme-header .header-content #link-faq a {
@@ -2255,6 +2432,13 @@ body.contraste #social-icons #sb_flickr:hover {
 }
 
 
+/*botão rss*/
+#article .blog-feed-link {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
 /* Plugin para curtir artigos e comentários */
 
 .action .dislike:before {
@@ -2290,4 +2474,23 @@ body.contraste #social-icons #sb_flickr:hover {
     right: 0;
     top: 0;
 }
+
+#article .action .vote-detail li {
+    display: inline-block;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-left: 0;
+    text-align: left;
+}
+
+#article .action .vote-detail li a span{
+    float: left;
+    margin-left: 5px;
+    width: 85px;
+}
+#article .action .vote-detail li a img {
+	float: left;
+}
+
+
 
