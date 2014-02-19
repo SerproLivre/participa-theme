@@ -536,9 +536,14 @@ p {
     padding: 0;
 }
 
+#content .comment-picture {
+    max-width: 50px;	
+	 word-wrap: break-word;
+}
+
 .comment-replies .comment-picture {
     height: auto;
-    max-width: 40px;
+    max-width: 50px;
 	 overflow: visible;
 }
 
