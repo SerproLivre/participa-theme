@@ -2043,8 +2043,8 @@ input.button.with-text {
 	vertical-align: middle;
 }
 
-.friends-block .common-profile-list-block .profile-image span.fn {
-margin-top: 5px;
+.friends-block .common-profile-list-block .profile_link span.fn {
+	margin-top: 5px;
 }
 
 /*fim alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
