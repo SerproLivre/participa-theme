@@ -330,7 +330,7 @@ p {
 #content .profile-info-options input.button:hover, 
 #content .profile-info-options a.button:hover {
 	 background-color: #ccc;
-    border: 0px solid #CCC;
+    border: 1pxpx solid #CCC;
 }
 
 
@@ -851,6 +851,7 @@ p {
 
 .common-profile-list-block {
     display: inline-block;
+	 vertical-align: top;
 }
 
 #search-results .common-profile-list-block {
@@ -1162,7 +1163,7 @@ input.button.with-text {
 
 
 #content a.button:hover {
-	border: 0px solid #CCCCCC;
+	border: 1px solid #CCCCCC;
 }
 
 /*label dos radio buttons da busca*/
@@ -2027,6 +2028,21 @@ input.button.with-text {
 .action-environment_design-index .box-1 .common-profile-list-block span{
 	width: auto;
 }
+
+/*alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
+.people-block .common-profile-list-block span span.helper,
+.friends-block .common-profile-list-block span span.helper{
+    display: inline-block;
+    height: 56px;
+    vertical-align: middle;
+    width: 0;
+}
+
+.people-block .common-profile-list-block img,
+.friends-block .common-profile-list-block img {
+	vertical-align: middle;
+}
+/*fim alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
 
 .action-home-index .box-1 .common-profile-list-block span.banner-span,
 .action-environment_design-index .box-1 .common-profile-list-block span.banner-span{
