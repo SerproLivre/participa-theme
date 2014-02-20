@@ -2040,11 +2040,19 @@ input.button.with-text {
 
 .people-block .common-profile-list-block img,
 .friends-block .common-profile-list-block img {
-	vertical-align: middle;
+	 margin-bottom: 5px;
+    vertical-align: bottom;
 }
 
 .friends-block .common-profile-list-block .profile_link span.fn {
-	margin-top: 5px;
+/*	margin-top: 5px;*/
+}
+
+.box-2 .common-profile-list-block .profile-image, 
+.box-3 .common-profile-list-block .profile-image{
+/*	 border: 1px solid #CCCCCC;
+    height: 100%;
+    margin: -1px;*/
 }
 
 /*fim alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
