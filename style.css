@@ -2044,6 +2044,11 @@ input.button.with-text {
     vertical-align: top;
 }
 
+.action-home-index .people-block .common-profile-list-block img,
+.action-environment_design-index .people-block .common-profile-list-block img {
+    vertical-align: middle;
+}
+
 .friends-block .common-profile-list-block .profile_link span.fn {
 /*	margin-top: 5px;*/
 }
