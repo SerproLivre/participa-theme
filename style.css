@@ -2042,6 +2042,11 @@ input.button.with-text {
 .friends-block .common-profile-list-block img {
 	vertical-align: middle;
 }
+
+.friends-block .common-profile-list-block .profile-image span.fn {
+margin-top: 5px;
+}
+
 /*fim alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
 
 .action-home-index .box-1 .common-profile-list-block span.banner-span,
