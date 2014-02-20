@@ -168,7 +168,7 @@ p {
     /*margin: 0;*/
 }
 
-.action-content_viewer-view_page #content .box-1 .block-title {
+#content .box-1 .block-title {
     background: url("images/bg-titulo-interno.png") repeat-x scroll 0 0 #FFF;
     border-bottom: medium none;
     border-top: 0px solid #757575;
@@ -179,10 +179,22 @@ p {
     text-transform: uppercase;
 }
 
-.action-content_viewer-view_page #content .box-1 .block-title span{
+#content .box-1 .block-title span{
 	background-color: #fff;
 	background-image: none;
 	padding: 0 1em 0 0;
+}
+
+.action-home-index #content .box-1 .block-title,
+.action-environment_design-index #content .box-1 .block-title {
+    background: none repeat-x scroll 0 0 transparent;
+    padding: 8px 8px 24px 10px;
+
+}
+
+.action-home-index #content .box-1 .block-title span,
+.action-environment_design-index #content .box-1 .block-title span {
+	background-image: none;
 }
 
 /**/
@@ -628,6 +640,16 @@ p {
     text-decoration: none;
     width: 35px;
 }
+
+#content .pagination a.prev_page,
+#content .pagination a.next_page{
+    background-image: none;
+    color: #888888;
+    font-size: 14px;
+    width: auto;
+}
+
+
 #content #article .pagination .next_page,
 #content #article .pagination .prev_page{
 	background-image: none;
@@ -1070,6 +1092,8 @@ div#article-parent {
 
 .pagination .prev_page{margin-right: 0.5em; font-weight: bold;}
 .pagination .next_page{margin-left: 0.5em; font-weight: bold;}
+
+
 
 #public-profile-search, #profile-search-results form, .profile-search-block form {
  background-color: transparent;
@@ -2031,7 +2055,8 @@ input.button.with-text {
 
 /*alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
 .people-block .common-profile-list-block span span.helper,
-.friends-block .common-profile-list-block span span.helper{
+.friends-block .common-profile-list-block span span.helper,
+.search-results-people .common-profile-list-block span span.helper{
     display: inline-block;
     height: 56px;
     vertical-align: middle;
@@ -2039,7 +2064,8 @@ input.button.with-text {
 }
 
 .people-block .common-profile-list-block img,
-.friends-block .common-profile-list-block img {
+.friends-block .common-profile-list-block img,
+.search-results-people .common-profile-list-block img {
 	 margin-bottom: 5px;
     vertical-align: top;
 }
@@ -2060,6 +2086,7 @@ input.button.with-text {
     height: 100%;
     margin: -1px;*/
 }
+
 
 /*fim alinhamento da imagem de pessoas nos blocos - incluindo página inicial*/
 
