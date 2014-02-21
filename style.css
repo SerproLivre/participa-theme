@@ -336,7 +336,8 @@ p {
     text-align: left;	 
 }
 #content .profile-info-options a.button.with-text{
-	border-bottom: 1px solid #CCCCCC !important;
+	border: 0px solid #CCCCCC;
+	border-bottom: 2px solid #CCCCCC !important;
 }
 
 #content .profile-info-options input.button:hover, 
