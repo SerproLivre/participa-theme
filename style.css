@@ -872,9 +872,14 @@ p {
     width: 99px;
 }
 
-.common-profile-list-block {
+.common-profile-list-block,
+ul.profile-list .common-profile-list-block {
     display: inline-block;
 	 vertical-align: top;
+}
+
+.main-block .common-profile-list-block {
+    display: block;
 }
 
 #search-results .common-profile-list-block {
@@ -1098,6 +1103,13 @@ div#article-parent {
 
 #public-profile-search, #profile-search-results form, .profile-search-block form {
  background-color: transparent;
+}
+
+#public-profile-search .search-field .formfield {
+	float: left;
+}
+#public-profile-search .search-field .formfield input {
+	margin-top: 0px;
 }
 
 .formfield input, .formfield textarea{
