@@ -2657,3 +2657,7 @@ body.action-embed-index {
   margin-top: 12px;
   background: url(images/instagram-widget.png) no-repeat;
 }
+
+.instagram_widget {
+  margin-top: 15px;
+}
