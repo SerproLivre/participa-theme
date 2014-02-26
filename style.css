@@ -2640,24 +2640,23 @@ body.action-embed-index {
 }
 
 /** Bloco de redes sociais **/
-.twitter_widget_topo {
+.social_widget .social_header {
   height: 27px;
   margin-top: 12px;
+}
+
+.social_widget.twitter {
   background: url(images/twitter-widget.png) no-repeat;
 }
 
-.facebook_widget_topo {
-  height: 27px;
-  margin-top: 12px;
+.social_widget.facebook {
   background: url(images/facebook-widget.png) no-repeat;
 }
 
-.instagram_widget_topo {
-  height: 27px;
-  margin-top: 12px;
+.social_widget.instagram {
   background: url(images/instagram-widget.png) no-repeat;
 }
 
-.instagram_widget {
+.social_widget.instagram .social_content {
   margin-top: 15px;
 }
