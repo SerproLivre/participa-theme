@@ -2637,3 +2637,14 @@ body.action-embed-index {
   background: url("images/bg-bloco-de-trilhas.png") no-repeat scroll center top transparent;
 }
 
+/** Bloco de redes sociais **/
+.twitter_widget_topo {
+  height: 50px;
+  background-image: url(images/twitter-widget.png);
+}
+
+.facebook_widget_topo {
+  height: 50px;
+  background-image: url(images/facebook-widget.png);
+}
+
