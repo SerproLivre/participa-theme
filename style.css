@@ -2639,12 +2639,12 @@ body.action-embed-index {
 
 /** Bloco de redes sociais **/
 .twitter_widget_topo {
-  height: 50px;
+  height: 27px;
   background: url(images/twitter-widget.png) no-repeat;
 }
 
 .facebook_widget_topo {
-  height: 50px;
+  height: 27px;
   background: url(images/facebook-widget.png) no-repeat;
 }
 
