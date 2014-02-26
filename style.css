@@ -2652,3 +2652,8 @@ body.action-embed-index {
   background: url(images/facebook-widget.png) no-repeat;
 }
 
+.instagram_widget_topo {
+  height: 27px;
+  margin-top: 12px;
+  background: url(images/instagram-widget.png) no-repeat;
+}
