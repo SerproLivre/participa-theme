@@ -2619,24 +2619,29 @@ body.action-embed-index {
   background-color: transparent;
   border-bottom: 0 solid #AAAAAA;
   border-top: 0 none;
-  left: -20px;
+  left: -12px;
   margin-bottom: 0;
-  margin-top: -44px;
+  margin-top: -38px;
   position: relative;
 }
 
 .action-embed-index #content .box-1 .block-title span {
-    background-color: #497b16;
-    color: white;
-    font-size: 18px;
-    font-variant: normal;
-    padding: 6px 1em;
-    text-align: left;
+  background-color: #497b16;
+  color: white;
+  font-size: 18px;
+  font-variant: normal;
+  padding: 6px 1em;
+  text-align: left;
 }
 
 /******** BLOCK => TRACK CARD LIST *********/
 .action-embed-index .community-track-plugin_track-card-list-block .block-inner-2 {
   background: url("images/bg-bloco-de-trilhas.png") no-repeat scroll center top transparent;
+}
+
+.action-embed-index .community-track-plugin_track-card-list-block .track_list {
+  text-align: center;
+  padding: 22px 0px 0px 0px;
 }
 
 /** Bloco de redes sociais **/
