@@ -2642,11 +2642,13 @@ body.action-embed-index {
 /** Bloco de redes sociais **/
 .twitter_widget_topo {
   height: 27px;
+  margin-top: 12px;
   background: url(images/twitter-widget.png) no-repeat;
 }
 
 .facebook_widget_topo {
   height: 27px;
+  margin-top: 12px;
   background: url(images/facebook-widget.png) no-repeat;
 }
 
