@@ -2144,7 +2144,9 @@ input.button.with-text {
 }
 
 .action-home-index .people-block .block-inner-2,
-.action-environment_design-index .people-block .block-inner-2{
+.action-home-index .common-profile-list-block .block-inner-2,
+.action-environment_design-index .people-block .block-inner-2,
+.action-environment_design-index .common-profile-list-block .block-inner-2{
     margin-left: 14px;
 }
 
