@@ -2640,6 +2640,10 @@ body.action-embed-index {
 }
 
 /** Bloco de redes sociais **/
+.social_widget {
+  .margin-left: 5px;
+}
+
 .social_widget .social_header {
   height: 27px;
   margin-top: 12px;
