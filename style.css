@@ -354,7 +354,7 @@ p {
 
 .action-home-index .communities-block .common-profile-list-block,
 .action-environment_design-index .communities-block .common-profile-list-block {
-  margin: 5px 7px 5px 6px;
+  margin: 0;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -2058,7 +2058,7 @@ input.button.with-text {
 }
 .action-home-index .communities-block .common-profile-list-block .vcard,
 .action-environment_design-index .communities-block .common-profile-list-block .vcard {
-	width: 99px;
+	width: 95px;
 }
 
 .action-home-index .box-1 .common-profile-list-block span,
