@@ -366,7 +366,7 @@ p {
 
 .action-home-index .communities-block .common-profile-list-block,
 .action-environment_design-index .communities-block .common-profile-list-block {
-  margin: 5px 7px 5px 6px;
+  margin: 0;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -1923,8 +1923,8 @@ input.button.with-text {
     left: -11px;
 }
 /*título do bloco de pessoas dentro do container */
-.action-home-index #content .box-1 .container-block-plugin_container-block .people-block .block-title, 
-.action-environment_design-index #content .box-1 .container-block-plugin_container-block .people-block .block-title {
+.action-home-index #content .box-1 .container-block-plugin_container-block .block .block-title, 
+.action-environment_design-index #content .box-1 .container-block-plugin_container-block .block .block-title {
     padding-left: 10px;
     padding-bottom: 24px;
 /*teste*/  top: -2px; left: -24px;
@@ -2070,7 +2070,7 @@ input.button.with-text {
 }
 .action-home-index .communities-block .common-profile-list-block .vcard,
 .action-environment_design-index .communities-block .common-profile-list-block .vcard {
-	width: 99px;
+	width: 88px;
 }
 
 .action-home-index .box-1 .common-profile-list-block span,
@@ -2156,7 +2156,9 @@ input.button.with-text {
 }
 
 .action-home-index .people-block .block-inner-2,
-.action-environment_design-index .people-block .block-inner-2{
+.action-home-index .communities-block .block-inner-2,
+.action-environment_design-index .people-block .block-inner-2,
+.action-environment_design-index .communities-block .block-inner-2{
     margin-left: 14px;
 }
 
@@ -2584,4 +2586,98 @@ body.contraste #social-icons #sb_flickr:hover {
 }
 
 
+/*****************************************************/
+/*                  EMBED CSS                        */
+/*****************************************************/
+body.action-embed-index {
+  background-color: #f0f0f0;
+}
 
+#embed {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+}
+
+.action-embed-index #boxes,
+.action-embed-index .box-1 .blocks,
+.action-embed-index .block-outer, 
+.action-embed-index #content .block {
+  margin: 0px;
+}
+
+.action-embed-index #wrap-1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.action-embed-index #wrap-2 {
+  border: 0px solid #F00;
+  padding: 0px;
+  background-color: #EEE;
+  margin: 0px;
+}
+
+.action-embed-index .block .block-inner-2 {
+  background-color: white;
+  padding: 1em;
+  margin: 0;
+}
+
+.action-embed-index #content .box-1 .block-title {
+  background-color: transparent;
+  border-bottom: 0 solid #AAAAAA;
+  border-top: 0 none;
+  left: -12px;
+  margin-bottom: 0;
+  margin-top: -38px;
+  position: relative;
+}
+
+.action-embed-index #content .box-1 .block-title span {
+  background-color: #497b16;
+  color: white;
+  font-size: 18px;
+  font-variant: normal;
+  padding: 6px 1em;
+  text-align: left;
+}
+
+/******** BLOCK => TRACK CARD LIST *********/
+.action-embed-index .community-track-plugin_track-card-list-block .block-inner-2 {
+  background: url("images/bg-bloco-de-trilhas.png") no-repeat scroll center top transparent;
+}
+
+.action-embed-index .community-track-plugin_track-card-list-block .track_list {
+  text-align: center;
+  padding: 22px 0px 0px 0px;
+}
+
+/** Bloco de redes sociais **/
+.social_widget {
+  margin-left: 5px;
+}
+
+.social_widget .social_header {
+  height: 27px;
+  margin-top: 12px;
+}
+
+.social_widget.twitter {
+  background: url(images/twitter-widget.png) no-repeat;
+}
+
+.social_widget.facebook {
+  background: url(images/facebook-widget.png) no-repeat;
+}
+
+.social_widget.instagram {
+  background: url(images/instagram-widget.png) no-repeat;
+}
+
+.social_widget.instagram .social_content {
+  margin-top: 15px;
+}
