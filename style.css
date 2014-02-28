@@ -1849,6 +1849,7 @@ input.button.with-text {
 .action-home-index #content,
 .action-environment_design-index #content {
  margin-bottom: -105px;
+  border: 1px solid #000;
 }
 
 
@@ -2668,4 +2669,12 @@ body.action-embed-index {
 
 .social_widget.instagram .social_content {
   margin-top: 15px;
+}
+
+#content .no-boxes #main-content-wrapper-8 {
+  padding: 10px 10px;
+}
+
+#content .no-boxes #main-content-wrapper-8 .all_tracks {
+  padding-left: 2px;
 }
