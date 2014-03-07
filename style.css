@@ -819,7 +819,7 @@ p {
 .action-environment_design-index #content .container-block-plugin_container-block .display-content-block .image img {
 	height: 100%;
 	max-height: 200px;
-	max-width: 295px;
+	width: 100%;
 }
 
 
