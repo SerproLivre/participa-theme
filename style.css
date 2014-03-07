@@ -2689,3 +2689,21 @@ body.action-embed-index {
 #content .no-boxes #main-content-wrapper-8 .all_tracks {
   padding-left: 2px;
 }
+
+/* chat {{{ */
+
+#chat .toolbar {
+  background-color: #F8C300;
+  border: 2px solid #F8C300;
+}
+
+#chat #environment-logo {
+  background-color: #FCDD4E;
+}
+
+#chat #buddy-list,
+#chat #occupant-list {
+  background-color: #EEE;
+}
+
+/* }}} */
