@@ -2245,6 +2245,105 @@ input.button.with-text {
 /* Fim Bloco Estatistica */
 
 
+/*Pairwise*/
+
+#pairwise_main {
+	text-align: center;
+}
+
+#pairwise_main p {
+	background-color: white;
+	color: #131313;
+}
+
+#pairwise_main p.right {
+	text-align: right;
+	display: block;
+	padding: 14px;
+}
+
+/*tirar a barra vertical | separando os #pairwise_main p.right a */
+
+#pairwise_main p.right a{
+	color: #b3c4a6;
+	font-size: 14px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#pairwise_main p.right a.active{
+	color: #497b16;
+}
+
+#pairwise_main div.prompt {
+	background-color: #D0E2BF;
+	border-width: 0px;
+	max-width: 360px;
+	min-height: 190px;
+}
+
+#pairwise_main div.skip_vote {
+	width: 95%;
+	background-color: #7d8874;
+	font-size: 15px;
+	color: #fff;
+}
+
+#pairwise_main div.show_new_idea_box {
+	display: none !important;
+}
+
+#pairwise_main div#suggestions_box {
+	display: block !important;
+}
+
+#suggestions_box .suggestion_header {
+	display: none;
+}
+
+#pairwise_main div#suggestions_box #new_idea_button {
+    background: url("images/botao-enviar-pairwise.png") no-repeat top center #CCCCCC;
+    border-radius: 0px;
+    cursor: pointer;
+    display: block;
+    min-height: 71px;
+    padding: 5px 10px;
+    width: 93px;
+}
+
+/*Colocar "#idea_text" e "div.jqEasyCounterMsg" em uma div separada (se possível com uma classe diferente) (div A)*/
+/*Colocar essa nova div e a div que tem o botão "#new_idea_button" em uma nova div (div B)*/
+
+/*
+Deve ficar mais ou menos assim:
+
+
+<div id="suggestion_box_fields">
+		<div class="error">
+	       
+	    </div>
+	    <div class="notice">
+	    </div>
+	<div class="(div B)"> 
+		<div class="(div A)">
+	    <textarea placeholder="Digite aqui sua idéia" cols="40" rows="4" id="idea_text" maxlenght="160" name="idea[text]"></textarea>
+			<div class="jqEasyCounterMsg" style="font-size: 100%; font-family: inherit; color: rgb(0, 0, 0); text-align: right; width: 100%; opacity: 1;">131</div>
+		</div>
+
+	    <div style="width: 100%; text-align: center; display: inline;">
+	      <input type="submit" value="Enviar sugestão" id="new_idea_button" class="button with-text icon- submit" name="commit">
+	    </div>
+	</div>
+
+	  </div>
+
+Precisamos adicionar alguns elementos como o botão "escolher esta contribuição" dentro do prompt e o logo do usuário no canto superior direito.
+Devo chegar cedo na segunda feira para terminar o css.
+
+*/
+
+
+/*Fim Pairwise*/
+
 /*:::::::::::Acessibilidade:::::::::::*/
 /************* Contraste *************/
 
