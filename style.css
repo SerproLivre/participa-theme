@@ -2321,7 +2321,7 @@ input.button.with-text {
 
 #pairwise_main .skip_vote_reasons ul li a {color: white;}
 
-#pairwise_main #suggestions_box {}
+#pairwise_main #suggestions_box {display: block !important;}
 
 #pairwise_main #suggestions_box span {}
 
