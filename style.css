@@ -2272,13 +2272,12 @@ input.button.with-text {
 	color: #497B16;
 	background-color: #ECF2E7;
 	border-radius: 10px 10px 0 0;
-	border: 1px solid #497B16;
+	border: 1px solid #b3c4a6;
 	border-bottom: 0px;
 }
 
 #pairwise_main .pairwise_content {
     background-color: #ECF2E7;
-    display: inline-block;
     padding: 1em;
 }
 
@@ -2308,17 +2307,20 @@ input.button.with-text {
 }
 
 #pairwise_main .skip_vote {
-	width: 95%;
-	background-color: #7d8874;
+	width: 100%;
+	background-color: #7D8874;
 	font-size: 15px;
 	color: #fff;
+	padding: 1em 0 !important;
 }
 
 #pairwise_main .skip_vote_reasons {}
 
-#pairwise_main .skip_vote_reasons ul {}
+#pairwise_main .skip_vote_reasons ul {margin: 0; padding: 1em;}
 
-#pairwise_main .skip_vote_reasons ul li {}
+#pairwise_main .skip_vote_reasons ul li {color: white; padding: 0.5em 0.5em 0.5em 2em; text-align: left;}
+
+#pairwise_main .skip_vote_reasons ul li a {color: white;}
 
 #pairwise_main #suggestions_box {}
 
