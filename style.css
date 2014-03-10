@@ -2295,7 +2295,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt {
-	background-color: #D0E2BF;
+	background-color: #D0E2BF !important;
 	border-width: 0px;
 	max-width: 360px;
 	min-height: 190px;
