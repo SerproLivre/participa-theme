@@ -2295,7 +2295,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt {
-	background-color: #D0E2BF !important;
+	background-color: #cfe1bf !important;
 	border-width: 0px;
 	max-width: 360px;
 	min-height: 190px;
@@ -2368,7 +2368,7 @@ input.button.with-text {
 
 #pairwise_main #suggestion_box_fields {}
 
-#pairwise_main .div_text_input_container {}
+#pairwise_main .div_text_input_container {width: 100%;}
 
 #pairwise_main .div_text_input_container .div_text_input {
     display: inline-block;
@@ -2377,10 +2377,10 @@ input.button.with-text {
 
 #pairwise_main .div_text_input_container .div_text_input textarea {    
 	 border: 1px solid #CCCCCC;
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
 }
 
-#pairwise_main .div_text_input_container .div_text_input .jqEasyCounterMsg {}
+#pairwise_main .div_text_input_container .div_text_input .jqEasyCounterMsg {color: #7D8874 !important;font-size: 13px;}
 
 #pairwise_main .div_text_input_container .suggest_idea_btn {
     display: inline-block;
