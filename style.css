@@ -2301,7 +2301,7 @@ input.button.with-text {
 	min-height: 190px;
 }
 
-#pairwise_main .prompt:first-of-type {
+#pairwise_main .prompt.left {
 	background-image: none;
 	background-color: #D0E2BF;
 }
