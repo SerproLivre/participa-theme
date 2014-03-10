@@ -2306,11 +2306,33 @@ input.button.with-text {
 }
 
 #pairwise_main .skip_vote {
-	width: 100%;
-	background-color: #7D8874;
-	font-size: 15px;
+	width: 100% !important;
+	background-color: #7D8874 !important;
+	font-size: 15px !important;
 	color: #fff;
 	padding: 1em 0 !important;
+
+/*cópia do css do plugin*/
+/*
+    background-color: #CCCCCC;
+    border-color: #CCCCCC;
+    border-radius: 7px 7px 7px 7px;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    float: none;
+    font-size: 12pt;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    min-height: 18px;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: top;
+    word-wrap: break-word;
+*/
+
 }
 
 #pairwise_main .skip_vote_reasons {}
@@ -2321,9 +2343,20 @@ input.button.with-text {
 
 #pairwise_main .skip_vote_reasons ul li a {color: white;}
 
-#pairwise_main #suggestions_box {display: block !important;}
+#pairwise_main #suggestions_box {
+	display: block !important;
+   margin-top: 15px;
+   padding: 10px;
+	text-align: left;
+}
 
-#pairwise_main #suggestions_box span {}
+#pairwise_main #suggestions_box span {
+    color: #4B7421;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
 
 #pairwise_main .suggestion_form {}
 
@@ -2331,13 +2364,24 @@ input.button.with-text {
 
 #pairwise_main .div_text_input_container {}
 
-#pairwise_main .div_text_input_container .div_text_input {}
+#pairwise_main .div_text_input_container .div_text_input {
+    display: inline-block;
+    width: 80%;
+}
 
-#pairwise_main .div_text_input_container .div_text_input textarea {}
+#pairwise_main .div_text_input_container .div_text_input textarea {    
+	 border: 1px solid #CCCCCC;
+    border-radius: 0 0 0 0;
+}
 
 #pairwise_main .div_text_input_container .div_text_input .jqEasyCounterMsg {}
 
-#pairwise_main .div_text_input_container .suggest_idea_btn {}
+#pairwise_main .div_text_input_container .suggest_idea_btn {
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: top;
+    width: 14%;
+}
 
 #pairwise_main .div_text_input_container .suggest_idea_btn input#new_idea_button{
     background: url("images/botao-enviar-pairwise.png") no-repeat top center #CCCCCC;
