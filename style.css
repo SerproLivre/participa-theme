@@ -2254,6 +2254,7 @@ input.button.with-text {
 #pairwise_main ul.pairwise_menu {
 	background-color: white;
 	color: #ECF2E7;
+	text-align: right;
 }
 
 #pairwise_main ul.pairwise_menu li {
@@ -2261,16 +2262,38 @@ input.button.with-text {
 }
 
 #pairwise_main ul.pairwise_menu li a {
-	color: #497b16;
+    color: #b3c4a6;
+    font-size: 14px;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#pairwise_main ul.pairwise_menu li a:hover{
+	color: #497B16;
+	background-color: #ECF2E7;
+	border-radius: 10px 10px 0 0;
+	border: 1px solid #497B16;
+	border-bottom: 0px;
 }
 
 #pairwise_main .pairwise_content {
-	background-color: #ECF2E7;
+    background-color: #ECF2E7;
+    display: inline-block;
+    padding: 1em;
 }
 
-#pairwise_main .pairwise_body {}
+#pairwise_main .pairwise_body {
+    background-color: white;
+    display: block;
+    margin: 1em;
+    padding: 1em;
+	 font-size: 22px;
+}
 
-#pairwise_main .pairwise_call_for_action {}
+#pairwise_main .pairwise_call_for_action {
+    color: #4B7421;
+    font-size: 14px;
+}
 
 #pairwise_main .prompt {
 	background: url("images/prompt_bg.png") no-repeat top center #548A1C;
@@ -2279,7 +2302,7 @@ input.button.with-text {
 	min-height: 190px;
 }
 
-#pairwise_main .prompt.outra {
+#pairwise_main .prompt:first-of-type {
 	background-image: none;
 	background-color: #D0E2BF;
 }
