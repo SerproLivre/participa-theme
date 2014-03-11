@@ -2312,7 +2312,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt a{
-	color: #2a2d28;
+	color: #2a2d28 !important;
 	/*font-size: 14px;*/
 	font-size: 12px;/*rEDUZIDO PARA CABER 160 CARACTERES.*/
 	display: block;
