@@ -2299,7 +2299,7 @@ input.button.with-text {
 
 #pairwise_main .prompt {
 	/*background-color: #cfe1bf !important;*/
-	background: url("images/prompt_bg_normal.png") no-repeat top center #cfe1bf;
+	background: url("images/prompt_bg_normal.png") no-repeat center top #cfe1bf;
 	border-width: 0px;
    max-width: 369px;
    height: 170px !important;
@@ -2308,7 +2308,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt:hover {
-	background: url("images/prompt_bg_hover.png") no-repeat top center #548A1C;
+	background: url("images/prompt_bg_hover.png") no-repeat center top #548A1C;
 }
 
 #pairwise_main .prompt a{
