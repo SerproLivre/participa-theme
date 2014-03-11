@@ -2306,6 +2306,11 @@ input.button.with-text {
 	background: url("images/prompt_bg.png") no-repeat top center #548A1C;
 }
 
+#pairwise_main .prompt a{
+	color: #2a2d28;
+	font-size: 14px;
+}
+
 #pairwise_main .separator {
     display: inline-block;
     float: none;
