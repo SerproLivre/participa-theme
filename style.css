@@ -2366,7 +2366,7 @@ input.button.with-text {
 
 #pairwise_main .skip_vote_reasons ul li {color: white; padding: 0.5em 0.5em 0.5em 2em; text-align: left;}
 
-#pairwise_main .skip_vote_reasons ul li:hover{background-color:#ECF2E7;}
+#pairwise_main .skip_vote_reasons ul li:hover{background-color:#666;}
 
 #pairwise_main .skip_vote_reasons ul li a {color: white;text-decoration: none;font-size: 14px;}
 
