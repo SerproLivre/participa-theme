@@ -2299,7 +2299,7 @@ input.button.with-text {
 
 #pairwise_main .prompt {
 	/*background-color: #cfe1bf !important;*/
-	background: url("images/prompt_bg_normal.png") no-repeat top center #cfe1bf !important;
+	background: url("images/prompt_bg_normal.png") no-repeat top center #cfe1bf;
 	border-width: 0px;
    max-width: 369px;
    height: 170px !important;
@@ -2314,9 +2314,9 @@ input.button.with-text {
 #pairwise_main .prompt a{
 	color: #2a2d28 !important;
 	/*font-size: 14px;*/
-	font-size: 12px;/*rEDUZIDO PARA CABER 160 CARACTERES.*/
+	font-size: 12px;/*REDUZIDO PARA CABER 160 CARACTERES.*/
 	display: block;
-	height: 170px;
+	/*height: 170px;*/
 	max-width: 369px;
 	padding: 10px 0;
 }
