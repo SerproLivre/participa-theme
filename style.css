@@ -881,7 +881,7 @@ p {
 
 .search-results-box .common-profile-list-block li {
     display: inline-block;
-    width: 99px;
+    width: 112px;
 }
 
 .common-profile-list-block,
@@ -895,7 +895,8 @@ ul.profile-list .common-profile-list-block {
 }
 
 #search-results .common-profile-list-block {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .vcard .menu-submenu-list li {
@@ -904,7 +905,8 @@ ul.profile-list .common-profile-list-block {
 
 .common-profile-list-block .profile-image {
     display: block;
-    height: 100%;
+    height: 56px;
+    max-height: 100%;
     width: 100%;
 }
 
@@ -2107,9 +2109,11 @@ input.button.with-text {
 
 .box-2 .common-profile-list-block .profile-image, 
 .box-3 .common-profile-list-block .profile-image{
+    height: 56px;
 /*	 border: 1px solid #CCCCCC;
     height: 100%;
     margin: -1px;*/
+
 }
 
 
@@ -2274,6 +2278,7 @@ input.button.with-text {
 	border-radius: 10px 10px 0 0;
 	border: 1px solid #b3c4a6;
 	border-bottom: 0px;
+	margin: -1px;
 }
 
 #pairwise_main ul.pairwise_menu li a.active{
@@ -2291,27 +2296,41 @@ input.button.with-text {
 
 #pairwise_main .pairwise_body {
     background-color: white;
+    border-radius: 7px 7px 7px 7px;
     display: block;
-    margin: 1em;
+    font-size: 22px;
+    margin: 0 0 0.5em;
     padding: 1em;
-	 font-size: 22px;
 }
 
 #pairwise_main .pairwise_call_for_action {
     color: #4B7421;
     font-size: 14px;
+	 line-height: 1.5em;
 }
 
 #pairwise_main .prompt {
-	background-color: #cfe1bf !important;
+	/*background-color: #cfe1bf !important;*/
+	background: url("images/prompt_bg_normal.png") no-repeat center top #cfe1bf;
 	border-width: 0px;
-	max-width: 360px;
-	min-height: 190px;
+   max-width: 369px;
+   height: 170px !important;
+   padding: 10px 0;
 	border-width: 0 !important;
 }
 
 #pairwise_main .prompt:hover {
-	background: url("images/prompt_bg.png") no-repeat top center #548A1C;
+	background: url("images/prompt_bg_hover.png") no-repeat center top #548A1C;
+}
+
+#pairwise_main .prompt a{
+	color: #2a2d28 !important;
+	/*font-size: 14px;*/
+	font-size: 12px;/*REDUZIDO PARA CABER 160 CARACTERES.*/
+	display: block;
+	/*height: 170px;*/
+	max-width: 369px;
+	padding: 10px 0;
 }
 
 #pairwise_main .separator {
@@ -2359,7 +2378,7 @@ input.button.with-text {
 
 #pairwise_main .skip_vote_reasons ul li {color: white; padding: 0.5em 0.5em 0.5em 2em; text-align: left;}
 
-#pairwise_main .skip_vote_reasons ul li:hover{background-color:#ECF2E7;}
+#pairwise_main .skip_vote_reasons ul li:hover{background-color:#666;}
 
 #pairwise_main .skip_vote_reasons ul li a {color: white;text-decoration: none;font-size: 14px;}
 
@@ -2404,13 +2423,14 @@ input.button.with-text {
 }
 
 #pairwise_main .div_text_input_container .suggest_idea_btn input#new_idea_button{
-    background: url("images/botao-enviar-pairwise.png") no-repeat top center #CCCCCC;
+    background: url("images/botao-enviar-pairwise.png") no-repeat top center transparent;
     border-radius: 0px;
     cursor: pointer;
     display: block;
     min-height: 71px;
     padding: 5px 10px;
     width: 93px;
+    border-width: 0;
 }
 
 
