@@ -13,6 +13,14 @@
 	});
 
   $( ".profile-image" ).prepend( "<span class='helper'></span>" );
+  //insere a mensagem no bloco de trilhas na página inicial//
+  $( ".action-home-index #content .community-track-plugin_track-card-list-block .track_list" ).prepend( "<span class='msg_block'>Construa seu caminho de participação na elaboração de políticas públicas...</span>" );
+
+  //insere a mensagem no bloco de comunidades na página inicial//
+  $( ".action-home-index #content .communities-block .block-inner-2>div" ).prepend( "<span class='msg_block'>Participe dos dialogos entre governo e sociedade em comunidades temáticas...</span>" );
+
+  $( ".action-home-index #content .communities-block .block-inner-2>div.block-footer-content .msg_block" ).remove();
+	
 
 })(jQuery);
 

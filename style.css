@@ -413,6 +413,21 @@ p {
   display: inline-block;
 }
 
+.action-home-index .msg_block {    
+	display: block;
+	font-size: 12px;
+	background-color: white;
+}
+
+.action-home-index .community-track-plugin_track-card-list-block .msg_block {
+    margin: 0 0 -5px;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.action-home-index .communities-block .msg_block {margin: 0 0 1em;}
+
+
 
 /*****************/
 
