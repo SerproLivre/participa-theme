@@ -526,12 +526,13 @@ background: url(images/icone-verde-flickr.png) 0 20px;
 #footer-license {
    max-width: 960px;
    margin: 0 auto;
-   text-align: center;
+   text-align: left;
    padding: 19px;
 }
 
 #footer-license p {
     color: #F28F00;
+	 text-align: left;
 }
 
 
