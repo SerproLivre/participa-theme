@@ -895,7 +895,8 @@ ul.profile-list .common-profile-list-block {
 }
 
 #search-results .common-profile-list-block {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .vcard .menu-submenu-list li {
