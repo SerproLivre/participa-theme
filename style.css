@@ -2296,6 +2296,14 @@ input.button.with-text {
 	margin: -1px;
 }
 
+#pairwise_main ul.pairwise_menu li a.active{
+    color: #497B16;
+    background-color: #ECF2E7;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #b3c4a6;
+    border-bottom: 0px;
+}
+
 #pairwise_main .pairwise_content {
     background-color: #ECF2E7;
     padding: 1em;
@@ -2338,6 +2346,7 @@ input.button.with-text {
 	/*height: 170px;*/
 	max-width: 369px;
 	padding: 10px 0;
+    height: 100%;
 }
 
 #pairwise_main .separator {
