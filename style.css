@@ -2868,6 +2868,12 @@ body.action-embed-index {
   padding: 22px 0px 0px 0px;
 }
 
+.action-embed-index .community-track-plugin_track-card-list-block .view_all a {
+  position: absolute;
+  right: -12px;
+  top: -33px;
+}
+
 /** Bloco de redes sociais **/
 .social_widget {
   margin-left: 5px;
