@@ -174,8 +174,8 @@ p {
     width: 30%;
 }
 
-.action-account-signup .signup-form-header,
-.action-account-signup .signup-form-profile {
+.action-account-signup #signup-form-header,
+.action-account-signup #signup-form-profile {
     display: inline-block;
     float: right;
     width: 60%;
