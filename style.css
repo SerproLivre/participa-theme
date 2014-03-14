@@ -160,6 +160,17 @@ p {
 	/*font-size: x-small;*/
 }
 
+/*Registro de usuário*/
+
+.action-account-signup {}
+
+.action-account-signup form {
+	margin-right: 0px;
+}
+
+
+/*Fim Registro de usuário*/
+
 /* Menu List left */
 /*Estilo nos blocos laterais*/
 
