@@ -160,6 +160,35 @@ p {
 	/*font-size: x-small;*/
 }
 
+/*Registro de usuário*/
+
+.action-account-signup .no-boxes form {
+    margin: 0px;
+}
+
+.action-account-signup .singup_text {
+	 display: inline-block;
+    float: left;
+    margin-right: 5%;
+    margin-top: 70px;
+    width: 30%;
+}
+
+.action-account-signup #signup-form-header,
+.action-account-signup #signup-form-profile {
+    display: inline-block;
+    float: right;
+    width: 60%;
+}
+
+.action-account-signup form>p {
+	clear: both;
+}
+
+
+
+/*Fim Registro de usuário*/
+
 /* Menu List left */
 /*Estilo nos blocos laterais*/
 
@@ -412,6 +441,21 @@ p {
   height: 100%;
   display: inline-block;
 }
+
+.action-home-index .msg_block {    
+	display: block;
+	font-size: 12px;
+	background-color: white;
+}
+
+.action-home-index .community-track-plugin_track-card-list-block .msg_block {
+    margin: 0 0 -5px;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.action-home-index .communities-block .msg_block {margin: 0 0 1em;}
+
 
 
 /*****************/
@@ -2320,7 +2364,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt:hover {
-	background: url("images/prompt_bg_hover.png") no-repeat center top #548A1C;
+	background: url("images/prompt_bg_hover.png") no-repeat 51% top #548A1C;
 }
 
 #pairwise_main .prompt a{
@@ -2335,8 +2379,12 @@ input.button.with-text {
 }
 
 #pairwise_main .separator {
+    background-color: #CCCCCC;
     display: inline-block;
     float: none;
+    height: 170px;
+    margin-top: 8px;
+    width: 1px;
 }
 
 
@@ -2847,6 +2895,12 @@ body.action-embed-index {
 .action-embed-index .community-track-plugin_track-card-list-block .track_list {
   text-align: center;
   padding: 22px 0px 0px 0px;
+}
+
+.action-embed-index .community-track-plugin_track-card-list-block .view_all a {
+  position: absolute;
+  right: -12px;
+  top: -33px;
 }
 
 /** Bloco de redes sociais **/
