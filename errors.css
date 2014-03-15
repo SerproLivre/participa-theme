@@ -1,0 +1,24 @@
+@import url(../base/errors.css);
+
+body {
+	background-image: radial-gradient(ellipse at center center , #FCDD4E 1%, #F9C404 100%);
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+}
+#logo {
+   background: url(images/503-logo.jpg) 20px 0px no-repeat;
+}
+
+#header {
+  background: #ccc url(imgs/menu-top-bg-right.png) top right no-repeat;
+  height: 42px;
+  margin-top: 48px;
+  position: relative;
+}
+
+
+#wrap {
+  margin: 20px 20px 0px 20px;
+  border: 1px solid #d3d7cf;
+  background: white url(images/503.jpg) 100% 100% no-repeat;
+  height: 680px;
+}

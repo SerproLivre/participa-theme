@@ -160,6 +160,35 @@ p {
 	/*font-size: x-small;*/
 }
 
+/*Registro de usuário*/
+
+.action-account-signup .no-boxes form {
+    margin: 0px;
+}
+
+.action-account-signup .singup_text {
+	 display: inline-block;
+    float: left;
+    margin-right: 5%;
+    margin-top: 70px;
+    width: 30%;
+}
+
+.action-account-signup #signup-form-header,
+.action-account-signup #signup-form-profile {
+    display: inline-block;
+    float: right;
+    width: 60%;
+}
+
+.action-account-signup form>p {
+	clear: both;
+}
+
+
+
+/*Fim Registro de usuário*/
+
 /* Menu List left */
 /*Estilo nos blocos laterais*/
 

@@ -50,6 +50,11 @@ function igualarBlocos(cc){
   //Alinha os blocos do tipo container lado a lado      
   $('.container-block-plugin_container-block').each(igualarBlocos);
 
+
+ //insere a mensagem na página de registro//
+  $( ".action-account-signup #content form" ).prepend( "<div class='singup_text'><p>Registre-se. Crie sua conta no Participa Brasil! Este é mais um espaço de diálogo entre governo e sociedade civil. Depois que você se registrar será possível fazer comentários e/ou contribuições, participar de consultas públicas, criar blogs, participar e/ou criar comunidades, etc.</p><p>A gestão pública nunca esteve tão próxima das pessoas como agora. Faça parte desta mudança!</p><p>Seja bem vind@!</p></div>" );
+ 
+
 })(jQuery);
 
 
