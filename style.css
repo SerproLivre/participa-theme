@@ -2392,7 +2392,7 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt:hover {
-	background: url("images/prompt_bg_hover.png") no-repeat #548A1C;
+	background: url("images/prompt_bg_hover.png") no-repeat 50% top #548A1C;
 }
 
 #pairwise_main .prompt.left{
