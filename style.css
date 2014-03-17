@@ -2427,36 +2427,19 @@ input.button.with-text {
 
 #pairwise_main .skip_vote {
 	width: 100% !important;
-	/*background-color: #7D8874 !important;*/
-	background: url("images/btn_duvida_pairwise.png") no-repeat center center #fff !important;
+	text-align: center;
+/* background-color: #7D8874 !important;
 	font-size: 15px !important;
 	color: #fff;
 	padding: 1em 0 !important;
 	border-width: 0px !important;
-	border-radius: 7px 7px 0px 0px !important;
+	border-radius: 7px 7px 0px 0px !important;*/
+}
+
+#pairwise_main .skip_vote a {
+	background: url("images/btn_duvida_pairwise.png") no-repeat center center #fff !important;	
+	display: block;
 	
-
-/*cópia do css do plugin*/
-/*
-    background-color: #CCCCCC;
-    border-color: #CCCCCC;
-    border-radius: 7px 7px 7px 7px;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
-    float: none;
-    font-size: 12pt;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    min-height: 18px;
-    padding: 0.5em;
-    text-align: center;
-    vertical-align: top;
-    word-wrap: break-word;
-*/
-
 }
 
 #pairwise_main .skip_vote_reasons {background-color: #7D8874;padding-top: 0 !important;}
