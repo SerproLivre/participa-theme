@@ -2520,6 +2520,9 @@ input.button.with-text {
     border-width: 0;
 }
 
+div.pairwise_group_list_container .arrow span.active {
+	background-position: center top;
+}
 
 /*Fim Pairwise*/
 
