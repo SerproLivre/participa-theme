@@ -160,6 +160,35 @@ p {
 	/*font-size: x-small;*/
 }
 
+/*Registro de usuário*/
+
+.action-account-signup .no-boxes form {
+    margin: 0px;
+}
+
+.action-account-signup .singup_text {
+	 display: inline-block;
+    float: left;
+    margin-right: 5%;
+    margin-top: 70px;
+    width: 30%;
+}
+
+.action-account-signup #signup-form-header,
+.action-account-signup #signup-form-profile {
+    display: inline-block;
+    float: right;
+    width: 60%;
+}
+
+.action-account-signup form>p {
+	clear: both;
+}
+
+
+
+/*Fim Registro de usuário*/
+
 /* Menu List left */
 /*Estilo nos blocos laterais*/
 
@@ -2263,7 +2292,35 @@ input.button.with-text {
 
 /* Fim Bloco Estatistica */
 
+/*bloco de conteúdo relevante*/
 
+.relevant-content-plugin_relevant-content-block{}
+
+.action-home-index #content .block-outer .block .block{
+    display: inline-block;
+    left: 0;
+    margin-bottom: 14px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    vertical-align: top;
+    width: 19%;
+}
+
+.relevant-content-plugin_relevant-content-block ul{
+	padding: 0;
+}
+
+.relevant-content-plugin_relevant-content-block li {
+}
+.relevant-content-plugin_relevant-content-block li:hover {
+	background-color: #eee;
+}
+.relevant-content-plugin_relevant-content-block li a{
+    color: #333;
+	 display: block;
+    padding: 0.5em 1em;
+}
 /*Pairwise*/
 
 #pairwise_main {
@@ -2335,8 +2392,17 @@ input.button.with-text {
 }
 
 #pairwise_main .prompt:hover {
-	background: url("images/prompt_bg_hover.png") no-repeat 51% top #548A1C;
+	background: url("images/prompt_bg_hover.png") no-repeat 50% top #548A1C;
 }
+
+#pairwise_main .prompt.left{
+	background-position: 51% top;
+}
+
+#pairwise_main .prompt.right{
+	background-position: 50% top;
+}
+
 
 #pairwise_main .prompt a{
 	color: #2a2d28 !important;
@@ -2361,35 +2427,27 @@ input.button.with-text {
 
 #pairwise_main .skip_vote {
 	width: 100% !important;
-	background-color: #7D8874 !important;
+	text-align: center;
+/* background-color: #7D8874 !important;
 	font-size: 15px !important;
 	color: #fff;
 	padding: 1em 0 !important;
 	border-width: 0px !important;
-	border-radius: 7px 7px 0px 0px !important;
-	
+	border-radius: 7px 7px 0px 0px !important;*/
+}
 
-/*cópia do css do plugin*/
-/*
+#pairwise_main .skip_vote a {
+	 background: url("images/btn_duvida_pairwise.png") no-repeat center center #fff !important;	
+
     background-color: #CCCCCC;
-    border-color: #CCCCCC;
-    border-radius: 7px 7px 7px 7px;
-    border-style: solid;
-    border-width: 1px;
     color: white;
-    float: none;
-    font-size: 12pt;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    min-height: 18px;
-    padding: 0.5em;
-    text-align: center;
-    vertical-align: top;
-    word-wrap: break-word;
-*/
-
+	 display: inline-block;
+    height: 1px;
+    line-height: 0;
+    padding: 1em 0;
+    text-decoration: none;
+    width: 150px;
+	
 }
 
 #pairwise_main .skip_vote_reasons {background-color: #7D8874;padding-top: 0 !important;}
@@ -2453,6 +2511,9 @@ input.button.with-text {
     border-width: 0;
 }
 
+div.pairwise_group_list_container .arrow span.active {
+	background-position: center top;
+}
 
 /*Fim Pairwise*/
 
@@ -2745,6 +2806,9 @@ body.contraste #social-icons #sb_flickr:hover {
 }
 
 /* Plugin para curtir artigos e comentários */
+.pairwise-plugin_pairwise-content .vote-actions {
+  display: none;
+}
 
 .action .dislike:before {
   content: url(images/negative-hand.png);
