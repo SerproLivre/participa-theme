@@ -6,6 +6,10 @@ function alignBlocks(containerIndex){
         if(jQuery(this).height() > longerBlock)
                 longerBlock = jQuery(this).height();
     });
+    
+    jt.find("#block-48504 .block-inner-2").height(492);
+    jt.find("#block-55304 .block-inner-2").height(378);
+        
     //Aligns the blocks in the most common situations
     jt.find(".block-outer").height(longerBlock);
     //Only used for blocks with video, since it uses the size of the iframe
