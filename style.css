@@ -2399,7 +2399,8 @@ input.button.with-text {
 
 #pairwise_main .skip_vote {
 	width: 100% !important;
-	background-color: #7D8874 !important;
+	/*background-color: #7D8874 !important;*/
+	background: url("images/btn_duvida_pairwise.png") no-repeat center center #fff !important;
 	font-size: 15px !important;
 	color: #fff;
 	padding: 1em 0 !important;
