@@ -2812,6 +2812,9 @@ body.contraste #social-icons #sb_flickr:hover {
 }
 
 /* Plugin para curtir artigos e comentários */
+.pairwise-plugin_pairwise-content .vote-actions {
+  display: none;
+}
 
 .action .dislike:before {
   content: url(images/negative-hand.png);
