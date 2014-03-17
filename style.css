@@ -2292,7 +2292,35 @@ input.button.with-text {
 
 /* Fim Bloco Estatistica */
 
+/*bloco de conteúdo relevante*/
 
+.relevant-content-plugin_relevant-content-block{}
+
+.relevant-content-plugin_relevant-content-block .block{
+    display: inline-block;
+    left: 0;
+    margin-bottom: 14px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    vertical-align: top;
+    width: 19%;
+}
+
+.relevant-content-plugin_relevant-content-block ul{
+	padding: 0;
+}
+
+.relevant-content-plugin_relevant-content-block li {
+}
+.relevant-content-plugin_relevant-content-block li:hover {
+	background-color: #eee;
+}
+.relevant-content-plugin_relevant-content-block li a{
+    color: #333;
+	 display: block;
+    padding: 0.5em 1em;
+}
 /*Pairwise*/
 
 #pairwise_main {
