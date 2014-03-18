@@ -185,9 +185,76 @@ p {
 	clear: both;
 }
 
-
-
 /*Fim Registro de usuário*/
+
+/* PopUp Login*/
+
+#TB_window {
+	left: -350px;
+	margin-left: 50% !important;
+	width: 700px !important;
+}
+
+#TB_ajaxContent.TB_modal {
+    padding: 15px;
+    position: relative;
+    width: auto !important;
+}
+
+#TB_window .login-box{}
+
+#TB_window .login-box h2{
+    background: url("images/bg-titulo-interno.png") repeat-x scroll 0 0 #FFFFFF;
+    color: #757575;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    width: 45%;
+}
+
+#TB_window .login-box form {
+    margin: 0;
+    width: 45%;
+}
+
+#TB_window .login-box .formfieldline input {
+	width: 100%;
+}
+
+#TB_window .login-box  .button-bar input.icon-login {
+	background: url("images/btn_entrar_login.png") repeat-x scroll 0 0 #FFFFFF;
+	height: 49px !important;
+	max-height: 49px !important;
+	width: 142px;
+}
+
+#TB_window .login-box  .button-bar input.icon-close {
+	background: url("images/btn_cancelar_login.png") repeat-x scroll 0 0 #FFFFFF;
+	height: 47px !important;
+   max-height: 47px !important;
+   width: 123px;
+}
+
+#TB_window .login-box .button-bar input.submit,
+#TB_window .login-box .button-bar a.icon-close {
+	
+}
+
+#TB_window .login-box .button-bar {
+    float: right;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 45%;
+}
+
+#TB_window .login-box form .button-bar {
+	float: none; 
+	width: 100%
+}
+
+
+
+/*Fim PopUp Login*/
 
 /* Menu List left */
 /*Estilo nos blocos laterais*/
@@ -539,6 +606,12 @@ p {
 	
 }
 
+/*tamanho da fonte dentro dos artigos*/
+.article-body p{
+	font-size:13px;
+	line-height:26px;
+}
+/* fim tamanho da fonte dentro dos artigos*/
 
 
 /*comentário*/
@@ -2389,6 +2462,7 @@ input.button.with-text {
    height: 170px !important;
    padding: 10px 0;
 	border-width: 0 !important;
+	border-radius: 10px;
 }
 
 #pairwise_main .prompt:hover {
@@ -2402,7 +2476,6 @@ input.button.with-text {
 #pairwise_main .prompt.right{
 	background-position: 50% top;
 }
-
 
 #pairwise_main .prompt a{
 	color: #2a2d28 !important;
