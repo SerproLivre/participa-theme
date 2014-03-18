@@ -215,6 +215,7 @@ p {
 #TB_window .login-box form {
     margin: 0;
     width: 45%;
+    background: url("images/img_login_popUp.png") no-repeat scroll 80% top #FFFFFF;
 }
 
 #TB_window .login-box .formfieldline input {
