@@ -223,9 +223,14 @@ p {
 
 #TB_window .login-box .button-bar input.icon-login {
     background: url("images/btn_entrar_login.png") no-repeat scroll 0 0 #FFFFFF;
+    border: 0px none;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     height: 50px !important;
     max-height: 50px !important;
     padding: 0;
+    text-transform: uppercase;
     width: 145px;
 }
 
