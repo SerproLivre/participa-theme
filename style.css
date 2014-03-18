@@ -201,7 +201,7 @@ p {
     width: auto !important;
 }
 
-#TB_window .login-box{}
+#TB_window .login-box{width: 100%;}
 
 #TB_window .login-box h2{
     background: url("images/bg-titulo-interno.png") repeat-x scroll 0 0 #FFFFFF;
@@ -218,26 +218,36 @@ p {
 }
 
 #TB_window .login-box .formfieldline input {
-	width: 100%;
+	width: 95%;
 }
 
-#TB_window .login-box  .button-bar input.icon-login {
-	background: url("images/btn_entrar_login.png") repeat-x scroll 0 0 #FFFFFF;
-	height: 49px !important;
-	max-height: 49px !important;
-	width: 142px;
+#TB_window .login-box .button-bar input.icon-login {
+    background: url("images/btn_entrar_login.png") no-repeat scroll 0 0 #FFFFFF;
+    height: 50px !important;
+    max-height: 50px !important;
+    padding: 0;
+    width: 145px;
 }
 
-#TB_window .login-box  .button-bar input.icon-close {
-	background: url("images/btn_cancelar_login.png") repeat-x scroll 0 0 #FFFFFF;
-	height: 47px !important;
-   max-height: 47px !important;
-   width: 123px;
+#TB_window .login-box .button-bar a.icon-close {
+ /*background: url("images/btn_cancelar_login.png") repeat-x scroll 0 0 #FFFFFF;*/
+    background-color: #FCE9E8;
+    background-image: none;
+    border: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    color: #CE5E5E;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    padding: 14px 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 115px;
 }
 
 #TB_window .login-box .button-bar input.submit,
 #TB_window .login-box .button-bar a.icon-close {
-	
+    border: 0px none;
 }
 
 #TB_window .login-box .button-bar {
