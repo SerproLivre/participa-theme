@@ -1067,6 +1067,7 @@ ul.profile-list .common-profile-list-block {
 .action-home-index #wrap-2,
 .action-environment_design-index #wrap-2  {
 	background: url(images/bg-palacio-do-planalto.jpg) no-repeat fixed center top;
+  background-size: 100%;
 }
 
 /***************content*************/
@@ -2395,6 +2396,9 @@ input.button.with-text {
     padding: 0.5em 1em;
 }
 /*Pairwise*/
+.pairwise-plugin_pairwise-content #article-header .title {
+  display: none;
+}
 
 #pairwise_main {
 	text-align: center;
