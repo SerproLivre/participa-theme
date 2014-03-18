@@ -263,6 +263,14 @@ p {
     width: 45%;
 }
 
+#TB_window .login-box .button-bar .icon-add{
+	
+}
+
+#TB_window .login-box .button-bar .icon-help{
+	
+}
+
 #TB_window .login-box form .button-bar {
 	float: none; 
 	width: 100%
@@ -2519,7 +2527,7 @@ input.button.with-text {
 
 
 #pairwise_main .skip_vote {
-	width: 100% !important;
+	width: 200px !important;
 	text-align: center;
 	padding: 0;
 	border-width: 0px;
@@ -2534,16 +2542,17 @@ input.button.with-text {
 
 #pairwise_main .skip_vote a {
 	 background: url("images/btn_duvida_pairwise.png") no-repeat center center #fff !important;	
-
-    background-color: #CCCCCC;
     color: transparent !important;
 	 display: inline-block;
     height: 1px;
     line-height: 0;
     padding: 1em 0;
     text-decoration: none;
-    width: 150px;
-	
+    width: 200px;	
+}
+
+#pairwise_main .skip_vote a:hover {
+	 background: url("images/btn_duvida_pairwise_hover.png") no-repeat center center #fff !important;	
 }
 
 #pairwise_main .skip_vote_reasons {background-color: #7D8874;padding-top: 0 !important;}
