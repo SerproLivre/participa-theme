@@ -201,7 +201,10 @@ p {
     width: auto !important;
 }
 
-#TB_window .login-box{width: 100%;}
+#TB_window .login-box{
+	width: 100%;
+   background: url("images/img_login_popUp.png") no-repeat scroll 90% 30% #FFFFFF;
+}
 
 #TB_window .login-box h2{
     background: url("images/bg-titulo-interno.png") repeat-x scroll 0 0 #FFFFFF;
@@ -215,7 +218,7 @@ p {
 #TB_window .login-box form {
     margin: 0;
     width: 45%;
-    background: url("images/img_login_popUp.png") no-repeat scroll 70% 30% #FFFFFF;
+    /*background: url("images/img_login_popUp.png") no-repeat scroll 70% 30% #FFFFFF;*/
 }
 
 #TB_window .login-box .formfieldline input {
@@ -236,7 +239,7 @@ p {
 }
 
 #TB_window .login-box .button-bar a.icon-close {
- /*background: url("images/btn_cancelar_login.png") repeat-x scroll 0 0 #FFFFFF;*/
+  /*background: url("images/btn_cancelar_login.png") repeat-x scroll 0 0 #FFFFFF;*/
     background-color: #FCE9E8;
     background-image: none;
     border: 0 none;
@@ -257,14 +260,29 @@ p {
 }
 
 #TB_window .login-box .button-bar {
-    float: right;
+    float: none;
     margin-bottom: 1em;
     margin-top: 1em;
-    width: 45%;
+    width: 100%;
 }
 
 #TB_window .login-box .button-bar .icon-add{
-	
+    background-color: #F7E074;
+    background-image: none;
+    color: #004B82;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 75px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    top: -3em;
+    width: 30%;
+}
+
+#TB_window .login-box .button-bar .icon-add span{
+	border-bottom: 1px solid #F7E074;
 }
 
 #TB_window .login-box .button-bar .icon-help{
