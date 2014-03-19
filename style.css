@@ -2444,6 +2444,7 @@ input.button.with-text {
 
 #pairwise_main {
 	text-align: center;
+	width: auto;
 }
 
 #pairwise_main ul.pairwise_menu {
