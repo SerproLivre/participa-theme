@@ -237,6 +237,11 @@ p {
     padding: 0;
     text-transform: uppercase;
     width: 145px;
+	 cursor: pointer;
+}
+
+#TB_window .login-box .button-bar input.icon-login:hover {
+	background-image: url("btn_entrar_login_hover.png");
 }
 
 #TB_window .login-box .button-bar a.icon-close {
@@ -253,6 +258,9 @@ p {
     text-align: center;
     text-transform: uppercase;
     width: 115px;
+}
+#TB_window .login-box .button-bar a.icon-close:hover {
+	background-color: #FFD1CF;
 }
 
 #TB_window .login-box .button-bar input.submit,
