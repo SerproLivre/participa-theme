@@ -2447,10 +2447,6 @@ input.button.with-text {
     padding: 0.5em 1em;
 }
 /*Pairwise*/
-div.pairwise_main .spinner {
-  width: 92%;
-}
-
 .pairwise-plugin_pairwise-content #article-header .title {
   display: none;
 }
