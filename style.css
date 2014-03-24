@@ -2546,8 +2546,8 @@ input.button.with-text {
 	font-size: 12px;/*REDUZIDO PARA CABER 160 CARACTERES.*/
 	display: block;
 	/*height: 170px;*/
-	max-width: 369px;
-	padding: 10px 0;
+	max-width: 349px;
+	padding: 10px;
     height: 100%;
 }
 
