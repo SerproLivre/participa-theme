@@ -241,7 +241,7 @@ p {
 }
 
 #TB_window .login-box .button-bar input.icon-login:hover {
-	background-image: url("btn_entrar_login_hover.png");
+	background-image: url("images/btn_entrar_login_hover.png");
 }
 
 #TB_window .login-box .button-bar a.icon-close {
