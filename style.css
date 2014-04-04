@@ -2323,6 +2323,9 @@ input.button.with-text {
     padding: 0.5em 1em;
 }
 /*Pairwise*/
+.pairwise-plugin_pairwise-content #article-header .title {
+  display: none;
+}
 
 #pairwise_main {
 	text-align: center;
