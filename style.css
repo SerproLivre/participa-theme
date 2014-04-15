@@ -3148,6 +3148,7 @@ body.action-embed-index {
 	background: url("images/hub-remove-icon.png") no-repeat center center #fff;
 }
 
+/*
 .hub .promote{
 	background: url("images/hub-promote-icon.png") no-repeat center center #fff;
 }
@@ -3155,14 +3156,14 @@ body.action-embed-index {
 .hub .pin{
 	background: url("images/hub-pin-icon.png") no-repeat center center #fff;
 }
+*/
+
 .hub ul.settings li{
 	 position: relative;
 	 background: url("images/hub-arrow-right.png") no-repeat scroll 95% 50% #ED8E01;
 	 overflow: hidden;
 	 z-index:999;
 }
-
-
 
 .hub ul.settings li.twitter:hover{
 	 background: url("images/hub-arrow-up.png") no-repeat scroll 95% 50% #ED8E01;
