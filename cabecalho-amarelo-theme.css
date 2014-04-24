@@ -369,9 +369,10 @@ background: url(images/icone-verde-flickr.png) 0 20px;
 
 /************* Bar Psocial Style - Menu Horizontal**************/
 #user{
-	padding: 0 2em;
-   top: -30px;
-   font-size: 12px;
+  padding: 0px 2em;
+  top: -30px;
+  font-size: 12px;
+  right: 4em;
 }
 
 .logged-in #user{
