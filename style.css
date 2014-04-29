@@ -303,12 +303,28 @@ p {
 	width: 100%
 }
 
-
+#password-rate {
+	width: 375px;
+}
 
 /*Fim PopUp Login*/
 
 /* Menu List left */
 /*Estilo nos blocos laterais*/
+
+
+.design-menu {
+    display: inline-block;
+}
+
+.box-1 {
+   /* display: inline-block;*/
+}
+
+.box-2 {
+   display: inline-block;
+	vertical-align: top;
+}
 
 .box-2 .block .block-inner-2,
 .box-3 .block .block-inner-2{
@@ -611,7 +627,7 @@ p {
 }
 
 .box-1 .blocks {
-    margin-top: -30px;
+    /*margin-top: -30px;*/
 }
 
 .block-outer .block .block-outer {
