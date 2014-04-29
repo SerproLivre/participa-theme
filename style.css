@@ -307,6 +307,14 @@ p {
 	width: 375px;
 }
 
+#signup-form small#signup-balloon, 
+#signup-form small#password-balloon, 
+#signup-form small#password-confirmation-balloon, 
+#signup-form small#email-balloon, 
+#signup-form small#name-balloon {
+	right: 0;
+}
+
 /*Fim PopUp Login*/
 
 /* Menu List left */
