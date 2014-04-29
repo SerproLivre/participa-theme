@@ -303,7 +303,7 @@ p {
 	width: 100%
 }
 
-#password-rate {
+#email-check, #fake-check, #password-rate, #password-check {
 	width: 375px;
 }
 
