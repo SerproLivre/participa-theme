@@ -3011,6 +3011,10 @@ body.contraste #social-icons #sb_flickr:hover {
   opacity: 1;
 }
 
+#article .action .vote-detail li {
+  padding: 0px;
+}
+
 .vote-action .action-icon {
   opacity: 0.5;
 }
