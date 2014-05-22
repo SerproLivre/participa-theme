@@ -807,10 +807,14 @@ p {
 }
 
 #content .comment-header .comment-actions-reply{
-	 margin-right: 10px;
-    margin-top: 5px;
+	 margin-right: 5px;
+   margin-top: 5px;
 }
 
+.comment-details .menu-submenu {
+  bottom: -4px;
+  right: -130px;
+}
 
 #page-comment-form .post_comment_box {
 	 display: inline-block;
@@ -1132,6 +1136,19 @@ ul.profile-list .common-profile-list-block {
 	 height: auto;
 	 padding-top: 0;
 	 overflow: visible;
+}
+
+#content .comment-actions li {
+  padding: 2px;
+}
+
+#article .article-comment .comment-details .comment-actions h4 {
+  display: none;
+}
+
+.menu-submenu-trigger, .comment-actions .vcard .menu-submenu-trigger {
+ width: 20px;
+ height: 20px;
 }
 
 .common-profile-list-block .vcard:hover .menu-submenu-trigger {
