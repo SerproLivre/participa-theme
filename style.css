@@ -3007,6 +3007,10 @@ body.contraste #social-icons #sb_flickr:hover {
   content: url(images/positive-hand.png);
 }
 
+.action .vote-detail {
+  width: 160px;
+}
+
 .vote-action .like-action-active .action-icon {
   opacity: 1;
 }
@@ -3048,7 +3052,7 @@ body.contraste #social-icons #sb_flickr:hover {
 #article .action .vote-detail li a span{
     float: left;
     margin-left: 5px;
-    width: 85px;
+    width: 120px;
 }
 #article .action .vote-detail li a img {
 	float: left;
