@@ -2031,6 +2031,23 @@ input.button.with-text {
 
 /*#content .tags-block .block-footer-content a, */
 
+#content .tags-block .block-footer-content a,
+#content .people-block .block-footer-content a,
+#content .profile-list-block .block-footer-content a,
+#content .enterprises-block .block-footer-content a,
+#content .members-block .block-footer-content a,
+#content .communities-block .block-footer-content a,
+#content .friends-block .block-footer-content a {
+    background: url("images/bg-btn-ver-mais-1px.png") repeat-x scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: inline;
+    margin: 14px 0 14px 14px;
+    padding: 5px 15px;
+    position: relative;
+    top: 5px;
+}
+
 .action-home-index #content .people-block .block-footer-content a, 
 .action-home-index #content .profile-list-block .block-footer-content a, 
 .action-home-index #content .enterprises-block .block-footer-content a, 
@@ -2046,31 +2063,16 @@ input.button.with-text {
 .action-environment_design-index .friends-block .block-footer-content a {
 
     background: url("images/button-read-more-vazio.png") no-repeat scroll left 50% transparent;
-    color: #000000;
+    color: #333;
     display: inline-block;
     font-weight: bold;
     margin-right: 0;
     padding: 10px 20px 10px 50px;
     position: relative;
     text-align: left;
-	 font-family: Arial, sans-serif;
-}
-
-#content .tags-block .block-footer-content a, 
-#content .people-block .block-footer-content a, 
-#content .profile-list-block .block-footer-content a, 
-#content .enterprises-block .block-footer-content a, 
-#content .members-block .block-footer-content a, 
-#content .communities-block .block-footer-content a, 
-#content .friends-block .block-footer-content a {
-    background: url("images/bg-btn-ver-mais-1px.png") repeat-x scroll 0 0 #EEEEEE;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px 5px 5px 5px;
-    display: inline;
-    margin: 14px 0 14px 14px;
-    padding: 5px 15px;
-    position: relative;
-    top: 5px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: inherit;
 }
 
 /*fim botoes ver todos*/
